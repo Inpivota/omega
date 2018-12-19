@@ -8,18 +8,21 @@ import {theme} from './styles/theme'
 import {Provider} from "react-redux";
 import {store} from "./redux/rootReducer";
 import ProtectedRoute from "./components/ProtectedRoute";
+import CssBaseline from "@material-ui/core/CssBaseline/CssBaseline";
 
 class App extends Component {
     render() {
         return (
             <Provider store={store}>
                 <MuiThemeProvider theme={theme}>
-                    <Router>
-                        <Switch>
-                            <Route path={'/login'} component={LoginPage}/>
-                            <ProtectedRoute path={'/'} component={Admin}/>
-                        </Switch>
-                    </Router>
+                    <CssBaseline>
+                        <Router>
+                            <Switch>
+                                <Route path={'/login'} component={LoginPage}/>
+                                <ProtectedRoute path={'/'} component={Admin}/>
+                            </Switch>
+                        </Router>
+                    </CssBaseline>
                 </MuiThemeProvider>
             </Provider>
         );

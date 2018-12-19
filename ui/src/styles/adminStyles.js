@@ -1,12 +1,24 @@
-export const adminStyles = {
+
+
+const drawerWidth = 240;
+
+export const adminStyles = theme => ({
     root: {
+        display: 'flex',
+    },
+    appBar: {
+        zIndex: theme.zIndex.drawer + 1,
+    },
+    drawer: {
+        width: drawerWidth,
+        flexShrink: 0,
+    },
+    drawerPaper: {
+        width: drawerWidth,
+    },
+    content: {
         flexGrow: 1,
+        padding: theme.spacing.unit * 3,
     },
-    grow: {
-        flexGrow: 1,
-    },
-    menuButton: {
-        marginLeft: -12,
-        marginRight: 20,
-    },
-};
+    toolbar: theme.mixins.toolbar,
+});
