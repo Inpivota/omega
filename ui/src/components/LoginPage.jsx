@@ -6,7 +6,7 @@ import LoginBackground from "../assets/img/login-background.jpg"
 import {connect} from "react-redux";
 import {getUserAuth} from "../redux/reducers/SecurityReducer";
 import {Redirect} from "react-router-dom";
-import {submitLogin} from "../redux/actions/SecurityActions";
+import {tryLogin} from "../redux/actions/SecurityActions";
 
 
 const unStyledLoginPage = (props) => {
@@ -31,7 +31,10 @@ const unStyledLoginPage = (props) => {
     >
 
         <Grid item xs={4}>
-            <LoginForm loginAction={() => dispatch(submitLogin())} />
+            <LoginForm loginAction={(event) => {
+                event.preventDefault();
+                dispatch(tryLogin("test","test"));
+            }} />
         </Grid>
 
     </Grid>;

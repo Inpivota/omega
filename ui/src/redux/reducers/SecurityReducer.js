@@ -1,6 +1,7 @@
-import {SUBMIT_LOGIN} from "../actions/SecurityActions";
+import {LOGIN_SUCCESS, SUBMIT_LOGIN} from "../actions/SecurityActions";
 
 const defaultSecurityState = {
+    submittingLogin: false,
     isLoggedIn: false,
     userRoles: [],
 };
@@ -11,8 +12,14 @@ export const security = (state = defaultSecurityState, action) => {
         case SUBMIT_LOGIN:
             return {
                 ...state,
+                submittingLogin: true,
+                isLoggedIn: false,
+            };
+        case LOGIN_SUCCESS:
+            return {
+                ...state,
+                submittingLogin: false,
                 isLoggedIn: true,
-                userRoles:["USER"],
             };
         default:
             return {...state}
