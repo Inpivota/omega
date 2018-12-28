@@ -1,5 +1,9 @@
+import {meFromToken} from "../../utilAPIs/securityAPI";
+
 export const SUBMIT_LOGIN = "SUBMIT_LOGIN";
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_ERROR = "LOGIN_ERROR";
+export const LOGOUT = "LOGOUT";
 export const ME_FROM_TOKEN_SUCCESS = "ME_FROM_TOKEN_SUCCESS";
 
 const submitLogin = () => {
@@ -12,9 +16,15 @@ const loginSuccess = () => {
         type: LOGIN_SUCCESS,
     }
 };
-const meFromTokenSuccess = (payload) => {
-    return dispatch => {
-        dispatch(loginSuccess())
+const loginError = (errorMessage) => {
+    return {
+        type: LOGIN_ERROR,
+        errorMessage,
+    }
+};
+const doLogout = () => {
+    return {
+        type: LOGOUT,
     }
 };
 export const tryLogin = (username, password) => {
@@ -29,8 +39,18 @@ export const tryLogin = (username, password) => {
 };
 export const logout = () => {
     return dispatch => {
-        sessionStorage.removeItem("jwtToken");
-        // dispatch(resetToken());
+        localStorage.removeItem("jwtToken");
+        dispatch(doLogout());
+    }
+};
+const meFromTokenSuccess = (payload) => {
+    return dispatch => {
+        dispatch(loginSuccess())
+    }
+};
+const meFromTokenFailure = () => {
+    return dispatch => {
+        dispatch(loginError("Token was Invalid"))
     }
 };
 
@@ -40,16 +60,16 @@ export const loadUserFromToken = () => {
         if (!token || token === "") {//if there is no token, don't do anything
             return;
         }
-        // dispatch(meFromToken(token))
+        // meFromToken(token)
         //     .then((response) => {
-        //         if (!response.error) {
-        //             sessionStorage.setItem("jwtToken", response.payload.data.token);
+                // if (!response.error) {
+                //     sessionStorage.setItem("jwtToken", response.payload.data.token);
                     dispatch(meFromTokenSuccess("fakePayload"))
                     // dispatch(meFromTokenSuccess(response.payload))
-            //     } else {
-            //         sessionStorage.removeItem("jwtToken");
-            //         dispatch(meFromTokenFailure(response.payload));
-            //     }
+                // } else {
+                //     sessionStorage.removeItem("jwtToken");
+                //     dispatch(meFromTokenFailure(response.payload));
+                // }
             // });
     }
 };

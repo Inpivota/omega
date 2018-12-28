@@ -21,4 +21,7 @@ export const adminStyles = theme => ({
         padding: theme.spacing.unit * 3,
     },
     toolbar: theme.mixins.toolbar,
+    appBarButton: {
+        color: theme.palette.primary.contrastText,
+    },
 });

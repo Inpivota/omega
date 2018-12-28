@@ -7,6 +7,10 @@ import {connect} from "react-redux";
 import {getUserAuth} from "../redux/reducers/SecurityReducer";
 import {Redirect} from "react-router-dom";
 import {tryLogin} from "../redux/actions/SecurityActions";
+import Dialog from "@material-ui/core/Dialog/Dialog";
+import DialogTitle from "@material-ui/core/DialogTitle/DialogTitle";
+import LinearProgress from "@material-ui/core/LinearProgress/LinearProgress";
+import DialogContent from "@material-ui/core/DialogContent/DialogContent";
 
 
 const unStyledLoginPage = (props) => {
@@ -14,6 +18,7 @@ const unStyledLoginPage = (props) => {
         classes,
         location,
         isLoggedIn,
+        submittingLogin,
         dispatch,
     } = props;
 
@@ -35,6 +40,12 @@ const unStyledLoginPage = (props) => {
                 event.preventDefault();
                 dispatch(tryLogin("test","test"));
             }} />
+            <Dialog open={submittingLogin}>
+                <DialogTitle>Logging In</DialogTitle>
+                <DialogContent>
+                    <LinearProgress/>
+                </DialogContent>
+            </Dialog>
         </Grid>
 
     </Grid>;
@@ -50,9 +61,11 @@ const styles = theme => ({
 const mapStateToProps = (state) => {
     const {
         isLoggedIn,
+        submittingLogin,
     } = getUserAuth(state);
     return {
         isLoggedIn,
+        submittingLogin,
     }
 };
 const LoginPage = withStyles(styles)(unStyledLoginPage);

@@ -11,11 +11,26 @@ import ListItem from "@material-ui/core/ListItem/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText/ListItemText";
 import InboxIcon from "@material-ui/icons/Inbox";
+import AccountIcon from "@material-ui/icons/AccountCircle";
+import IconButton from "@material-ui/core/IconButton/IconButton";
+import ClickAwayListener from "@material-ui/core/ClickAwayListener/ClickAwayListener";
+import Menu from "@material-ui/core/Menu/Menu";
+import MenuItem from "@material-ui/core/MenuItem/MenuItem";
+import Grid from "@material-ui/core/Grid/Grid";
+import {connect} from "react-redux";
+import {logout} from "../redux/actions/SecurityActions";
 
 const Admin = (props) => {
     const {
         classes,
     } = props;
+
+    const [menuAnchor, setMenuAnchor] = useState(null);
+
+    const logout = () => {
+        setMenuAnchor(null);
+        props.logout();
+    };
 
     return <div>
         <AppBar
@@ -23,9 +38,26 @@ const Admin = (props) => {
             className={classes.appBar}
         >
             <Toolbar>
+                <Grid container justify={"space-between"} alignItems={"center"}>
                 <Typography variant="h6" color="inherit" className={classes.grow}>
                     Inpivota Admin
                 </Typography>
+                <IconButton onClick={(event) => setMenuAnchor(event.currentTarget)}>
+                    <AccountIcon className={classes.appBarButton}/>
+                </IconButton>
+                <ClickAwayListener onClickAway={() => setMenuAnchor(null)}>
+                    <Menu open={Boolean(menuAnchor)}
+                          anchorEl={menuAnchor}
+                    >
+                        <MenuItem onClick={()=>{setMenuAnchor(null)}}>
+                            My Profile
+                        </MenuItem>
+                        <MenuItem onClick={logout}>
+                            Logout
+                        </MenuItem>
+                    </Menu>
+                </ClickAwayListener>
+                </Grid>
             </Toolbar>
         </AppBar>
             <Drawer
@@ -47,5 +79,12 @@ const Admin = (props) => {
     </div>
 };
 
-export default withStyles(adminStyles)(Admin);
+const mapDispatchToProps = (dispatch) => {
+    return {
+        logout: ()=> dispatch(logout())
+    }
+};
+
+const StyledAdmin = withStyles(adminStyles)(Admin);
+export default connect(undefined, mapDispatchToProps)(StyledAdmin)
 
