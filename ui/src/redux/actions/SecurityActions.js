@@ -1,9 +1,10 @@
-import {meFromToken} from "../../utilAPIs/securityAPI";
+import {fetchLoginToken, meFromToken} from "../../utilAPIs/securityAPI";
 
 export const SUBMIT_LOGIN = "SUBMIT_LOGIN";
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const LOGIN_ERROR = "LOGIN_ERROR";
 export const LOGOUT = "LOGOUT";
+export const CLEAR_LOGIN_STATE = "CLEAR_LOGIN_STATE";
 export const ME_FROM_TOKEN_SUCCESS = "ME_FROM_TOKEN_SUCCESS";
 
 const submitLogin = () => {
@@ -27,15 +28,23 @@ const doLogout = () => {
         type: LOGOUT,
     }
 };
+const clearLoginState = () => {
+    return {
+        type: CLEAR_LOGIN_STATE,
+    }
+};
 export const tryLogin = (username, password) => {
     return (dispatch) => {
         dispatch(submitLogin());
-        // fetchToken
-        setTimeout(() => {
-            localStorage.setItem("jwtToken", "fakeJWT.payload.sdsd");
-            return dispatch(loginSuccess());
-        }, 1500);
-        // dispatch(loginFailed());
+        fetchLoginToken(username, password).then(token =>
+        {
+            localStorage.setItem("jwtToken", token);
+            dispatch(loginSuccess());
+        })
+            .catch(error => {
+                dispatch(loginError(error.message));
+                setTimeout(() => dispatch(clearLoginState()), 2000)
+            });
     }
 };
 export const logout = () => {

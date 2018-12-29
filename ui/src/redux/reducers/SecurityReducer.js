@@ -1,9 +1,10 @@
-import {LOGIN_SUCCESS, LOGOUT, SUBMIT_LOGIN} from "../actions/SecurityActions";
+import {CLEAR_LOGIN_STATE, LOGIN_ERROR, LOGIN_SUCCESS, LOGOUT, SUBMIT_LOGIN} from "../actions/SecurityActions";
 
 const defaultSecurityState = {
     submittingLogin: false,
     isLoggedIn: false,
     userRoles: [],
+    errorMessage: "",
 };
 
 export const security = (state = defaultSecurityState, action) => {
@@ -21,11 +22,26 @@ export const security = (state = defaultSecurityState, action) => {
                 submittingLogin: false,
                 isLoggedIn: true,
             };
+        case LOGIN_ERROR:
+            return {
+                ...state,
+                submittingLogin: false,
+                isLoggedIn: false,
+                errorMessage: action.errorMessage
+            };
         case LOGOUT:
             return {
                 ...state,
                 submittingLogin: false,
                 isLoggedIn: false,
+            };
+        case CLEAR_LOGIN_STATE:
+            return {
+                ...state,
+                submittingLogin: false,
+                isLoggedIn: false,
+                userRoles: [],
+                errorMessage: "",
             };
         default:
             return {...state}
@@ -37,10 +53,12 @@ export const getUserAuth = (state) => {
         submittingLogin,
         isLoggedIn,
         userRoles,
+        errorMessage,
     } = state.security;
     return {
         submittingLogin,
         isLoggedIn,
         userRoles,
+        errorMessage,
     }
 };

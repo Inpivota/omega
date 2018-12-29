@@ -19,7 +19,7 @@ const unStyledLoginPage = (props) => {
         location,
         isLoggedIn,
         submittingLogin,
-        dispatch,
+        errorMessage,
     } = props;
 
     let { from } = location.state || { from: { pathname: "/" } };
@@ -36,14 +36,11 @@ const unStyledLoginPage = (props) => {
     >
 
         <Grid item xs={4}>
-            <LoginForm loginAction={(event) => {
-                event.preventDefault();
-                dispatch(tryLogin("test","test"));
-            }} />
-            <Dialog open={submittingLogin}>
-                <DialogTitle>Logging In</DialogTitle>
+            <LoginForm/>
+            <Dialog open={submittingLogin || errorMessage}>
+                <DialogTitle>{errorMessage? errorMessage : "Logging In"}</DialogTitle>
                 <DialogContent>
-                    <LinearProgress/>
+                    {submittingLogin && <LinearProgress/>}
                 </DialogContent>
             </Dialog>
         </Grid>
@@ -62,10 +59,12 @@ const mapStateToProps = (state) => {
     const {
         isLoggedIn,
         submittingLogin,
+        errorMessage,
     } = getUserAuth(state);
     return {
         isLoggedIn,
         submittingLogin,
+        errorMessage,
     }
 };
 const LoginPage = withStyles(styles)(unStyledLoginPage);
