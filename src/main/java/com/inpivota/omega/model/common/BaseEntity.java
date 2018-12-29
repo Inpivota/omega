@@ -1,4 +1,4 @@
-package com.inpivota.omega.model;
+package com.inpivota.omega.model.common;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;

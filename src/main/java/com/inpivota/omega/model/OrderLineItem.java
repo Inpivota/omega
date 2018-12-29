@@ -1,5 +1,6 @@
 package com.inpivota.omega.model;
 
+import com.inpivota.omega.model.common.BaseEntity;
 import lombok.Data;
 
 import javax.persistence.Entity;

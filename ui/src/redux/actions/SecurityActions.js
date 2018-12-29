@@ -30,6 +30,7 @@ const doLogout = () => {
 export const tryLogin = (username, password) => {
     return (dispatch) => {
         dispatch(submitLogin());
+        // fetchToken
         setTimeout(() => {
             localStorage.setItem("jwtToken", "fakeJWT.payload.sdsd");
             return dispatch(loginSuccess());
