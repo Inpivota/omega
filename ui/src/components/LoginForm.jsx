@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography/Typography";
 import TextField from "@material-ui/core/TextField/TextField";
 import Button from "@material-ui/core/Button/Button";
 import {withStyles} from "@material-ui/core/es/styles";
-import {tryLogin} from "../redux/actions/SecurityActions";
+import {launchSignUp, tryLogin} from "../redux/actions/SecurityActions";
 import {connect} from "react-redux";
 import {COMPANY_NAME} from "../constants/companyConstants";
 
@@ -47,7 +47,8 @@ const LoginForm = ({loginAction, classes, ...props}) => {
                     </Grid>
                     <Grid item xs={12} className={classes.submitButton}>
                         <Grid container justify={"center"}>
-                            <Button variant={"contained"} type={"submit"}>Submit</Button>
+                                <Button color={"primary"} variant={"contained"} type={"submit"}>Submit</Button>
+                                <Button color={"secondary"} onClick={() => props.dispatch(launchSignUp())}>Sign Up</Button>
                         </Grid>
                     </Grid>
                 </form>

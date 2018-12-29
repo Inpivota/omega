@@ -1,10 +1,18 @@
-import {CLEAR_LOGIN_STATE, LOGIN_ERROR, LOGIN_SUCCESS, LOGOUT, SUBMIT_LOGIN} from "../actions/SecurityActions";
+import {
+    CLEAR_LOGIN_STATE,
+    LAUNCH_SIGN_UP,
+    LOGIN_ERROR,
+    LOGIN_SUCCESS,
+    LOGOUT,
+    SUBMIT_LOGIN
+} from "../actions/SecurityActions";
 
 const defaultSecurityState = {
     submittingLogin: false,
     isLoggedIn: false,
     userRoles: [],
     errorMessage: "",
+    isSignUp: false,
 };
 
 export const security = (state = defaultSecurityState, action) => {
@@ -43,6 +51,11 @@ export const security = (state = defaultSecurityState, action) => {
                 userRoles: [],
                 errorMessage: "",
             };
+        case LAUNCH_SIGN_UP:
+            return {
+                ...state,
+                isSignUp: true,
+            };
         default:
             return {...state}
     }
@@ -54,11 +67,13 @@ export const getUserAuth = (state) => {
         isLoggedIn,
         userRoles,
         errorMessage,
+        isSignUp,
     } = state.security;
     return {
         submittingLogin,
         isLoggedIn,
         userRoles,
         errorMessage,
+        isSignUp,
     }
 };

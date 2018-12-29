@@ -17,7 +17,7 @@ const App = () => {
                 <CssBaseline>
                     <Router>
                         <Switch>
-                            <Route path={'/login'} component={LoginPage}/>
+                            <Route path={'/login**'} component={LoginPage}/>
                             <ProtectedRoute path={'/'} component={Admin}/>
                         </Switch>
                     </Router>

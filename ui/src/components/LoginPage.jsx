@@ -11,6 +11,7 @@ import Dialog from "@material-ui/core/Dialog/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle/DialogTitle";
 import LinearProgress from "@material-ui/core/LinearProgress/LinearProgress";
 import DialogContent from "@material-ui/core/DialogContent/DialogContent";
+import SignUpForm from "./SignUpForm";
 
 
 const unStyledLoginPage = (props) => {
@@ -20,11 +21,13 @@ const unStyledLoginPage = (props) => {
         isLoggedIn,
         submittingLogin,
         errorMessage,
+        isSignUp,
     } = props;
 
     let { from } = location.state || { from: { pathname: "/" } };
 
     if (isLoggedIn) return <Redirect to={from} />;
+    const form = isSignUp? <SignUpForm/> : <LoginForm/>;
 
     return <Grid
         container
@@ -36,7 +39,7 @@ const unStyledLoginPage = (props) => {
     >
 
         <Grid item xs={4}>
-            <LoginForm/>
+            {form}
             <Dialog open={submittingLogin || errorMessage}>
                 <DialogTitle>{errorMessage? errorMessage : "Logging In"}</DialogTitle>
                 <DialogContent>
@@ -51,8 +54,9 @@ const unStyledLoginPage = (props) => {
 const styles = theme => ({
     page: {
         minHeight: '100vh',
-        backgroundImage: 'url(' + LoginBackground + ')' }
-    ,
+        backgroundImage: 'url(' + LoginBackground + ')',
+        backgroundPosition: "center center",
+    },
 });
 
 const mapStateToProps = (state) => {
@@ -60,11 +64,13 @@ const mapStateToProps = (state) => {
         isLoggedIn,
         submittingLogin,
         errorMessage,
+        isSignUp,
     } = getUserAuth(state);
     return {
         isLoggedIn,
         submittingLogin,
         errorMessage,
+        isSignUp,
     }
 };
 const LoginPage = withStyles(styles)(unStyledLoginPage);

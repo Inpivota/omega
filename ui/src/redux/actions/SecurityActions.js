@@ -5,6 +5,7 @@ export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const LOGIN_ERROR = "LOGIN_ERROR";
 export const LOGOUT = "LOGOUT";
 export const CLEAR_LOGIN_STATE = "CLEAR_LOGIN_STATE";
+export const LAUNCH_SIGN_UP = "LAUNCH_SIGN_UP";
 export const ME_FROM_TOKEN_SUCCESS = "ME_FROM_TOKEN_SUCCESS";
 
 const submitLogin = () => {
@@ -31,6 +32,11 @@ const doLogout = () => {
 const clearLoginState = () => {
     return {
         type: CLEAR_LOGIN_STATE,
+    }
+};
+export const launchSignUp = () => {
+    return {
+        type: LAUNCH_SIGN_UP,
     }
 };
 export const tryLogin = (username, password) => {
