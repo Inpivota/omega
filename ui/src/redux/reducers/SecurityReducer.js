@@ -1,4 +1,5 @@
 import {
+    CANCEL_SIGN_UP,
     CLEAR_LOGIN_STATE,
     LAUNCH_SIGN_UP,
     LOGIN_ERROR,
@@ -29,6 +30,7 @@ export const security = (state = defaultSecurityState, action) => {
                 ...state,
                 submittingLogin: false,
                 isLoggedIn: true,
+                isSignUp: false,
             };
         case LOGIN_ERROR:
             return {
@@ -42,6 +44,7 @@ export const security = (state = defaultSecurityState, action) => {
                 ...state,
                 submittingLogin: false,
                 isLoggedIn: false,
+                isSignUp: false,
             };
         case CLEAR_LOGIN_STATE:
             return {
@@ -55,6 +58,11 @@ export const security = (state = defaultSecurityState, action) => {
             return {
                 ...state,
                 isSignUp: true,
+            };
+        case CANCEL_SIGN_UP:
+            return {
+                ...state,
+                isSignUp: false,
             };
         default:
             return {...state}

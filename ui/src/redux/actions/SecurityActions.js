@@ -1,4 +1,4 @@
-import {fetchLoginToken, meFromToken} from "../../utilAPIs/securityAPI";
+import {fetchLoginToken, meFromToken, submitSignUp} from "../../utilAPIs/securityAPI";
 
 export const SUBMIT_LOGIN = "SUBMIT_LOGIN";
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
@@ -6,6 +6,7 @@ export const LOGIN_ERROR = "LOGIN_ERROR";
 export const LOGOUT = "LOGOUT";
 export const CLEAR_LOGIN_STATE = "CLEAR_LOGIN_STATE";
 export const LAUNCH_SIGN_UP = "LAUNCH_SIGN_UP";
+export const CANCEL_SIGN_UP = "CANCEL_SIGN_UP";
 export const ME_FROM_TOKEN_SUCCESS = "ME_FROM_TOKEN_SUCCESS";
 
 const submitLogin = () => {
@@ -39,6 +40,11 @@ export const launchSignUp = () => {
         type: LAUNCH_SIGN_UP,
     }
 };
+export const cancelSignUp = () => {
+    return {
+        type: CANCEL_SIGN_UP,
+    }
+};
 export const tryLogin = (username, password) => {
     return (dispatch) => {
         dispatch(submitLogin());
@@ -46,6 +52,20 @@ export const tryLogin = (username, password) => {
         {
             localStorage.setItem("jwtToken", token);
             dispatch(loginSuccess());
+        })
+            .catch(error => {
+                dispatch(loginError(error.message));
+                setTimeout(() => dispatch(clearLoginState()), 2000)
+            });
+    }
+};
+export const trySignUp = (values) => {
+    return (dispatch) => {
+        dispatch(submitLogin());
+        submitSignUp(values).then(success => {
+            if (success) {
+                dispatch(tryLogin(values.username, values.password))
+            }
         })
             .catch(error => {
                 dispatch(loginError(error.message));
