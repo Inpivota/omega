@@ -1,0 +1,1 @@
+export const PATH_TO_MY_PROFILE = "/profile";

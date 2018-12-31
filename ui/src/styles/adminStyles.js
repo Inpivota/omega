@@ -24,4 +24,8 @@ export const adminStyles = theme => ({
     appBarButton: {
         color: theme.palette.primary.contrastText,
     },
+    pageWrapper: {
+        marginLeft: drawerWidth,
+        marginTop: theme.spacing.unit * 8,
+    },
 });

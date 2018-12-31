@@ -1,7 +1,4 @@
 import React, {useState} from "react";
-import AppBar from "@material-ui/core/AppBar/AppBar";
-import Toolbar from "@material-ui/core/Toolbar/Toolbar";
-import Typography from "@material-ui/core/Typography/Typography";
 import {adminStyles} from "../styles/adminStyles";
 import {withStyles} from "@material-ui/core";
 import Drawer from "@material-ui/core/Drawer/Drawer";
@@ -11,55 +8,34 @@ import ListItem from "@material-ui/core/ListItem/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText/ListItemText";
 import InboxIcon from "@material-ui/icons/Inbox";
-import AccountIcon from "@material-ui/icons/AccountCircle";
-import IconButton from "@material-ui/core/IconButton/IconButton";
-import ClickAwayListener from "@material-ui/core/ClickAwayListener/ClickAwayListener";
-import Menu from "@material-ui/core/Menu/Menu";
-import MenuItem from "@material-ui/core/MenuItem/MenuItem";
-import Grid from "@material-ui/core/Grid/Grid";
 import {connect} from "react-redux";
 import {logout} from "../redux/actions/SecurityActions";
+import {Route, Switch, Redirect} from "react-router-dom";
+import HomeView from "../views/HomeView";
+import TestingView from "../views/TestingView";
+import AdminToolbar from "./AdminToolbar";
+import MyProfile from "../views/MyProfile";
+import {PATH_TO_MY_PROFILE} from "../constants/pathConstants";
 
 const Admin = (props) => {
     const {
         classes,
     } = props;
 
-    const [menuAnchor, setMenuAnchor] = useState(null);
+    const [redirect, setRedirect] = useState("");
 
-    const logout = () => {
-        setMenuAnchor(null);
-        props.logout();
+
+    const goHome = () => {
+        setRedirect(<Redirect to={"/"}/>);
+    };
+    const goTest = () => {
+        setRedirect(<Redirect to={"/testing"}/>);
     };
 
+    // if(redirect) return redirect;
     return <div>
-        <AppBar
-            position="fixed"
-            className={classes.appBar}
-        >
-            <Toolbar>
-                <Grid container justify={"space-between"} alignItems={"center"}>
-                <Typography variant="h6" color="inherit" className={classes.grow}>
-                    Inpivota Admin
-                </Typography>
-                <IconButton onClick={(event) => setMenuAnchor(event.currentTarget)}>
-                    <AccountIcon className={classes.appBarButton}/>
-                </IconButton>
-                <ClickAwayListener onClickAway={() => setMenuAnchor(null)}>
-                    <Menu open={Boolean(menuAnchor)}
-                          anchorEl={menuAnchor}
-                    >
-                        <MenuItem onClick={()=>{setMenuAnchor(null)}}>
-                            My Profile
-                        </MenuItem>
-                        <MenuItem onClick={logout}>
-                            Logout
-                        </MenuItem>
-                    </Menu>
-                </ClickAwayListener>
-                </Grid>
-            </Toolbar>
-        </AppBar>
+        {redirect}
+        <AdminToolbar/>
             <Drawer
                 className={classes.drawer}
                 variant="permanent"
@@ -70,12 +46,23 @@ const Admin = (props) => {
                 <div className={classes.toolbar}/>
                 <Divider />
                 <List>
-                    <ListItem button>
+                    <ListItem button onClick={goHome}>
                         <ListItemIcon><InboxIcon/></ListItemIcon>
-                        <ListItemText>Testing Item</ListItemText>
+                        <ListItemText>Home</ListItemText>
+                    </ListItem>
+                    <ListItem button onClick={goTest}>
+                        <ListItemIcon><InboxIcon/></ListItemIcon>
+                        <ListItemText>Testing</ListItemText>
                     </ListItem>
                 </List>
             </Drawer>
+        <div className={classes.pageWrapper}>
+            <Switch>
+                <Route path={"/testing"} component={TestingView}/>
+                <Route path={PATH_TO_MY_PROFILE} component={MyProfile}/>
+                <Route path={"/"} component={HomeView}/>
+            </Switch>
+        </div>
     </div>
 };
 
