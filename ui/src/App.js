@@ -1,8 +1,8 @@
 import React, {Component, useEffect} from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import LoginPage from "./components/LoginPage";
-import Admin from "./components/Admin";
+import LoginPage from "./pages/LoginPage";
+import Admin from "./pages/Admin";
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import {theme} from './styles/theme'
 import {connect, Provider} from "react-redux";

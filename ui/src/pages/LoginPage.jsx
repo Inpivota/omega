@@ -1,6 +1,6 @@
 import React from "react";
 import {withStyles} from "@material-ui/core/es/styles";
-import LoginForm from "./LoginForm";
+import LoginForm from "../components/LoginForm";
 import Grid from "@material-ui/core/Grid/Grid";
 import LoginBackground from "../assets/img/login-background.jpg"
 import {connect} from "react-redux";
@@ -11,7 +11,7 @@ import Dialog from "@material-ui/core/Dialog/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle/DialogTitle";
 import LinearProgress from "@material-ui/core/LinearProgress/LinearProgress";
 import DialogContent from "@material-ui/core/DialogContent/DialogContent";
-import SignUpForm from "./SignUpForm";
+import SignUpForm from "../components/SignUpForm";
 
 
 const unStyledLoginPage = (props) => {
