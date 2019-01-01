@@ -23,3 +23,9 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+
+### Node Modules ###
+/node_modules/
+
+#### TEMP ignore webapp until working ###
+/src/main/webapp/
