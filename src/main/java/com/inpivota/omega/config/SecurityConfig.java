@@ -25,6 +25,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+import java.util.List;
+import java.util.Optional;
+
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(securedEnabled = true, jsr250Enabled = true, prePostEnabled = true)
@@ -81,12 +84,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //    }
 
     @Bean
-    public CommandLineRunner demoData(RoleRepository roleRepository) {
+    public CommandLineRunner foundationalData(RoleRepository roleRepository) {
         return args -> {
+            List<Role> roles = roleRepository.findAll();
             for (RoleName roleName : RoleName.values()) {
-                Role role = new Role();
-                role.setName(roleName);
-                roleRepository.save(role);
+                Optional<Role> matchingRole = roles.stream()
+                        .filter(role -> role.getName() == roleName)
+                        .findFirst();
+                if(matchingRole.isEmpty()) {
+                    Role role = new Role();
+                    role.setName(roleName);
+                    roleRepository.save(role);
+                }
             }
         };
     }
@@ -115,12 +124,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/**/*.css",
                         "/**/*.js")
                 .permitAll()
-                .antMatchers("/api/auth/**")
+                .antMatchers("/**")
+//                .antMatchers("/api/auth/**")
                 .permitAll()
-                .antMatchers("/api/user/checkUsernameAvailability", "/api/user/checkEmailAvailability")
-                .permitAll()
-                .antMatchers(HttpMethod.GET, "/api/role/**", "/api/user/**")
-                .permitAll()
+//                .antMatchers("/api/user/checkUsernameAvailability", "/api/user/checkEmailAvailability")
+//                .permitAll()
+//                .antMatchers(HttpMethod.GET, "/api/role/**", "/api/user/**")
+//                .permitAll()
                 .anyRequest()
                 .authenticated();
 
