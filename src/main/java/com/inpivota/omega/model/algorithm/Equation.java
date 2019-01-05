@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
+import java.math.BigDecimal;
 import java.util.List;
 
 @Data
@@ -19,19 +20,17 @@ public class Equation extends BaseEntity {
     @ManyToMany
     private List<Constant> constants;
     @ManyToMany
+    private List<Variable> variables;
+    @ManyToMany
     private List<Equation> equations;
     @ManyToMany
     private List<Operation> operations;
 
-    /**
-     * getOutput is currently commented out, because if it is present,
-     * and I were to findAll Equations, then every single equation output would be calculated,
-     * so that the output value would be present in the JSON.
-     * It makes more sense to calculate the value in some service via a rest controller.
-     */
-//    public BigDecimal getOutput(){
-//        return new BigDecimal("0");
-//    }
+    public BigDecimal evaluate(BigDecimal... variableValues) {
+        BigDecimal output = BigDecimal.ZERO;
+
+        return output;
+    }
 
     @Override
     public String getUiLabel() {
