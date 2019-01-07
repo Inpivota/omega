@@ -1,11 +1,18 @@
 package com.inpivota.omega.config;
 
+import com.inpivota.omega.enums.OperationType;
+import com.inpivota.omega.model.algorithm.Constant;
 import com.inpivota.omega.model.algorithm.Equation;
+import com.inpivota.omega.model.algorithm.Operation;
 import com.inpivota.omega.repository.algorithm.EquationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Configuration
 public class AppConfig {
@@ -24,13 +31,22 @@ public class AppConfig {
     public CommandLineRunner testData(EquationRepository equationRepository) {
         return args -> {
             Equation equation = new Equation();
-            equation.setName("Test Constants");
+            equation.setName("Test 2 + 2");
             equation.setDescription("add 2 plus 2 as constants");
-            equationRepository.save(equation);
+            Constant constant1 = new Constant("first one", 0, new BigDecimal(2));
+            Constant constant2 = new Constant("first one", 2, new BigDecimal(2));
+            List<Constant> constants = new ArrayList<>();
+            constants.add(constant1);
+            constants.add(constant2);
+            equation.setConstants(constants);
+            List<Operation> operations = new ArrayList<>();
+            operations.add(new Operation(OperationType.ADD, 1));
+            equation.setOperations(operations);
+//            equationRepository.save(equation);
 
             System.out.println(">>>>>>>>>>>>>>>>>>> RUNNING EQUATIONS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
-            System.out.println(equation.getName());
-            System.out.println(equation.evaluate());
+            System.out.println();
+            System.out.println(equation.getName() + " evaluates to: " + equation.evaluate());
             System.out.println();
             System.out.println(">>>>>>>>>>>>>>>>>>>>>> END EQUATIONS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
         };

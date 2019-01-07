@@ -21,4 +21,13 @@ public class Constant extends BaseEntity {
     public String getUiLabel() {
         return null;
     }
+
+    public Constant() {
+    }
+
+    public Constant(String name, int position, BigDecimal value) {
+        this.name = name;
+        this.position = position;
+        this.value = value;
+    }
 }
