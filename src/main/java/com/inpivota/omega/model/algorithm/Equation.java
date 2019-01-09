@@ -77,6 +77,15 @@ public class Equation extends BaseEntity {
                 case ADD:
                     operationOutputs.add(value1.add(value2));
                     break;
+                case SUBTRACT:
+                    operationOutputs.add(value1.subtract(value2));
+                    break;
+                case MULTIPLY:
+                    operationOutputs.add(value1.subtract(value2));
+                    break;
+                case DIVIDE:
+                    operationOutputs.add(value1.subtract(value2));
+                    break;
             }
 
         });
