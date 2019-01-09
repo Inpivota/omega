@@ -18,81 +18,86 @@ public class Equation extends BaseEntity {
     private int position;
 
     @ManyToMany
-    private List<Constant> constants;
+    private List<Constant> constants = new ArrayList<>();
     @ManyToMany
-    private List<Variable> variables;
+    private List<Variable> variables = new ArrayList<>();
     @ManyToMany
-    private List<Equation> equations;
+    private List<Equation> equations = new ArrayList<>();
     @ManyToMany
-    private List<Operation> operations;
+    private List<Operation> operations = new ArrayList<>();
 
     public BigDecimal evaluate(BigDecimal... variableValues) {
-//        int nextVarIndex = 0;
         BigDecimal output = BigDecimal.ZERO;
 
-        List<BigDecimal> operationOutputs = new ArrayList<>();
         operations.sort(Comparator.comparingInt(op -> op.getType().ordinal()));
+        variables.sort(Comparator.comparingInt(Variable::getPosition));
 
+        List<BigDecimal> operationOutputs = new ArrayList<>();
+        List<Integer> positionsAltered = new ArrayList<>();
+        BigDecimal[] calculatedValues = new BigDecimal[operations.size()];
+        int completedOperations = 0;
+        int lastOperation = operations.size();
+        BigDecimal[] values = new BigDecimal[constants.size() + variables.size() + equations.size() + operations.size()];
+
+        constants.forEach(constant -> {
+            values[constant.getPosition()] = constant.getValue();
+        });
+        variables.forEach(variable -> {
+            values[variable.getPosition()] = variableValues[variables.indexOf(variable)];
+        });
+        equations.forEach(equation -> {
+            values[equation.getPosition()] = equation.evaluate();
+        });
         operations.forEach(operation -> {
+            values[operation.getPosition()] = BigDecimal.ZERO;
+        });
+
+        for (Operation operation : operations) {
             int operationPosition = operation.getPosition();
+            BigDecimal currentOperationOutput = BigDecimal.ZERO;
             BigDecimal value1 = BigDecimal.ZERO;
             BigDecimal value2 = BigDecimal.ZERO;
 
-            Optional<Constant> constant = Optional.empty();
-            for (Constant constant1 : constants) {
-                if (constant1.getPosition() == operationPosition - 1) {
-                    constant = Optional.of(constant1);
-                    break;
-                }
+            Integer pos1 = operationPosition - 1;
+            int pos2 = operationPosition + 1;
+
+            //// check val positions if in altered positions
+            //// if is not present then use the value in values[]
+            //// and add the pos to the list of altered positions
+            if(!positionsAltered.contains(pos1)) {
+                value1 = values[pos1];
+                positionsAltered.add(pos1);
             }
-//            Optional<Variable> variable = Optional.empty();
-//            for (Variable var1 : variables) {
-//                if (var1.getPosition() == operationPosition -1) {
-//                    variable = Optional.of(var1);
-//                    break;
-//                }
-//            }
-
-            if (constant.isPresent()) value1 = constant.get().getValue();
-
-            for (Constant constant1 : constants) {
-                if (constant1.getPosition() == operationPosition + 1) {
-                    constant = Optional.of(constant1);
-                    break;
-                }
+            else {
+                value1 = calculatedValues[pos1 + 1];
             }
-//            for (Variable var1 : variables) {
-//                if (var1.getPosition() == operationPosition +1) {
-//                    variable = Optional.of(var1);
-//                    break;
-//                }
-//            }
-            if (constant.isPresent()) value2 = constant.get().getValue();
-//            if(variable.isPresent()) {
-//                value1 = variableValues[nextVarIndex];
-//                nextVarIndex ++;
-//            }
-
+            if(!positionsAltered.contains(pos2)) {
+                value2 = values[pos2];
+                positionsAltered.add(pos2);
+            }
+            //// else use the values in calculatedValues
+            else {
+                value2 = calculatedValues[pos2 + 1];
+            }
             switch (operation.getType()) {
                 case ADD:
-                    operationOutputs.add(value1.add(value2));
+                    currentOperationOutput = value1.add(value2);
                     break;
                 case SUBTRACT:
-                    operationOutputs.add(value1.subtract(value2));
+                    currentOperationOutput = value1.subtract(value2);
                     break;
                 case MULTIPLY:
-                    operationOutputs.add(value1.subtract(value2));
+                    currentOperationOutput = value1.multiply(value2);
                     break;
                 case DIVIDE:
-                    operationOutputs.add(value1.subtract(value2));
+                    currentOperationOutput = value1.divide(value2);
                     break;
             }
-
-        });
-
-        for (BigDecimal operationOutput : operationOutputs) {
-            output = output.add(operationOutput);
+            completedOperations ++;
+            if (completedOperations == lastOperation) output = currentOperationOutput;
+            else calculatedValues[operationPosition] = currentOperationOutput;
         }
+
         return output;
     }
 
