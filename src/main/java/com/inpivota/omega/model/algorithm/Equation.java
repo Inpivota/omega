@@ -6,6 +6,7 @@ import lombok.Data;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 import java.math.BigDecimal;
+import java.math.MathContext;
 import java.util.*;
 
 @Data
@@ -28,16 +29,19 @@ public class Equation extends BaseEntity {
 
     public BigDecimal evaluate(BigDecimal... variableValues) {
         BigDecimal output = BigDecimal.ZERO;
-
+        int totalNumberOfItems = constants.size() + variables.size() + equations.size() + operations.size();
+        MathContext mathContext = new MathContext(10);
+        List<Operation> opsByPosition = new ArrayList<>(operations);
+        opsByPosition.sort(Comparator.comparingInt(Operation::getPosition));
         operations.sort(Comparator.comparingInt(op -> op.getType().ordinal()));
         variables.sort(Comparator.comparingInt(Variable::getPosition));
 
         List<BigDecimal> operationOutputs = new ArrayList<>();
         List<Integer> positionsAltered = new ArrayList<>();
-        BigDecimal[] calculatedValues = new BigDecimal[operations.size()];
+        BigDecimal[] calculatedValues = new BigDecimal[operations.size()+1];
         int completedOperations = 0;
         int lastOperation = operations.size();
-        BigDecimal[] values = new BigDecimal[constants.size() + variables.size() + equations.size() + operations.size()];
+        BigDecimal[] values = new BigDecimal[totalNumberOfItems];
 
         constants.forEach(constant -> {
             values[constant.getPosition()] = constant.getValue();
@@ -55,12 +59,14 @@ public class Equation extends BaseEntity {
         for (Operation operation : operations) {
             int operationPosition = operation.getPosition();
             BigDecimal currentOperationOutput = BigDecimal.ZERO;
-            BigDecimal value1 = BigDecimal.ZERO;
-            BigDecimal value2 = BigDecimal.ZERO;
+            BigDecimal value1;
+            BigDecimal value2;
 
             Integer pos1 = operationPosition - 1;
             int pos2 = operationPosition + 1;
 
+            boolean didUsePreviousCalculateValue = false;
+            boolean didUseFollowingCalculateValue = false;
             //// check val positions if in altered positions
             //// if is not present then use the value in values[]
             //// and add the pos to the list of altered positions
@@ -69,7 +75,8 @@ public class Equation extends BaseEntity {
                 positionsAltered.add(pos1);
             }
             else {
-                value1 = calculatedValues[pos1 + 1];
+                value1 = calculatedValues[opsByPosition.indexOf(operation)-1];
+                didUsePreviousCalculateValue = true;
             }
             if(!positionsAltered.contains(pos2)) {
                 value2 = values[pos2];
@@ -77,7 +84,8 @@ public class Equation extends BaseEntity {
             }
             //// else use the values in calculatedValues
             else {
-                value2 = calculatedValues[pos2 + 1];
+                value2 = calculatedValues[opsByPosition.indexOf(operation)+1];
+                didUseFollowingCalculateValue = true;
             }
             switch (operation.getType()) {
                 case ADD:
@@ -90,12 +98,18 @@ public class Equation extends BaseEntity {
                     currentOperationOutput = value1.multiply(value2);
                     break;
                 case DIVIDE:
-                    currentOperationOutput = value1.divide(value2);
+                    currentOperationOutput = value1.divide(value2, mathContext);
                     break;
             }
             completedOperations ++;
             if (completedOperations == lastOperation) output = currentOperationOutput;
-            else calculatedValues[operationPosition] = currentOperationOutput;
+            else {
+                calculatedValues[opsByPosition.indexOf(operation)] = currentOperationOutput;
+                if(didUsePreviousCalculateValue)
+                    calculatedValues[opsByPosition.indexOf(operation) - 1] = currentOperationOutput;
+                if(didUseFollowingCalculateValue)
+                    calculatedValues[opsByPosition.indexOf(operation) + 1] = currentOperationOutput;
+            }
         }
 
         return output;
