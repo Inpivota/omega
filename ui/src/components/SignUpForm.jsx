@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography/Typography";
 import TextField from "@material-ui/core/TextField/TextField";
 import Button from "@material-ui/core/Button/Button";
 import {withStyles} from "@material-ui/core/es/styles";
-import {cancelSignUp, launchSignUp, tryLogin, trySignUp} from "../redux/actions/SecurityActions";
+import {cancelSignUp, trySignUp} from "../redux/actions/SecurityActions";
 import {connect} from "react-redux";
 import {COMPANY_NAME} from "../constants/companyConstants";
 

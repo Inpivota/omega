@@ -1,5 +1,3 @@
-
-
 const drawerWidth = 240;
 
 export const adminStyles = theme => ({
@@ -15,6 +13,10 @@ export const adminStyles = theme => ({
     },
     drawerPaper: {
         width: drawerWidth,
+    },
+    link: {
+        textDecoration: "none",
+        color: "inherit"
     },
     content: {
         flexGrow: 1,

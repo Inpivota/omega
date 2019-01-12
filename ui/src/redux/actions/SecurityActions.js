@@ -1,4 +1,4 @@
-import {fetchLoginToken, meFromToken, submitSignUp} from "../../utilAPIs/securityAPI";
+import {fetchLoginToken, submitSignUp} from "../../utilAPIs/securityAPI";
 
 export const SUBMIT_LOGIN = "SUBMIT_LOGIN";
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
@@ -84,11 +84,11 @@ const meFromTokenSuccess = (payload) => {
         dispatch(loginSuccess())
     }
 };
-const meFromTokenFailure = () => {
-    return dispatch => {
-        dispatch(loginError("Token was Invalid"))
-    }
-};
+// const meFromTokenFailure = () => {
+//     return dispatch => {
+//         dispatch(loginError("Token was Invalid"))
+//     }
+// };
 
 export const loadUserFromToken = () => {
     return dispatch => {
