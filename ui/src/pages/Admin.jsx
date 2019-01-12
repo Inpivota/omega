@@ -6,9 +6,10 @@ import HomeView from "../views/HomeView";
 import TestingView from "../views/TestingView";
 import AdminToolbar from "../components/AdminToolbar";
 import MyProfile from "../views/MyProfile";
-import {PATH_TO_FORECASTING, PATH_TO_MY_PROFILE} from "../constants/pathConstants";
+import {PATH_TO_FORECASTING, PATH_TO_FORMULA_MANAGEMENT, PATH_TO_MY_PROFILE} from "../constants/pathConstants";
 import ForecastingView from "../views/ForecastingView";
 import AdminSidebar from "../components/AdminSidebar";
+import FormulaManager from "../views/FormulaManager";
 
 const Admin = (props) => {
     const {
@@ -23,6 +24,7 @@ const Admin = (props) => {
                 <Route path={"/testing"} component={TestingView}/>
                 <Route path={PATH_TO_FORECASTING} component={ForecastingView}/>
                 <Route path={PATH_TO_MY_PROFILE} component={MyProfile}/>
+                <Route path={PATH_TO_FORMULA_MANAGEMENT} component={FormulaManager}/>
                 <Route path={"/"} component={HomeView}/>
             </Switch>
         </div>
