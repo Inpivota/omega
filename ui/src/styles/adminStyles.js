@@ -4,8 +4,12 @@ export const adminStyles = theme => ({
     root: {
         display: 'flex',
     },
+    toolbar: theme.mixins.toolbar,
     appBar: {
         zIndex: theme.zIndex.drawer + 1,
+    },
+    appBarButton: {
+        color: theme.palette.primary.contrastText,
     },
     drawer: {
         width: drawerWidth,
@@ -22,12 +26,13 @@ export const adminStyles = theme => ({
         flexGrow: 1,
         padding: theme.spacing.unit * 3,
     },
-    toolbar: theme.mixins.toolbar,
-    appBarButton: {
-        color: theme.palette.primary.contrastText,
-    },
     pageWrapper: {
         marginLeft: drawerWidth,
         marginTop: theme.spacing.unit * 8,
+        padding: theme.spacing.unit * 8,
+        paddingTop: theme.spacing.unit * 4,
+    },
+    viewWrapper: {
+        padding: theme.spacing.unit * 2,
     },
 });
