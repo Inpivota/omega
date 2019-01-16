@@ -8,9 +8,7 @@ const DataManager = (props) => {
     const columns = [""];
     const data = [];
     return(
-        <ViewWrapper title={"Data Management"}>
             <MUIDataTable title={"no title"} data={data} columns={columns}/>
-        </ViewWrapper>
     )
 };
 

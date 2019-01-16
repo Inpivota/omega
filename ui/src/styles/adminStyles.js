@@ -29,10 +29,9 @@ export const adminStyles = theme => ({
     pageWrapper: {
         marginLeft: drawerWidth,
         marginTop: theme.spacing.unit * 8,
-        padding: theme.spacing.unit * 8,
-        paddingTop: theme.spacing.unit * 4,
     },
     viewWrapper: {
         padding: theme.spacing.unit * 2,
+        marginTop: theme.spacing.unit * 4
     },
 });

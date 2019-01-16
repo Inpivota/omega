@@ -1,7 +1,6 @@
 import React from "react";
 import Paper from "@material-ui/core/Paper/Paper";
 import Grid from "@material-ui/core/Grid/Grid";
-import Typography from "@material-ui/core/Typography/Typography";
 import {withStyles} from "@material-ui/core";
 import {adminStyles} from "../styles/adminStyles";
 import * as PropTypes from "prop-types";
@@ -11,14 +10,13 @@ const ViewWrapper = ({title, ...props}) => {
         classes,
     } = props;
     return (
-        <Paper className={classes.viewWrapper}>
-            <Grid container justify={"center"}>
-                {/*<Grid item>*/}
-                    <Typography variant={"h4"}>{title}</Typography>
-                {/*</Grid>*/}
+        <Grid container justify={"center"}>
+            <Grid item xs={12} sm={10} md={8} lg={7} xl={6}>
+                <Paper className={classes.viewWrapper}>
+                    {props.children}
+                </Paper>
             </Grid>
-            {props.children}
-        </Paper>
+        </Grid>
     )
 };
 
