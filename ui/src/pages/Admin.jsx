@@ -15,7 +15,7 @@ import {Route, Switch, Redirect} from "react-router-dom";
 import HomeView from "../views/HomeView";
 import TestingView from "../views/TestingView";
 import AdminToolbar from "../components/AdminToolbar";
-import MyProfile from "../views/MyProfile";
+import MyProfile from "../views/MyProfileView";
 import {PATH_TO_FORECASTING, PATH_TO_HOME, PATH_TO_MY_PROFILE} from "../constants/pathConstants";
 import ForecastingView from "../views/ForecastingView";
 import {redirect} from "../redux/actions/NavigationActions";
