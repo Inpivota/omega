@@ -13,6 +13,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import IconButton from "@material-ui/core/es/IconButton/IconButton";
 
 
 const styles = {
@@ -24,12 +25,15 @@ const styles = {
     typ:
         {
             padding: "10px"
-        }
+        },
+    input: {
+        display: 'none',
+    },
 };
 
 
 const UserView = (props) => {
-    var testUser = {
+    const testUser = {
         FirstName: "Tester",
         LastName: "Chester",
         Email: "TesterChester@question.com",
@@ -70,85 +74,95 @@ const UserView = (props) => {
 
     const ImageAvatars = (props) => {
         return (
-            <Paper>
-                <Avatar
-                    alt="Remy Sharp" src="/static/images/avatar/1.jpg"
-                    style={styles.bigAvatar}
+            <div>
+                <input
+                    accept="image/*"
+                    style={styles.input}
+                    id="contained-button-file"
+                    multiple
+                    type="file"
                 />
+                <label htmlFor="contained-button-file">
+                        <Avatar
+                            alt="Remy Sharp" src="/static/images/avatar/1.jpg"
+                            style={styles.bigAvatar}
+                        />
+                </label>
                 <Mypopup/>
-                <Button onClick={handleClickOpen} variant="contained" style={{margin: "10px"}}>Edit Picture</Button>
-            </Paper>
+            </div>
         );
     };
 
     const UserInfo = (props) => {
         return (
-            <Paper>
+            <div>
                 <div>
                     <Typography variant="title" style={styles.typ}>
                         Full Name:
                     </Typography>
-                    <Typography variant="display1"  style={styles.typ}>
+                    <Typography variant="display1" style={styles.typ}>
                         {testUser.FirstName} {testUser.LastName}
                     </Typography>
-                    <Typography variant="title"  style={styles.typ}>
+                    <Typography variant="title" style={styles.typ}>
                         Email:
                     </Typography>
-                    <Typography variant="title"  style={styles.typ}>
+                    <Typography variant="title" style={styles.typ}>
                         {testUser.Email}
                     </Typography>
-                    <Typography variant="title"  style={styles.typ}>
+                    <Typography variant="title" style={styles.typ}>
                         Phone:
                     </Typography>
-                    <Typography variant="title"  style={styles.typ}>
+                    <Typography variant="title" style={styles.typ}>
                         {testUser.Phone}
                     </Typography>
                 </div>
                 <Button variant="contained" size="small" style={{margin: "10px",}}>Edit User Info</Button>
-            </Paper>
+            </div>
         )
     };
 
     const UserRoleInfo = (props) => {
         return (
-            <Paper>
+            <div>
                 <div>
                     <Typography variant="display1" style={styles.typ}>
                         Roles:
                     </Typography>
-                    <Typography variant="title"  style={styles.typ}>
+                    <Typography variant="title" style={styles.typ}>
                         <ul>
                             {testUser.Roles.map((role) => <li>{role}</li>)}
                         </ul>
                     </Typography>
                 </div>
                 <Button variant="contained" size="small" style={{margin: "10px",}}>Edit Roles</Button>
-            </Paper>
+            </div>
         )
     };
 
     const [currentTab, setCurrentTab] = useState(0);
     const FooterTabs = (props) => {
         return (
-            <Paper square>
+            <div square>
                 <Tabs value={currentTab} style={{padding: "10px"}}
                       onChange={(event, newValue) => setCurrentTab(newValue)}>
                     <Tab label="User Info"/>
                     <Tab label="Roles"/>
                 </Tabs>
-            </Paper>
+            </div>
         );
     };
 
     return (
-            <Grid container justify={"center"} style={{paddingTop: "50px"}}>
-                <Grid item xs={6}>
+        <Grid container justify={"center"} style={{paddingTop: "50px"}}>
+            <Grid item xs={6}>
+                <Paper>
                     <ImageAvatars/>
+                    <FooterTabs/>
                     {currentTab === 0 && <UserInfo style={{padding: "10px"}}/>}
                     {currentTab === 1 && <UserRoleInfo style={{padding: "10px"}}/>}
-                    <FooterTabs/>
-                </Grid>
+                </Paper>
             </Grid>
+        </Grid>
     );
 };
 const StyledAdmin = withStyles(adminStyles)(UserView);
