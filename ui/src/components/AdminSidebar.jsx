@@ -9,7 +9,7 @@ import ListItemText from "@material-ui/core/ListItemText/ListItemText";
 import StorageIcon from "@material-ui/icons/Storage";
 import MathIcon from "@material-ui/icons/Iso";
 import AssessmentIcon from "@material-ui/icons/Assessment";
-import {PATH_TO_DATABASE_MANAGEMENT, PATH_TO_FORECASTING} from "../constants/pathConstants";
+import {PATH_TO_DATABASE_MANAGEMENT, PATH_TO_FORECASTING, PATH_TO_GRAPHQL} from "../constants/pathConstants";
 import {adminStyles} from "../styles/adminStyles";
 import {withStyles} from "@material-ui/core";
 
@@ -37,12 +37,12 @@ const AdminSidebar = (props) => {
                         <ListItemText>Forecasting</ListItemText>
                     </ListItem>
                 </Link>
-                {/*<Link to={PATH_TO_FORMULA_MANAGEMENT} className={classes.link}>
+                <Link to={PATH_TO_GRAPHQL} className={classes.link}>
                     <ListItem button>
                         <ListItemIcon><MathIcon/></ListItemIcon>
-                        <ListItemText>Formulas</ListItemText>
+                        <ListItemText>GraphiQL</ListItemText>
                     </ListItem>
-                </Link>*/}
+                </Link>
                 <Link to={PATH_TO_DATABASE_MANAGEMENT} className={classes.link}>
                     <ListItem button>
                         <ListItemIcon>

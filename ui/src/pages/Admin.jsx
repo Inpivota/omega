@@ -8,7 +8,7 @@ import MyProfile from "../views/MyProfile";
 import {
     PATH_TO_DATABASE_MANAGEMENT,
     PATH_TO_FORECASTING,
-    PATH_TO_FORMULA_MANAGEMENT,
+    PATH_TO_FORMULA_MANAGEMENT, PATH_TO_GRAPHQL,
     PATH_TO_HOME,
     PATH_TO_MY_PROFILE
 } from "../constants/pathConstants";
@@ -16,6 +16,7 @@ import ForecastingView from "../views/ForecastingView";
 import AdminSidebar from "../components/AdminSidebar";
 import FormulaManager from "../views/FormulaManager";
 import DataManager from "../views/DataManager";
+import GraphQlView from "../views/GraphQLView";
 
 const Admin = (props) => {
     const {
@@ -31,7 +32,8 @@ const Admin = (props) => {
                 <Route path={PATH_TO_MY_PROFILE} component={MyProfile}/>
                 <Route path={PATH_TO_FORMULA_MANAGEMENT} component={FormulaManager}/>
                 <Route path={PATH_TO_DATABASE_MANAGEMENT} component={DataManager}/>
-                <Route path={PATH_TO_HOME} component={HomeView}/>
+                <Route path={PATH_TO_HOME} component={HomeView} exact/>
+                <Route path={PATH_TO_GRAPHQL} component={GraphQlView}/>
             </Switch>
         </div>
     </div>
