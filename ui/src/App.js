@@ -1,11 +1,11 @@
-import React, {Component, useEffect} from 'react';
+import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import Admin from "./pages/Admin";
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import {theme} from './styles/theme'
-import {connect, Provider} from "react-redux";
+import {Provider} from "react-redux";
 import {store} from "./redux/rootReducer";
 import ProtectedRoute from "./components/ProtectedRoute";
 import CssBaseline from "@material-ui/core/CssBaseline/CssBaseline";

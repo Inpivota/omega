@@ -6,7 +6,6 @@ import LoginBackground from "../assets/img/login-background.jpg"
 import {connect} from "react-redux";
 import {getUserAuth} from "../redux/reducers/SecurityReducer";
 import {Redirect} from "react-router-dom";
-import {tryLogin} from "../redux/actions/SecurityActions";
 import Dialog from "@material-ui/core/Dialog/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle/DialogTitle";
 import LinearProgress from "@material-ui/core/LinearProgress/LinearProgress";

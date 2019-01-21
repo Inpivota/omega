@@ -1,81 +1,43 @@
-import React, {useState} from "react";
+import React from "react";
 import {adminStyles} from "../styles/adminStyles";
 import {withStyles} from "@material-ui/core";
-import Drawer from "@material-ui/core/Drawer/Drawer";
-import Divider from "@material-ui/core/Divider/Divider";
-import List from "@material-ui/core/List/List";
-import ListItem from "@material-ui/core/ListItem/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText/ListItemText";
-import InboxIcon from "@material-ui/icons/Inbox";
-import AssessmentIcon from "@material-ui/icons/Assessment";
-import {connect} from "react-redux";
-import {logout} from "../redux/actions/SecurityActions";
-import {Route, Switch, Redirect} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 import HomeView from "../views/HomeView";
-import TestingView from "../views/TestingView";
 import AdminToolbar from "../components/AdminToolbar";
 import MyProfile from "../views/MyProfileView";
-import {PATH_TO_FORECASTING, PATH_TO_HOME, PATH_TO_MY_PROFILE} from "../constants/pathConstants";
+import {
+    PATH_TO_DATABASE_MANAGEMENT,
+    PATH_TO_FORECASTING,
+    PATH_TO_FORMULA_MANAGEMENT, PATH_TO_GRAPHQL,
+    PATH_TO_HOME,
+    PATH_TO_MY_PROFILE
+} from "../constants/pathConstants";
 import ForecastingView from "../views/ForecastingView";
-import {redirect} from "../redux/actions/NavigationActions";
-import {getRedirect} from "../redux/reducers/NavigationReducer";
+import AdminSidebar from "../components/AdminSidebar";
+import FormulaManager from "../views/FormulaManager";
+import DataManager from "../views/DataManager";
+import GraphQlView from "../views/GraphQLView";
 
 const Admin = (props) => {
     const {
         classes,
-        redirect
     } = props;
 
-
-
     return <div>
-        {redirect}
         <AdminToolbar/>
-            <Drawer
-                className={classes.drawer}
-                variant="permanent"
-                classes={{
-                    paper: classes.drawerPaper,
-                }}
-            >
-                <div className={classes.toolbar}/>
-                <Divider />
-                <List>
-                    <ListItem button onClick={()=> props.sendRedirect(PATH_TO_FORECASTING)}>
-                        <ListItemIcon><AssessmentIcon/></ListItemIcon>
-                        <ListItemText>Forecasting</ListItemText>
-                    </ListItem>
-                    <ListItem button onClick={()=> props.sendRedirect("/testing")}>
-                        <ListItemIcon><InboxIcon/></ListItemIcon>
-                        <ListItemText>Testing</ListItemText>
-                    </ListItem>
-                </List>
-            </Drawer>
+        <AdminSidebar/>
         <div className={classes.pageWrapper}>
             <Switch>
-                <Route path={"/testing"} component={TestingView}/>
                 <Route path={PATH_TO_FORECASTING} component={ForecastingView}/>
                 <Route path={PATH_TO_MY_PROFILE} component={MyProfile}/>
-                <Route path={"/"} component={HomeView}/>
+                <Route path={PATH_TO_FORMULA_MANAGEMENT} component={FormulaManager}/>
+                <Route path={PATH_TO_DATABASE_MANAGEMENT} component={DataManager}/>
+                <Route path={PATH_TO_HOME} component={HomeView} exact/>
+                <Route path={PATH_TO_GRAPHQL} component={GraphQlView}/>
             </Switch>
         </div>
     </div>
 };
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        logout: () => dispatch(logout()),
-        sendRedirect: (path) => dispatch(redirect(path))
-    }
-};
-
-const mapStateToProps = (state) => {
-    return {
-        redirect: getRedirect(state)
-    }
-};
-
-const StyledAdmin = withStyles(adminStyles)(Admin);
-export default connect(mapStateToProps, mapDispatchToProps)(StyledAdmin)
+export default withStyles(adminStyles)(Admin);
 
