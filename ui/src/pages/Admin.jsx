@@ -4,7 +4,7 @@ import {withStyles} from "@material-ui/core";
 import {Route, Switch} from "react-router-dom";
 import HomeView from "../views/HomeView";
 import AdminToolbar from "../components/AdminToolbar";
-import MyProfile from "../views/MyProfile";
+import MyProfile from "../views/MyProfileView";
 import {
     PATH_TO_DATABASE_MANAGEMENT,
     PATH_TO_FORECASTING,

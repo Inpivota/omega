@@ -30,6 +30,11 @@ export const adminStyles = theme => ({
         marginLeft: drawerWidth,
         marginTop: theme.spacing.unit * 8,
     },
+    bigAvatar: {
+        padding: 10,
+        width: 190,
+        height: 190,
+    },
     viewWrapper: {
         padding: theme.spacing.unit * 2,
         marginTop: theme.spacing.unit * 4
