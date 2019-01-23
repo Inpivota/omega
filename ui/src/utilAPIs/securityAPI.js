@@ -1,7 +1,7 @@
 import {handleErrors} from "./APIUtils";
 
 export const fetchLoginToken = (username, password) => {
-   return fetch("api/auth/login", {
+   return fetch("auth/login", {
        method: 'POST',
        headers: {
            'Accept': 'application/json',
@@ -13,7 +13,7 @@ export const fetchLoginToken = (username, password) => {
        .then(json => json.accessToken)
 };
 export const submitSignUp = (values) => {
-    return fetch("api/auth/register", {
+    return fetch("auth/register", {
         method: 'POST',
         headers: {
             'Accept': 'application/json',

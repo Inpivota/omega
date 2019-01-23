@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {Link, withRouter} from "react-router-dom";
 import Drawer from "@material-ui/core/Drawer/Drawer";
 import Divider from "@material-ui/core/Divider/Divider";
 import List from "@material-ui/core/List/List";
@@ -16,6 +16,7 @@ import {withStyles} from "@material-ui/core";
 const AdminSidebar = (props) => {
     const {
         classes,
+        location
     } = props;
 
     return (
@@ -29,7 +30,7 @@ const AdminSidebar = (props) => {
             <div className={classes.toolbar}/>
             <Divider/>
             <List>
-                <Link to={PATH_TO_FORECASTING} className={classes.link}>
+                <Link to={PATH_TO_FORECASTING} className={location.pathname !== PATH_TO_FORECASTING? classes.link :""}>
                     <ListItem button>
                         <ListItemIcon>
                             <AssessmentIcon/>
@@ -37,13 +38,7 @@ const AdminSidebar = (props) => {
                         <ListItemText>Forecasting</ListItemText>
                     </ListItem>
                 </Link>
-                <Link to={PATH_TO_GRAPHQL} className={classes.link}>
-                    <ListItem button>
-                        <ListItemIcon><MathIcon/></ListItemIcon>
-                        <ListItemText>GraphiQL</ListItemText>
-                    </ListItem>
-                </Link>
-                <Link to={PATH_TO_DATABASE_MANAGEMENT} className={classes.link}>
+                <Link to={PATH_TO_DATABASE_MANAGEMENT} className={location.pathname !== PATH_TO_DATABASE_MANAGEMENT? classes.link :""}>
                     <ListItem button>
                         <ListItemIcon>
                             <StorageIcon/>
@@ -51,9 +46,15 @@ const AdminSidebar = (props) => {
                         <ListItemText>Database</ListItemText>
                     </ListItem>
                 </Link>
+                <Link to={PATH_TO_GRAPHQL} className={location.pathname !== PATH_TO_GRAPHQL? classes.link :""}>
+                    <ListItem button>
+                        <ListItemIcon><MathIcon/></ListItemIcon>
+                        <ListItemText>GraphiQL</ListItemText>
+                    </ListItem>
+                </Link>
             </List>
         </Drawer>
     )
 };
 
-export default withStyles(adminStyles)(AdminSidebar);
+export default withRouter(withStyles(adminStyles)(AdminSidebar));
