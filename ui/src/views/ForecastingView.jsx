@@ -1,7 +1,4 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography/Typography";
-import ViewWrapper from "../components/ViewWrapper";
-import Grid from "@material-ui/core/Grid/Grid";
 import Table from "@material-ui/core/Table/Table";
 import TableHead from "@material-ui/core/TableHead/TableHead";
 import TableRow from "@material-ui/core/TableRow/TableRow";
@@ -11,6 +8,9 @@ import Paper from "@material-ui/core/Paper/Paper";
 import {Area, AreaChart} from "recharts";
 import TextField from "@material-ui/core/TextField/TextField";
 import withStyles from "@material-ui/core/styles/withStyles";
+import IconButton from "@material-ui/core/IconButton/IconButton";
+import Tooltip from "@material-ui/core/Tooltip/Tooltip";
+import InfoIcon from "@material-ui/icons/Info";
 
 const styles = theme => ({
     root: {
@@ -41,6 +41,22 @@ const ForecastingView = (props) => {
             manualAverage: 34,
             amazonInventory: 625,
             shipped: 630,
+        },
+        {
+            name:"Calcium Carbonate 16oz",
+            salesHistory: salesDataObjects([6,1,4,5,4,6,5,3,4,4,3,6,5,5,0,0,0,0,0,0,1,8,5,3,3,1,7,7,7,2,6]),
+            predictedAvg: 4.43,
+            manualAverage: 6.250,
+            amazonInventory: 293,
+            shipped: 2,
+        },
+        {
+            name:"POI Aluminum Oxide 32oz X23",
+            salesHistory: salesDataObjects([0,0,0,3,2,2,0,1,0,1,0,3,1,7,2,1,2,6,2,1,2,4,3,0,1,1,4,0,2,0,1]),
+            predictedAvg: 1.68,
+            manualAverage: 5,
+            amazonInventory: 78,
+            shipped: 17,
         }
     ];
     return (
@@ -71,6 +87,13 @@ const ForecastingView = (props) => {
                                 </TableCell>
                                 <TableCell>{item.amazonInventory}</TableCell>
                                 <TableCell>{item.shipped}</TableCell>
+                                <TableCell>
+                                    <Tooltip title={"View Details"}>
+                                        <IconButton>
+                                            <InfoIcon/>
+                                        </IconButton>
+                                    </Tooltip>
+                                </TableCell>
                             </TableRow>)
                         )}
                     </TableBody>
