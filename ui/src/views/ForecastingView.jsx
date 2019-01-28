@@ -11,6 +11,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import IconButton from "@material-ui/core/IconButton/IconButton";
 import Tooltip from "@material-ui/core/Tooltip/Tooltip";
 import InfoIcon from "@material-ui/icons/Info";
+import MUIDataTable from "mui-datatables";
 
 const styles = theme => ({
     root: {
@@ -36,51 +37,98 @@ const ForecastingView = (props) => {
     const salesDataObjects = (sales) => sales.map(value => {
         return {sales: value}
     });
-    const data = [
-        {
-            name: "Vitamin C (1 lb) POI",
-            overUnder: 15,
-            manualAverage: 34,
-            salesHistory: salesDataObjects([5, 10, 14, 17, 12, 8, 7, 3, 14, 16, 20, 26, 27, 30, 34, 31, 28, 25, 23, 26, 29, 20, 15, 21, 16, 10, 18, 6, 2, 1, 1]),
-            notes: "",
-            // predictedAvg: 19.03,
-            // amazonInventory: 625,
-            // shipped: 630,
-        },
-        {
-            name: "Calcium Carbonate 16oz",
-            overUnder: 1.8,
-            manualAverage: 6.250,
-            salesHistory: salesDataObjects([6, 1, 4, 5, 4, 6, 5, 3, 4, 4, 3, 6, 5, 5, 0, 0, 0, 0, 0, 0, 1, 8, 5, 3, 3, 1, 7, 7, 7, 2, 6]),
-            notes: "",
-            // predictedAvg: 4.43,
-            // amazonInventory: 293,
-            // shipped: 2,
-        },
-        {
-            name: "POI Aluminum Oxide 32oz X23",
-            overUnder: 3.3,
-            manualAverage: 5,
-            salesHistory: salesDataObjects([0, 0, 0, 3, 2, 2, 0, 1, 0, 1, 0, 3, 1, 7, 2, 1, 2, 6, 2, 1, 2, 4, 3, 0, 1, 1, 4, 0, 2, 0, 1]),
-            notes: "Low Avg Sales",
-            // predictedAvg: 1.68,
-            // amazonInventory: 78,
-            // shipped: 17,
-        }
+    const tableColumns = [
+        "Name",
+        "Over Under",
+        "Manual Avg",
+        "Sales - last 30d",
+        "Notes",
+        "Actions"
     ];
+    const tableData = [
+        [
+            "Vitamin C (1 lb) POI",
+            15,
+            <TextField value={34}/>,
+            graph(salesDataObjects([5, 10, 14, 17, 12, 8, 7, 3, 14, 16, 20, 26, 27, 30, 34, 31, 28, 25, 23, 26, 29, 20, 15, 21, 16, 10, 18, 6, 2, 1, 1])),
+            "",
+            <Tooltip title={"View Details"}>
+                <IconButton>
+                    <InfoIcon/>
+                </IconButton>
+            </Tooltip>
+        ],
+        [
+            "Calcium Carbonate 16oz",
+            1.8,
+            <TextField value={6.250}/>,
+            graph(salesDataObjects([5, 10, 14, 17, 12, 8, 7, 3, 14, 16, 20, 26, 27, 30, 34, 31, 28, 25, 23, 26, 29, 20, 15, 21, 16, 10, 18, 6, 2, 1, 1])),
+            "",
+            <Tooltip title={"View Details"}>
+                <IconButton>
+                    <InfoIcon/>
+                </IconButton>
+            </Tooltip>
+        ],
+        [
+            "POI Aluminum Oxide 32oz X23",
+            3.3,
+            <TextField value={5}/>,
+            graph(salesDataObjects([0, 0, 0, 3, 2, 2, 0, 1, 0, 1, 0, 3, 1, 7, 2, 1, 2, 6, 2, 1, 2, 4, 3, 0, 1, 1, 4, 0, 2, 0, 1])),
+            "Low Avg",
+            <Tooltip title={"View Details"}>
+                <IconButton>
+                    <InfoIcon/>
+                </IconButton>
+            </Tooltip>
+        ]
+    ];
+    // const data = [
+    //     {
+    //         name: "Vitamin C (1 lb) POI",
+    //         overUnder: 15,
+    //         manualAverage: 34,
+    //         salesHistory: salesDataObjects([5, 10, 14, 17, 12, 8, 7, 3, 14, 16, 20, 26, 27, 30, 34, 31, 28, 25, 23, 26, 29, 20, 15, 21, 16, 10, 18, 6, 2, 1, 1]),
+    //         notes: "",
+    //         // predictedAvg: 19.03,
+    //         // amazonInventory: 625,
+    //         // shipped: 630,
+    //     },
+    //     {
+    //         name: "Calcium Carbonate 16oz",
+    //         overUnder: 1.8,
+    //         manualAverage: 6.250,
+    //         salesHistory: salesDataObjects([6, 1, 4, 5, 4, 6, 5, 3, 4, 4, 3, 6, 5, 5, 0, 0, 0, 0, 0, 0, 1, 8, 5, 3, 3, 1, 7, 7, 7, 2, 6]),
+    //         notes: "",
+    //         // predictedAvg: 4.43,
+    //         // amazonInventory: 293,
+    //         // shipped: 2,
+    //     },
+    //     {
+    //         name: "POI Aluminum Oxide 32oz X23",
+    //         overUnder: 3.3,
+    //         manualAverage: 5,
+    //         salesHistory: salesDataObjects([0, 0, 0, 3, 2, 2, 0, 1, 0, 1, 0, 3, 1, 7, 2, 1, 2, 6, 2, 1, 2, 4, 3, 0, 1, 1, 4, 0, 2, 0, 1]),
+    //         notes: "Low Avg Sales",
+    //         // predictedAvg: 1.68,
+    //         // amazonInventory: 78,
+    //         // shipped: 17,
+    //     }
+    // ];
     return (
         <Paper className={classes.root}>
-            <Table className={classes.table}>
+            <MUIDataTable title={"Forecasting"} data={tableData} columns={tableColumns}/>
+            {/*<Table className={classes.table}>
                 <TableHead>
                     <TableRow>
-                        <TableCell>Name</TableCell> {/*Flag icon will be present right next to the name*/}
+                        <TableCell>Name</TableCell> Flag icon will be present right next to the name
                         <TableCell>Over - Under</TableCell>
                         <TableCell>Manual Average</TableCell>
                         <TableCell>Sales History (30d)</TableCell>
                         <TableCell>Notes</TableCell>
-                        {/*<TableCell>Predicted Average</TableCell>*/}
-                        {/*<TableCell>Amazon Inventory</TableCell>*/}
-                        {/*<TableCell>Shipped</TableCell>*/}
+                        <TableCell>Predicted Average</TableCell>
+                        <TableCell>Amazon Inventory</TableCell>
+                        <TableCell>Shipped</TableCell>
                         <TableCell>Actions</TableCell>
                     </TableRow>
                 </TableHead>
@@ -102,7 +150,7 @@ const ForecastingView = (props) => {
                                     fullWidth
                                 />
                             </TableCell>
-                            {/*<TableCell>{item.shipped}</TableCell>*/}
+                            <TableCell>{item.shipped}</TableCell>
                             <TableCell>
                                 <Tooltip title={"View Details"}>
                                     <IconButton>
@@ -113,7 +161,7 @@ const ForecastingView = (props) => {
                         </TableRow>)
                     )}
                 </TableBody>
-            </Table>
+            </Table>*/}
         </Paper>
     )
 };
