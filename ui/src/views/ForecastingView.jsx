@@ -5,7 +5,7 @@ import TableRow from "@material-ui/core/TableRow/TableRow";
 import TableCell from "@material-ui/core/TableCell/TableCell";
 import TableBody from "@material-ui/core/TableBody/TableBody";
 import Paper from "@material-ui/core/Paper/Paper";
-import {Area, AreaChart} from "recharts";
+import {Area, AreaChart, YAxis} from "recharts";
 import TextField from "@material-ui/core/TextField/TextField";
 import withStyles from "@material-ui/core/styles/withStyles";
 import IconButton from "@material-ui/core/IconButton/IconButton";
@@ -28,76 +28,92 @@ const ForecastingView = (props) => {
     const graph = (data) => {
         return (
             <AreaChart width={200} height={60} data={data}>
-                <Area type='monotone' dataKey='sales' stroke='#8884d8' fill='#8884d8' />
+                <Area type='monotone' dataKey='sales' stroke='#8884d8' fill='#8884d8'/>
+                <YAxis />
             </AreaChart>
         );
     };
-    const salesDataObjects = (sales) => sales.map(value => {return {sales:value}});
+    const salesDataObjects = (sales) => sales.map(value => {
+        return {sales: value}
+    });
     const data = [
         {
-            name:"Vitamin C (1 lb) POI",
-            salesHistory: salesDataObjects([5,10,14,17,12,8,7,3,14,16,20,26,27,30,34,31,28,25,23,26,29,20,15,21,16,10,18,6,2,1,1]),
-            predictedAvg: 19.03,
+            name: "Vitamin C (1 lb) POI",
+            overUnder: 15,
             manualAverage: 34,
-            amazonInventory: 625,
-            shipped: 630,
+            salesHistory: salesDataObjects([5, 10, 14, 17, 12, 8, 7, 3, 14, 16, 20, 26, 27, 30, 34, 31, 28, 25, 23, 26, 29, 20, 15, 21, 16, 10, 18, 6, 2, 1, 1]),
+            notes: "",
+            // predictedAvg: 19.03,
+            // amazonInventory: 625,
+            // shipped: 630,
         },
         {
-            name:"Calcium Carbonate 16oz",
-            salesHistory: salesDataObjects([6,1,4,5,4,6,5,3,4,4,3,6,5,5,0,0,0,0,0,0,1,8,5,3,3,1,7,7,7,2,6]),
-            predictedAvg: 4.43,
+            name: "Calcium Carbonate 16oz",
+            overUnder: 1.8,
             manualAverage: 6.250,
-            amazonInventory: 293,
-            shipped: 2,
+            salesHistory: salesDataObjects([6, 1, 4, 5, 4, 6, 5, 3, 4, 4, 3, 6, 5, 5, 0, 0, 0, 0, 0, 0, 1, 8, 5, 3, 3, 1, 7, 7, 7, 2, 6]),
+            notes: "",
+            // predictedAvg: 4.43,
+            // amazonInventory: 293,
+            // shipped: 2,
         },
         {
-            name:"POI Aluminum Oxide 32oz X23",
-            salesHistory: salesDataObjects([0,0,0,3,2,2,0,1,0,1,0,3,1,7,2,1,2,6,2,1,2,4,3,0,1,1,4,0,2,0,1]),
-            predictedAvg: 1.68,
+            name: "POI Aluminum Oxide 32oz X23",
+            overUnder: 3.3,
             manualAverage: 5,
-            amazonInventory: 78,
-            shipped: 17,
+            salesHistory: salesDataObjects([0, 0, 0, 3, 2, 2, 0, 1, 0, 1, 0, 3, 1, 7, 2, 1, 2, 6, 2, 1, 2, 4, 3, 0, 1, 1, 4, 0, 2, 0, 1]),
+            notes: "Low Avg Sales",
+            // predictedAvg: 1.68,
+            // amazonInventory: 78,
+            // shipped: 17,
         }
     ];
     return (
         <Paper className={classes.root}>
-                <Table className={classes.table}>
-                    <TableHead>
+            <Table className={classes.table}>
+                <TableHead>
+                    <TableRow>
+                        <TableCell>Name</TableCell> {/*Flag icon will be present right next to the name*/}
+                        <TableCell>Over - Under</TableCell>
+                        <TableCell>Manual Average</TableCell>
+                        <TableCell>Sales History (30d)</TableCell>
+                        <TableCell>Notes</TableCell>
+                        {/*<TableCell>Predicted Average</TableCell>*/}
+                        {/*<TableCell>Amazon Inventory</TableCell>*/}
+                        {/*<TableCell>Shipped</TableCell>*/}
+                        <TableCell>Actions</TableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {data.map(item => (
                         <TableRow>
-                            <TableCell>Name</TableCell> {/*Flag icon will be present right next to the name*/}
-                            <TableCell>Sales History</TableCell>
-                            <TableCell>Predicted Average</TableCell>
-                            <TableCell>Manual Average</TableCell>
-                            <TableCell>Amazon Inventory</TableCell>
-                            <TableCell>Shipped</TableCell>
-                            <TableCell>Actions</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {data.map(item => (
-                            <TableRow>
-                                <TableCell>{item.name}</TableCell>
-                                <TableCell>{graph(item.salesHistory)}</TableCell>
-                                <TableCell>{item.predictedAvg}</TableCell>
-                                <TableCell>
-                                    <TextField
-                                        value={item.manualAverage}
-                                        // onChange={updateItem}
-                                    />
-                                </TableCell>
-                                <TableCell>{item.amazonInventory}</TableCell>
-                                <TableCell>{item.shipped}</TableCell>
-                                <TableCell>
-                                    <Tooltip title={"View Details"}>
-                                        <IconButton>
-                                            <InfoIcon/>
-                                        </IconButton>
-                                    </Tooltip>
-                                </TableCell>
-                            </TableRow>)
-                        )}
-                    </TableBody>
-                </Table>
+                            <TableCell>{item.name}</TableCell>
+                            <TableCell>{item.overUnder}</TableCell>
+                            <TableCell>
+                                <TextField
+                                    value={item.manualAverage}
+                                    // onChange={updateItem}
+                                />
+                            </TableCell>
+                            <TableCell>{graph(item.salesHistory)}</TableCell>
+                            <TableCell>
+                                <TextField
+                                    value={item.notes}
+                                    fullWidth
+                                />
+                            </TableCell>
+                            {/*<TableCell>{item.shipped}</TableCell>*/}
+                            <TableCell>
+                                <Tooltip title={"View Details"}>
+                                    <IconButton>
+                                        <InfoIcon/>
+                                    </IconButton>
+                                </Tooltip>
+                            </TableCell>
+                        </TableRow>)
+                    )}
+                </TableBody>
+            </Table>
         </Paper>
     )
 };
