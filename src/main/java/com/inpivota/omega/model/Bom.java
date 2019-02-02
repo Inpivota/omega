@@ -5,12 +5,13 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
+import java.math.BigDecimal;
 
 @Data
 @Entity
 public class Bom  extends BaseEntity {
 
-    private double quantity;
+    private BigDecimal quantity;
     private String note;
 
     @OneToOne
