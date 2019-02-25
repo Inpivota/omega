@@ -19,6 +19,9 @@ public class InventoryItem extends BaseEntity {
     @ManyToOne
     private Product product;
 
+    @ManyToOne
+    private RawProduct rawProduct;
+
     @Override
     public String getUiLabel() {
         return name;

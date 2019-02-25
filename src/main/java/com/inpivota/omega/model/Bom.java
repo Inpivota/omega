@@ -19,7 +19,7 @@ public class Bom  extends BaseEntity {
 
     //Map to raw good. I believe we want a different table for all of our raw goods
     @OneToOne
-    private Product raw_product;
+    private RawProduct raw_product;
 
     public Bom() {
     }
