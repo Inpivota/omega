@@ -41,7 +41,7 @@ public class ForecastService {
         LocalDate endDate = LocalDate.now();
         LocalDate startDate = LocalDate.now().minusDays(days);
 
-        List<OrderLineItem> sales = orderLineItemRepository.findallByProductAndOrder_OrderDateBetweenDates(product,startDate, endDate);
+        List<OrderLineItem> sales = orderLineItemRepository.findAllByProductAndOrder_OrderDateBetweenDates(product,startDate, endDate);
         int quantitySold = 0;
         for (OrderLineItem quantity:
                 sales) {

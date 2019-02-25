@@ -22,7 +22,7 @@ import static org.junit.Assert.*;
 @Transactional
 //@ContextConfiguration(classes = { ApplicationConfig.class })
 public class ForecastServiceTest {
-    @MockBean
+    /*@MockBean
     private OrderLineItemRepository orderLineItemRepository;
     @MockBean
     private InventoryItemRepository inventoryItemRepository;
@@ -38,5 +38,5 @@ public class ForecastServiceTest {
         int result = service.GetSaleQuantitiyForDate(product, LocalDate.now().minusDays(5));
 
         assertEquals(1, result);
-    }
+    }*/
 }
