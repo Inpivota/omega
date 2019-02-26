@@ -15,13 +15,22 @@ public class Product extends BaseEntity {
     @Column(unique = true)
     private String modelNumber;
 
+    @NaturalId
+    @Column(unique = true)
     private String finaleId;
+    @NaturalId
+    @Column(unique = true)
     private String sku;
     private String name;
     private String description;  // Found that we only need to set the length to 3060, instead of 255. Not sure how to do that here.
     private String notes; // Should probably increase the limit of this field to something bigger than 255.
     //    private int buildOutToDays; //@todo also I don't think that this should go here. This should belong to a bom, probably.
+    // Or is it just named poorly? should it be called targetDaysOfStock or something like that?
+    @NaturalId
+    @Column(unique = true)
     private String fnSku;
+    @NaturalId
+    @Column(unique = true)
     private String upc;
 
     // @todo pricing should be a separate concern. a different table
