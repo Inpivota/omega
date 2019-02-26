@@ -2,6 +2,7 @@ package com.inpivota.omega.controller;
 
 
 import com.inpivota.omega.service.DataService;
+import com.inpivota.omega.service.ForecastService;
 import graphql.ExecutionInput;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,7 +33,8 @@ public class GraphQLController {
 
     @Autowired
     public GraphQLController(
-            DataService dataService
+            DataService dataService,
+            ForecastService forecastService
     ) {
 
         //Schema generated from query classes
@@ -43,7 +45,7 @@ public class GraphQLController {
                         //Resolve public methods inside root package
                         new PublicResolverBuilder("com.inpivota.omega"))
                 .withOperationsFromSingleton(dataService)
-//                .withOperationsFromSingleton(socialNetworkQuery)
+                .withOperationsFromSingleton(forecastService)
 //                .withOperationsFromSingleton(vendorQuery)
 //                .withOperationsFromSingleton(domainQuery)
 //                .withOperationsFromSingleton(productQuery)

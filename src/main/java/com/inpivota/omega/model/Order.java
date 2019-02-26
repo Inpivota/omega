@@ -5,7 +5,7 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
-import java.sql.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 @Data
@@ -13,8 +13,8 @@ import java.util.List;
 public class Order extends BaseEntity {
 
     private String orderNumber;
-    private Date orderDate;
-    private Date shipDate;
+    private LocalDate orderDate;
+    private LocalDate shipDate;
     private int shippingCost;
     // Some way to store customer data. Eventually we will want to be able to know who are returning customers are.
     // Statues of order (Payment Processed, Packed, Shipped, ect)
