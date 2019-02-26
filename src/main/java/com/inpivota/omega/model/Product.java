@@ -4,10 +4,7 @@ import com.inpivota.omega.model.common.BaseEntity;
 import lombok.Data;
 import org.hibernate.annotations.NaturalId;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Data
