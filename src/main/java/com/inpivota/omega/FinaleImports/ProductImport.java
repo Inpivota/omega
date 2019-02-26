@@ -7,6 +7,7 @@ import com.inpivota.omega.repository.ProductCategoryRepository;
 import com.inpivota.omega.repository.ProductRepository;
 import com.inpivota.omega.repository.RawProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -18,6 +19,7 @@ import java.util.Locale;
 
 import static com.inpivota.omega.FinaleImports.HelperMethods.*;
 
+@Service
 public class ProductImport {
 
     private ProductRepository productRepository;

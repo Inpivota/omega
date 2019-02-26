@@ -4,6 +4,7 @@ package com.inpivota.omega.FinaleImports;
 import com.inpivota.omega.model.ProductCategory;
 import com.inpivota.omega.repository.ProductCategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -13,6 +14,7 @@ import java.util.List;
 import static com.inpivota.omega.FinaleImports.HelperMethods.FindCategoryByName;
 
 
+@Service
 public class CategoryImport {
     private ProductCategoryRepository productCategoryRepository;
 

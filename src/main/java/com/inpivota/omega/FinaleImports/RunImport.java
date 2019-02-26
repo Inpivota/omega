@@ -1,29 +1,37 @@
 package com.inpivota.omega.FinaleImports;
 
 
-import com.inpivota.omega.repository.*;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
 
-@SpringBootApplication
+@Service
 public class RunImport {
 
-    private LocationRepository locationRepository;
-    private ProductCategoryRepository productCategoryRepository;
-    private ProductRepository productRepository;
-    private RawProductRepository rawProductRepository;
-    private BomRepository bomRepository;
-    private InventoryItemRepository inventoryItemRepository;
+    private CategoryImport categoryImport;
+    private LocationImport locationImport;
+    private ProductImport productImport;
+    private BOMImport bomImport;
+    private InventoryImport inventoryImport;
 
-    @Scheduled
-    public void main() {
+    @Autowired
+    public RunImport(
+            CategoryImport categoryImport,
+            LocationImport locationImport,
+            ProductImport productImport,
+            BOMImport bomImport,
+            InventoryImport inventoryImport
+    ){
+        this.categoryImport = categoryImport;
+        this.locationImport = locationImport;
+        this.productImport = productImport;
+        this.bomImport = bomImport;
+        this.inventoryImport = inventoryImport;
+    }
 
-        CategoryImport categoryImport = new CategoryImport(productCategoryRepository);
-        LocationImport locationImport = new LocationImport(locationRepository);
-        ProductImport productImport = new ProductImport(productRepository, rawProductRepository, productCategoryRepository);
-        BOMImport bomImport = new BOMImport(productRepository, bomRepository, rawProductRepository);
-        InventoryImport inventoryImport = new InventoryImport(productRepository, inventoryItemRepository, rawProductRepository, locationRepository);
+    @Scheduled(fixedRate = 900000)
+//    @Scheduled(fixedRate = 60000) // For testing only
+    public void doImports() {
 
         String categoryResults = categoryImport.ImportCategories();
         String locationResults = locationImport.ImportLocations();
