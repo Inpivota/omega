@@ -4,10 +4,10 @@ import com.inpivota.omega.model.OrderLineItem;
 import com.inpivota.omega.model.Product;
 import com.inpivota.omega.repository.InventoryItemRepository;
 import com.inpivota.omega.repository.OrderLineItemRepository;
+import io.leangen.graphql.annotations.GraphQLContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityManager;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
@@ -41,7 +41,7 @@ public class ForecastService {
         LocalDate endDate = LocalDate.now();
         LocalDate startDate = LocalDate.now().minusDays(days);
 
-        List<OrderLineItem> sales = orderLineItemRepository.findallByProductAndOrder_OrderDateBetweenDates(product,startDate, endDate);
+        List<OrderLineItem> sales = orderLineItemRepository.findAllByProductAndOrder_OrderDateBetween(product, startDate, endDate);
         int quantitySold = 0;
         for (OrderLineItem quantity:
                 sales) {
@@ -57,7 +57,7 @@ public class ForecastService {
         return result;
     }
 
-    public int GetBuildOutToDays(Product product){
+    public int GetBuildOutToDays(@GraphQLContext Product product){
         // todo: Add build out to days to the DB and pull it here
         // default is 31
         return 31;
@@ -75,7 +75,7 @@ public class ForecastService {
         return LocalDate.now().plusDays(daysLeftInStock);
     }
 
-    public int GetSaleQuantitiyForDate(Product product,LocalDate date) {
+    public int GetSaleQuantityForDate(Product product, LocalDate date) {
         List<OrderLineItem> orderItems = orderLineItemRepository.findAllByProductAndOrder_OrderDate(product, date);
         int quantitySold = 0;
         for (OrderLineItem quantity:
