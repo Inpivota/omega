@@ -2,11 +2,8 @@ package com.inpivota.omega.FinaleImports;
 
 
 import com.inpivota.omega.repository.*;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.Scheduled;
 
-@SpringBootApplication
 public class RunImport {
 
     private LocationRepository locationRepository;
@@ -17,7 +14,7 @@ public class RunImport {
     private InventoryItemRepository inventoryItemRepository;
 
     @Scheduled
-    public void main() {
+    public String Import() {
 
         CategoryImport categoryImport = new CategoryImport(productCategoryRepository);
         LocationImport locationImport = new LocationImport(locationRepository);
@@ -34,5 +31,7 @@ public class RunImport {
         // Dump Results somewhere
         String results = categoryResults + "\r\n" + locationResults + "\r\n " + productResults + "\r\n " + bomResults + "\r\n " + inventoryResults;
         System.out.print(results);
+
+        return results;
     }
 }
