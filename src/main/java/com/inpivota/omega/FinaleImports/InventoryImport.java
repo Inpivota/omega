@@ -8,6 +8,7 @@ import com.inpivota.omega.repository.InventoryItemRepository;
 import com.inpivota.omega.repository.LocationRepository;
 import com.inpivota.omega.repository.ProductRepository;
 import com.inpivota.omega.repository.RawProductRepository;
+import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -16,6 +17,7 @@ import java.util.List;
 
 import static com.inpivota.omega.FinaleImports.HelperMethods.*;
 
+@Service
 public class InventoryImport {
 
     private ProductRepository productRepository;

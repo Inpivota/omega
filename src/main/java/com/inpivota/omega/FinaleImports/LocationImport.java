@@ -3,6 +3,7 @@ package com.inpivota.omega.FinaleImports;
 import com.inpivota.omega.model.Location;
 import com.inpivota.omega.repository.LocationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -11,6 +12,7 @@ import java.util.List;
 
 import static com.inpivota.omega.FinaleImports.HelperMethods.FindLocationByName;
 
+@Service
 public class LocationImport {
 
     private LocationRepository locationRepository;

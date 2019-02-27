@@ -10,5 +10,5 @@ import java.util.UUID;
 
 public interface OrderLineItemRepository extends JpaRepository<OrderLineItem, UUID> {
     List<OrderLineItem> findAllByProductAndOrder_OrderDate(Product product, LocalDate date);
-    List<OrderLineItem> findAllByProductAndOrder_OrderDateBetweenDates(Product product, LocalDate startDate, LocalDate endDate);
+    List<OrderLineItem> findAllByProductAndOrder_OrderDateBetween(Product product, LocalDate startDate, LocalDate endDate);
 }
