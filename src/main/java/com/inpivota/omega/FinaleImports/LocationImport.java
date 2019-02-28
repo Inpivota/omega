@@ -9,6 +9,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static com.inpivota.omega.FinaleImports.HelperMethods.FindLocationByName;
 
@@ -23,7 +24,6 @@ public class LocationImport {
     }
 
     public String ImportLocations(){
-        String filePath = "";
         String productFileName = "Locations.csv";
         String line = "";
         List<Location> dbLocations = locationRepository.findAll();
@@ -31,16 +31,16 @@ public class LocationImport {
         List<String> errors = new ArrayList<>();
 
         try {
-            var br = new BufferedReader(new FileReader(filePath + productFileName));
+            var br = new BufferedReader(new FileReader(RunImport.PATH_TO_IMPORT_FILES + productFileName));
             while ((line = br.readLine()) != null) {
 
                 String[] data = line.split(",");
-                String category = data[0];
-                if(category != "Category" && category != "--"){
-                    Location dbCategory = FindLocationByName(dbLocations, category);
-                    if (dbCategory == null){
+                String locationName = data[0];
+                if(!locationName.equals("Sublocation") && !locationName.equals("--")){
+                    Optional<Location> dbCategory = FindLocationByName(dbLocations, locationName);
+                    if (dbCategory.isEmpty()){
                         Location newLocation = new Location();
-                        newLocation.setName(category);
+                        newLocation.setName(locationName);
                         locationRepository.save(newLocation);
                     }
                 }

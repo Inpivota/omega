@@ -14,6 +14,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static com.inpivota.omega.FinaleImports.HelperMethods.*;
 
@@ -26,16 +27,15 @@ public class InventoryImport {
     private LocationRepository locationRepository;
 
     public InventoryImport(ProductRepository productRepository, InventoryItemRepository inventoryItemRepository,
-                           RawProductRepository rawProductRepository, LocationRepository locationRepository){
+                           RawProductRepository rawProductRepository, LocationRepository locationRepository) {
         this.productRepository = productRepository;
         this.inventoryItemRepository = inventoryItemRepository;
         this.rawProductRepository = rawProductRepository;
         this.locationRepository = locationRepository;
     }
 
-    public String ImportProductInventory(){
+    public String ImportProductInventory() {
 
-        String filePath = "";
         String fileName = "Inventory.csv";
         String manageFileName = "Manage.csv";
         String fulfillFileName = "Fulfill.txt";
@@ -45,8 +45,8 @@ public class InventoryImport {
         List<RawProduct> dbRawProducts = rawProductRepository.findAll();
         List<InventoryItem> dbInventoryItems = inventoryItemRepository.findAll();
 
-        List<ManageData> shippedInventory = GetManageData(filePath, manageFileName);
-        List<ManageData> FBAInventory = GetFulfillData(filePath, fulfillFileName);
+        List<ManageData> shippedInventory = GetManageData(RunImport.PATH_TO_IMPORT_FILES, manageFileName);
+        List<ManageData> FBAInventory = GetFulfillData(RunImport.PATH_TO_IMPORT_FILES, fulfillFileName);
 
         //Counts
         List<String> errors = new ArrayList<>();
@@ -57,7 +57,7 @@ public class InventoryImport {
         String resultsToStirng = "";
 
         try {
-            var br = new BufferedReader(new FileReader(filePath + fileName));
+            var br = new BufferedReader(new FileReader(RunImport.PATH_TO_IMPORT_FILES + fileName));
             while ((line = br.readLine()) != null) {
 
                 String[] data = line.split(",");
@@ -66,49 +66,49 @@ public class InventoryImport {
                 String finaleProductId = data[1];
                 int finaleUnits = Integer.parseInt(data[4]);
 
-                Location dbLocation = FindLocationByName(dbLocations, subLocation);
-                Product dbProduct = FindProductByFinaleId(dbProducts, finaleProductId);
-                RawProduct dbRawProduct = FindRawProductByFinaleId(dbRawProducts, finaleProductId);
-                boolean useRawProduct = dbRawProduct != null;
+                Location dbLocation = FindLocationByName(dbLocations, subLocation).orElseThrow();
+                Product dbProduct = FindProductByFinaleId(dbProducts, finaleProductId).orElseThrow();
+                Optional<RawProduct> dbRawProduct = FindRawProductByFinaleId(dbRawProducts, finaleProductId);
+                boolean useRawProduct = dbRawProduct.isPresent();
                 String productSKU = dbProduct.getSku();
 
                 int shippedUnits = FindQuantityBySKU(shippedInventory, productSKU);
                 int FBAUnits = FindQuantityBySKU(FBAInventory, productSKU);
-                int units = subLocation == "FBA" ? FBAUnits : subLocation == "--" ? shippedUnits : finaleUnits;
+                int units = subLocation.equals("FBA") ? FBAUnits : subLocation.equals("--") ? shippedUnits : finaleUnits;
 
-                String productName = useRawProduct ? dbRawProduct.getName() : dbProduct.getName();
+                String productName = useRawProduct ? dbRawProduct.get().getName() : dbProduct.getName();
 
-                try{
+                try {
 
-                    InventoryItem dbInventoryItem = FindInventoryItemByProductIdAndLocation(dbInventoryItems, finaleProductId, subLocation);
+                    Optional<InventoryItem> dbInventoryItem = FindInventoryItemByProductIdAndLocation(dbInventoryItems, finaleProductId, subLocation);
 
-                    if(dbInventoryItem == null){
+                    if (!dbInventoryItem.isPresent()) {
                         // Create one
                         InventoryItem newInventoryItem = new InventoryItem();
 
                         newInventoryItem.setLocation(dbLocation);
                         newInventoryItem.setName(productName + "-" + subLocation);
                         newInventoryItem.setProduct(dbProduct);
-                        newInventoryItem.setRawProduct(dbRawProduct);
+                        if (useRawProduct) newInventoryItem.setRawProduct(dbRawProduct.get());
                         newInventoryItem.setQuantity(units);
 
                         inventoryItemRepository.save(newInventoryItem);
                         successCount++;
 
-                    }else {
+                    } else {
                         // Update it
-                        dbInventoryItem.setQuantity(units);
+                        dbInventoryItem.get().setQuantity(units);
 
                         updateCount++;
                     }
 
-                }catch (Exception ex){
+                } catch (Exception ex) {
                     errorCount++;
                     errors.add("Had problem with Product Inventory. ProductId: " + finaleProductId + ", Location: " + subLocation +
                             ", Error: " + ex.getMessage() + "\r\n");
                 }
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             errorCount++;
             errors.add(" <||> " + e.getMessage());
         }

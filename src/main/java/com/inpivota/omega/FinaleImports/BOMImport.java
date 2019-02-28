@@ -15,6 +15,7 @@ import java.io.FileReader;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static com.inpivota.omega.FinaleImports.HelperMethods.*;
 
@@ -35,7 +36,6 @@ public class BOMImport {
 
     public String ImportBOMs(){
 
-        String filePath = "";
         String fileName = "BillOfMaterials.csv";
         String line = "";
         List<Product> dbProducts = productRepository.findAll();
@@ -51,26 +51,26 @@ public class BOMImport {
         String resultsToStirng = "";
 
         try {
-            var br = new BufferedReader(new FileReader(filePath + fileName));
+            var br = new BufferedReader(new FileReader(RunImport.PATH_TO_IMPORT_FILES + fileName));
             while ((line = br.readLine()) != null) {
 
                 String[] data = line.split(",");
 
                 String finaleProductId = data[0];
                 String stringQuantity = data[3];
-                BigDecimal quantity = stringQuantity != "" ? new BigDecimal(stringQuantity) : new BigDecimal(0);
+                BigDecimal quantity = !stringQuantity.equals("") ? new BigDecimal(stringQuantity) : new BigDecimal(0);
                 String rawProductId = data[4];
                 String itemNote = data[5];
 
                 try {
-                    Product dbProduct = FindProductByFinaleId(dbProducts, finaleProductId);
-                    RawProduct dbRawProduct = FindRawProductByFinaleId(dbRawProducts,rawProductId);
+                    Product dbProduct = FindProductByFinaleId(dbProducts, finaleProductId).orElseThrow();
+                    RawProduct dbRawProduct = FindRawProductByFinaleId(dbRawProducts,rawProductId).orElseThrow();
 
-                    if (finaleProductId != "ProductID") {
-                        Bom dbBOM = FindBOMByProductAndRawFinaleId(dbBOMs, dbProduct.getFinaleId(), dbRawProduct.getFinaleId());
+                    if (!finaleProductId.equals("ProductID")) {
+                        Optional<Bom> dbBOM = FindBOMByProductAndRawFinaleId(dbBOMs, dbProduct.getFinaleId(), dbRawProduct.getFinaleId());
 
                         //todo We need a way to delete BOMs from the DB if they are not in the new file...
-                        if (dbBOM == null){
+                        if (!dbBOM.isPresent()){
                             // Add new BOM to db
                             Bom newBOM = new Bom();
 
@@ -81,11 +81,11 @@ public class BOMImport {
 
                             bomRepository.save(newBOM);
                             successCount++;
-                        }
-                        else {
+                        } else {
                             // Update the BOM
-                            dbBOM.setQuantity(quantity);
-                            dbBOM.setNote(itemNote);
+                            Bom bom = dbBOM.get();
+                            bom.setQuantity(quantity);
+                            bom.setNote(itemNote);
                             updateCount++;
                         }
                     }

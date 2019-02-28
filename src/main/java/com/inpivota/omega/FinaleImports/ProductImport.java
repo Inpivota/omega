@@ -12,10 +12,7 @@ import org.springframework.stereotype.Service;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
 
 import static com.inpivota.omega.FinaleImports.HelperMethods.*;
 
@@ -39,7 +36,6 @@ public class ProductImport {
         boolean ImportRawGoods = true;
         boolean deleteProductsBeforeInput = false;
 
-        String filePath = "";
         String productFileName = "Products.csv";
         String manageFileName = "Manage.txt";
         String line = "";
@@ -66,9 +62,9 @@ public class ProductImport {
             rawProductRepository.deleteAll();
         }
 
-        List<ManageData> listManageData = GetManageData(filePath, manageFileName);
+        List<ManageData> listManageData = GetManageData(RunImport.PATH_TO_IMPORT_FILES, manageFileName);
         try {
-            var br = new BufferedReader(new FileReader(filePath + productFileName));
+            var br = new BufferedReader(new FileReader(RunImport.PATH_TO_IMPORT_FILES + productFileName));
             while  ((line = br.readLine()) != null){
 
                 String[] data  = line.split(",");
@@ -77,7 +73,7 @@ public class ProductImport {
                 String productName = data[2];
 
                 String productCategory = data[3];
-                ProductCategory category = FindCategoryByName(dbCategories, productCategory);
+                ProductCategory category = FindCategoryByName(dbCategories, productCategory).orElseThrow();
 
                 String SKU = data[5];
                 String fnSKU = FindFNSKUBySKU(listManageData, SKU);
@@ -91,14 +87,14 @@ public class ProductImport {
                 String notes = data[15];
                 String UPC = data[17];
 
-                if (finaleProductId.toLowerCase() != "productid" && finaleProductId != "") {
-                    Product dbProduct = FindProductByFinaleId(dbProducts, finaleProductId);
+                if (!finaleProductId.toLowerCase().equals("ProductID") && !finaleProductId.equals("")) {
+                    Optional<Product> dbProduct = FindProductByFinaleId(dbProducts, finaleProductId);
 
                     if(ImportProducts && (doesGetBuilt > 0 || (doesGetBuilt == 0 &&
                             (productCategory.contains("Sell") || productCategory.contains("Mattress"))))) {
                         try {
 
-                            if (dbProduct == null) {
+                            if (dbProduct.isEmpty()) {
                                 // Add Product to Database
                                 Product product = new Product();
                                 product.setFinaleId(finaleProductId);
@@ -115,12 +111,14 @@ public class ProductImport {
                                 successCount++;
                             } else {
                                 // Update existing product
-                                dbProduct.setName(productName);
-                                dbProduct.setProductCategory(category);
-                                dbProduct.setDescription(notes);
-                                dbProduct.setCreatedAt(doneDate.toInstant());
-                                dbProduct.setFnSku(fnSKU);
-                                dbProduct.setSku(SKU);
+                                /// I would check each value first, if it is different, then I would set the value.  to reduce the number of SQL queries
+                                Product product = dbProduct.get();
+                                product.setName(productName);
+                                product.setProductCategory(category);
+                                product.setDescription(notes);
+                                product.setCreatedAt(doneDate.toInstant());
+                                product.setFnSku(fnSKU);
+                                product.setSku(SKU);
                                 // Need to Make sure this persists to the DB
                                 updateCount++;
                             }
@@ -133,19 +131,25 @@ public class ProductImport {
                     }
 
                     if(ImportRawGoods &&
-                    doesGetBuilt == 0 && (productCategory == "RAW BULK" || productCategory == "Bags" || productCategory == "Boxes"
-                            || productCategory == "Containers" || productCategory == "Envelopes"
-                            || productCategory == "Labels" || productCategory == "Office Supplies"
-                            || productCategory == "Packaging" || productCategory == "Warehouse Supplies")){
+                    doesGetBuilt == 0 && (productCategory.equals("RAW BULK") || productCategory.equals("Bags") || productCategory.equals("Boxes")
+                            || productCategory.equals("Containers") || productCategory.equals("Envelopes")
+                            || productCategory.equals("Labels") || productCategory.equals("Office Supplies")
+                            || productCategory.equals("Packaging") || productCategory.equals("Warehouse Supplies"))){
 
-                        RawProduct dbRawProduct = FindRawProductByFinaleId(dbRawProducts, finaleProductId);
+                        Optional<RawProduct> dbRawProduct = FindRawProductByFinaleId(dbRawProducts, finaleProductId);
 
                         try{
                             // Create the product
-                            if (dbRawProduct == null){
+                            if (dbRawProduct.isPresent()) {
+                                // Update the Product
+                                RawProduct rawProduct = dbRawProduct.get();
+                                rawProduct.setName(productName);
+                                rawProduct.setDescription(notes);
+                                rawProduct.setSupplierId(null);
 
+                                rawUpdateCount++;
+                            } else {
                                 RawProduct rawProduct = new RawProduct();
-
                                 rawProduct.setName(productName);
                                 rawProduct.setSupplierId(null);
                                 rawProduct.setDescription(notes);
@@ -153,15 +157,6 @@ public class ProductImport {
 
                                 rawProductRepository.save(rawProduct);
                                 rawSuccessCount++;
-                            }
-                            else {
-                                // Update the Product
-
-                                dbRawProduct.setName(productName);
-                                dbRawProduct.setDescription(notes);
-                                dbRawProduct.setSupplierId(null);
-
-                                rawUpdateCount++;
                             }
                         }catch (Exception ex){
                             rawErrorCount++;

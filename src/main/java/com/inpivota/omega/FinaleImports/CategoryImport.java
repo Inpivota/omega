@@ -7,9 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static com.inpivota.omega.FinaleImports.HelperMethods.FindCategoryByName;
 
@@ -25,7 +27,6 @@ public class CategoryImport {
 
     public String ImportCategories() {
 
-        String filePath = "";
         String productFileName = "ProductCategories.csv";
         String line = "";
         List<ProductCategory> dbCategories = productCategoryRepository.findAll();
@@ -33,14 +34,16 @@ public class CategoryImport {
         List<String> errors = new ArrayList<>();
 
         try {
-            var br = new BufferedReader(new FileReader(filePath + productFileName));
+//            File folder = new File("./ImportFiles/");
+//            File[] listOfFiles = folder.listFiles();
+            var br = new BufferedReader(new FileReader(RunImport.PATH_TO_IMPORT_FILES + productFileName));
             while ((line = br.readLine()) != null) {
 
                 String[] data = line.split(",");
                 String category = data[0];
-                if(category != "Category" && category != "--"){
-                    ProductCategory dbCategory = FindCategoryByName(dbCategories, category);
-                    if (dbCategory == null){
+                if(!category.equals("Category") && !category.equals("--")){
+                    Optional<ProductCategory> dbCategory = FindCategoryByName(dbCategories, category);
+                    if (dbCategory.isEmpty()){
                         ProductCategory newCategory = new ProductCategory();
                         newCategory.setName(category);
                         productCategoryRepository.save(newCategory);

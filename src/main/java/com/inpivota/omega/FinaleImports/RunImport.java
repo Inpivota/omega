@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class RunImport {
 
+    static public String PATH_TO_IMPORT_FILES = "./ImportFiles/";
+
     private CategoryImport categoryImport;
     private LocationImport locationImport;
     private ProductImport productImport;
@@ -29,9 +31,12 @@ public class RunImport {
         this.inventoryImport = inventoryImport;
     }
 
+    /**
+     * scheduled methods should be void with no args
+     **/
     @Scheduled(fixedRate = 900000)
 //    @Scheduled(fixedRate = 60000) // For testing only
-    public String doImports() {
+    public void doImports() {
 
         String categoryResults = categoryImport.ImportCategories();
         String locationResults = locationImport.ImportLocations();
@@ -42,7 +47,5 @@ public class RunImport {
         // Dump Results somewhere
         String results = categoryResults + "\r\n" + locationResults + "\r\n " + productResults + "\r\n " + bomResults + "\r\n " + inventoryResults;
         System.out.print(results);
-
-        return results;
     }
 }
