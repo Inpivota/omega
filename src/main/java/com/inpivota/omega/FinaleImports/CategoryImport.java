@@ -25,7 +25,7 @@ public class CategoryImport {
 
     public String ImportCategories() {
 
-        String filePath = "";
+        String filePath = "d:\\FTPTest\\Data\\";
         String productFileName = "ProductCategories.csv";
         String line = "";
         List<ProductCategory> dbCategories = productCategoryRepository.findAll();
@@ -36,15 +36,18 @@ public class CategoryImport {
             var br = new BufferedReader(new FileReader(filePath + productFileName));
             while ((line = br.readLine()) != null) {
 
-                String[] data = line.split(",");
-                String category = data[0];
-                if(category != "Category" && category != "--"){
-                    ProductCategory dbCategory = FindCategoryByName(dbCategories, category);
-                    if (dbCategory == null){
-                        ProductCategory newCategory = new ProductCategory();
-                        newCategory.setName(category);
-                        productCategoryRepository.save(newCategory);
+                try {
+                    String category = line;
+                    if (!category.equals("Category") && !category.equals("--")) {
+                        ProductCategory dbCategory = FindCategoryByName(dbCategories, category);
+                        if (dbCategory == null) {
+                            ProductCategory newCategory = new ProductCategory();
+                            newCategory.setName(category);
+                            productCategoryRepository.save(newCategory);
+                        }
                     }
+                }catch (Exception ex){
+                    errors.add(ex.getMessage());
                 }
 
             }

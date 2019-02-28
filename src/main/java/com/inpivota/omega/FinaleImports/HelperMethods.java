@@ -15,7 +15,11 @@ public class HelperMethods {
     }
 
     public static ProductCategory FindCategoryByName(List<ProductCategory> Categories, String Name){
-        ProductCategory result = Categories.stream().filter(p -> p.getName() == Name).findFirst().get();
+        if(Categories == null || Categories.isEmpty())
+            return null;
+
+        var category = Categories.stream().filter(p -> p.getName() == Name).findFirst();
+        ProductCategory result = category != null ? category.get() : null;
         return result;
     }
 
