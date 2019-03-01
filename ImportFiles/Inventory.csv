@@ -1,0 +1,1825 @@
+Sublocation,ProductID,Description,Std Pkng,UnitsQoH,UnitsPacked,UnitsTransit,UnitsWIP,Total Std cost,Total Avg cost,Total Item price
+--,10005,Arborvitae Essential Oil 5 ml,,0,0,100,0,50,0,999
+--,10016,Ammonium Bicarbonate 16oz,,0,0,90,0,182.7,118.426448,895.5
+--,10021,Ammonium Bicarbonate (32 oz) POI,,0,0,69,0,210.45,151.450141,1052.25
+--,10034,Cedarwood Essential Oil (15 ml),,0,0,100,0,49,4.592593,899
+--,10041,Calcium Sulfate (11 oz) POI,,0,0,100,0,138,50,899
+--,10061,Cream of Tartar (2 lb.) POI,,0,0,276,0,2012.04,1865.723261,4678.2
+--,10067,Diatomaceous Earth (1 lb) POI,,0,0,270,0,459,268.062445,4857.3
+--,10071,Epsom Salt (1 lb) POI,,0,0,585,0,1088.1,449.453571,6142.5
+--,10076,Grapefruit Oil 15ml,,0,0,60,0,28.8,0,531
+--,10077,"Glycerin (Half Gallon, 64 fl oz) POI",,0,0,96,0,709.44,519.998049,1896
+--,10089,Monosodium Phosphate (2 lb) POI,,0,0,69,0,427.8,355.187231,1448.31
+--,10092,DL Malic (2 lb) POI,,0,0,150,0,516,322.101108,1798.5
+--,10097,Mineral Oil (8 oz) POI,,0,0,240,0,552,300.637113,2100
+--,10112,Potassium Bicarbonate 32oz,,0,0,92,0,493.12,405.048703,1403
+--,10128,Sodium Tripolyphosphate (1 lb) POI,,0,0,25,0,78.25,25.800725,323.75
+--,10144,Titanium dioxide 16oz,,0,0,180,0,712.8,472.291837,2158.2
+--,10146,Titanium Dioxide 8oz,,0,0,216,0,529.2,292.804615,1782
+--,10147,Vetiver Oil 15ml,,0,0,87,0,46.98,3.303649,1022.25
+--,10154,Ylang Ylang Essential Oil (15 ml) POI ,,0,0,30,0,73.5,2.298051,299.7
+--,10172,EDTA 4oz,,0,0,150,0,388.5,230.155932,1573.5
+--,10179,Glycerin (8 fl oz Weight 12 oz) POI,,0,0,1020,0,1999.2,1043.33554,9945
+--,10186,Ice Melt (3.5 Gallon (25 lbs)) EBE (Lower Feb 1)  (Raise Nov 1),,0,0,238,0,4036.48,3944.083289,14277.62
+--,10200,Ice Melt (1 Gallon (8 lbs)) EBE,,0,0,1000,0,5420,5311.273386,26990
+--,10201,"Ice Melt (5 Gallon, 40 lbs) EBE (Lower Feb 1)  (Raise Nov 1)",,0,0,100,0,2090,2351.477124,7599
+--,10337,Washing soda (2 lb Tub) EBE,,0,0,780,0,2667.6,1639.074667,10101
+--,10340,10 ml roller bottle 6 pack,,0,0,24,0,4.8,36.345,162
+--,10341,10 ml roller bottle 8 pack,,0,0,24,0,5.76,48.63,186
+--,10358,Cypress Essential Oil (15 ml) POI,,0,0,30,0,14.1,2.298051,238.5
+--,10361,Lemon Essential Oil (15 ml) POI,,0,0,20,0,9.8,0.559091,179.8
+--,10364,Lavender Essential Oil (15 ml) POI,,0,0,25,0,12.75,1.915043,249.75
+--,10386,"Cobalt Spray Bottle, 2 oz, 4-Pack",,0,0,100,0,8,191.412121,0
+--,10415,Propylene Glycol (1 Gallon) POI,,0,0,16,0,221.6,188.615,492
+--,104257,Borax 1 Gallon Bucket,,0,0,240,0,1692,1437.583477,5508
+--,104261,"Potassium Bicarbonate (200 Capsules, 2,860 mg) EBE",,0,0,250,0,1467.5,644.399441,4187.5
+--,104262,Guar Gum (8 oz.) POI,,0,0,1200,0,1908,1347.148468,9000
+--,104274,Guar Gum (10 oz.) POI,,0,0,550,0,957,415.723118,4400
+--,104275,Guar Gum (16 oz.) POI,,0,0,90,0,220.5,116.05157,1169.1
+--,104277,"Washing Soda (1 Gallon Bucket, 9 lb) EBE",,0,0,432,0,3015.36,2465.026331,11642.4
+--,104304,"Magnesium Chloride (1 Gallon, 8 lb) EBE",,0,0,32,0,704.64,788.699429,1680
+--,104321,Cardamom Essential Oil (5 ml),,0,0,100,0,20,0,999
+--,104324,Bergamot Essential Oil 15 ml,,0,0,60,0,345.6,0,539.4
+--,104325,Clary Sage Essential Oil (15 ml) POI,,0,0,254,0,1986.28,0,3299.46
+--,104332,Thyme Essential Oil (15 ml) POI ,,0,0,25,0,157,0,249.75
+--,104337,Coriander Essential Oil (15 ml) POI,,0,0,94,0,603.48,0,963.5
+--,104342,Almond Flour (2 lb) POI,,0,0,184,0,1827.12,1562.471864,4046.16
+--,104351,Acacia Fiber (2 lb) POI,,0,0,46,0,426.88,193.013621,1009.7
+--,104352,Mineral Oil (4 oz) POI,,0,0,50,0,87,69.894231,412.5
+--,104353,Propylene Glycol (4 fl oz) POI,,0,0,230,0,361.1,245.319643,1552.5
+--,104354,Glycerin (4 fl oz) POI,,0,0,180,0,275.4,150.572222,1215
+--,104367,Play Sand (5 lb) POI,,0,0,459,0,1225.53,713.216033,6999.75
+--,104372,"MASON JARS (12 count, 8 oz)",,0,0,65,0,89.7,919.711386,1690
+--,104384,"DL Malic Acid (Tub, 2 lb) EBE",,0,0,100,0,539,396.547009,1450
+--,104395,Siberian Fir Essential Oil (15 ml) POI,,0,0,38,0,49.78,0,340.1
+--,104410,"Diatomaceous Earth Capsules (150 count, 275 mg) UNP",,0,0,67,0,280.06,115.335245,904.5
+--,104432,"Amber Dropper Bottle 2 oz, 4 pack",,0,0,230,0,515.2,338.338589,0
+--,104433,"Amber Dropper Bottle 2 oz, 2 pack",,0,0,1100,0,1980,764.905405,0
+--,104435,"Cobalt Dropper Bottle 2 oz, 4pk",,0,0,180,0,0,321.070213,0
+--,104436,"Cobalt Dropper Bottle 2 oz, 2 pk",,0,0,900,0,2502,861.103448,6291
+--,104439,Tapioca Starch Flour (8 oz) POI,,0,0,450,0,657,189.609677,2925
+--,104454,"Cream Of Tartar (5 Gallon Bucket, 45 lb) EBE",,0,0,16,0,2253.6,2050.887442,4080
+--,104455,Epsom Salt (5 lb) POI (Single Listing),,0,0,117,0,507.78,365.491335,2164.5
+--,104460,Mineral Oil (8 oz) POI (Single Listing) ,,0,0,600,0,1386,744.501873,5250
+--,104474,Potato Starch (10 lb) POI (Single Listing)  (Shortage),,0,0,64,0,688,603.189404,2236.8
+--,104504,Cream of Tartar (4 oz) POI (Single Listing),,0,0,150,0,265.5,223.195853,1042.5
+--,104511,Potassium Bicarbonate (4 oz) POI (Single Listing),,0,0,150,0,232.5,92.087558,1177.5
+--,104512,Guar Gum (2 lb) POI (Single Listing),,0,0,230,0,828,586.112286,3217.7
+--,104521,Mineral Oil 5 gallon (35 lb.) EBE,,0,0,15,0,1265.7,983.135714,2219.25
+--,104537,Potassium Bicarbonate (2 lb) POI (Single Listing),,0,0,115,0,400.2,510.471121,1753.75
+--,104544,Pure Soap Flakes (2 lb) POI,,0,0,23,0,85.1,54.897019,316.25
+--,104561,"Potassium Bicarbonate (5 Gallon Bucket, 50 lb) EBE (Single Listing)",,0,0,15,0,1457.55,1670.07907,2774.25
+--,104564,"Cream Of Tartar (1 Gallon Bucket, 8 lb) EBE (Single Listing)",,0,0,64,0,1715.84,1690.840276,3299.2
+--,104606,"Maltodextrin (1 Gallon Bucket, 4 lb) EBE",,0,0,16,0,143.52,135.468108,319.84
+--,104628,"Tapioca Starch Flour (1 Gallon Bucket, 5 lb) EBE",,0,0,216,0,1345.68,979.650756,4309.2
+--,105053,"Corn Starch (1 Gallon Bucket, 4.5 lb) EBE",,0,0,556,0,3986.52,2858.426914,12204.2
+--,105055,"Corn Starch (5 Gallon Bucket, 25 lb) EBE",,0,0,23,0,627.21,427.506036,1309.85
+--,105560,Tapioca Starch Flour (8 oz) POI (Single Listing),,0,0,150,0,219,64.479094,975
+--,105561,Tapioca Starch Flour (2 lb) POI (Single Listing),,0,0,253,0,708.4,516.879678,2656.5
+--,105565,Tapioca Starch Flour (5 lb) POI,,0,0,810,0,4203.9,2917.240893,19431.9
+--,105586,Hulled Millet (3 lb) POI,,0,0,180,0,711,443.311675,2691
+--,105590,"Calcium Carbonate (1 Gallon Bucket, 8 lb) POI",,0,0,156,0,1380.6,1202.164252,4054.44
+--,105591,Cinnamon Sticks (1 lb) POI,,0,0,66,0,411.84,387.066275,986.7
+--,105598,"Washing Soda (1 Gallon Bucket, 9 lb) POI",,0,0,92,0,757.16,428.739067,2010.2
+--,105601,"Borax Powder (1 Gallon Bucket, 9 lb) POI",,0,0,372,0,3121.08,1912.799412,8370
+--,105605,Soy Flour (1 lb Tub) EBE,,0,0,42,0,147.42,99.273659,543.9
+--,105619,"Guar Gum (1 Gallon Bucket, 6.5 lb) EBE",,0,0,32,0,360.32,268.702609,958.4
+--,105625,"Tapioca Flour (Tub, 1.5 lb) EBE ",,0,0,21,0,81.27,46.210244,271.95
+--,105632,"Guar Gum (Tub, 1.5 lb) EBE",,0,0,84,0,374.64,240.906369,1533
+--,105645,"Cayenne Pepper Capsules (100 Capsules, 250 mg) POI",,0,0,200,0,598,184.486486,1990
+--,105650,Smoked Paprika (1 lb) POI ,,0,0,160,0,811.2,582.382888,2392
+--,105651,"Almond Flour (1 Gallon Bucket, 4 lbs) POI",,0,0,468,0,9659.52,7038.343087,16375.32
+--,105668,"Play Sand (1 Gallon Bucket, 13 lb) EBE",,0,0,201,0,1505.49,584.758452,5022.99
+--,105669,"Play Sand (3.5 Gallon Bucket, 50 lb) EBE",,0,0,41,0,1027.05,470.447925,2951.59
+--,105691,"Ground Ginger (Shaker, 8 oz) UNP ",,0,0,30,0,104.7,72.545,277.5
+--,105748,"Chukka Boots (Mauss Brown, Size 8.5) San Polos Men's, Model 2926",,0,0,5,0,157.55,0.777778,325
+--,105750,"Chukka Boots (Mauss Brown, Size 9) San Polos Men's, Model 2926",,0,0,4,0,126.04,0.497778,260
+--,105751,"Chukka Boots (Mauss Brown, Size 10) San Polos Men's, Model 2926",,0,0,5,0,157.55,0.875,325
+--,105752,"Chukka Boots (Mauss Brown, Size 10.5) San Polos Men's, Model 2926",,0,0,7,0,220.57,1.715,455
+--,105753,"Chukka Boots (Mauss Brown, Size 11.5) San Polos Men's, Model 2926",,0,0,5,0,157.55,0.875,325
+--,105758,"Chukka Boots (Blue Grey, Size 10.5) San Polos Men's, Model 2921 ",,0,0,5,0,157.6,0.7,325
+--,105780,"Lavender Epsom Salt (1 Gallon Bucket, 8 lb) EBE",,0,0,188,0,1660.04,1269.205012,4690.6
+--,105788,"Rolled Oats (1 Gallon Bucket, 4 lb) UNP",,0,0,96,0,615.36,435.552821,1819.2
+--,105803,Almond Flour (2 lb) UNP,,0,0,23,0,237.13,198.736912,482.77
+--,105818,Play Sand (22 lb) POI ,,0,0,124,0,1275.96,432.599809,4953.8
+--,105819,Corn Syrup (1 Gallon Jug) UNP,,0,0,80,0,677.6,483.492414,1916
+--,105876,Tapioca Starch (10 oz) UNP,,0,0,50,0,89.5,32.311019,397.5
+--,105877,Guar Gum (6 oz) UNP,,0,0,50,0,1025.5,28.984867,367.5
+--,105916,Baking Soda (1.5 lb) UNP,,0,0,60,0,113.4,44.253864,735
+--,105967,Rainbow Sprinkles (1.5 lb) UNP,,0,0,17,0,52.87,36.383441,221.85
+--,105979,Rainbow Nonpareils Sprinkles (1.5 lb) UNP,,0,0,90,0,350.1,260.040659,1282.5
+--,105990,Sunflower Seed Oil (4 oz) POI,,0,0,25,0,39.25,16.246223,262.5
+--,105998,Grape Seed Oil (3 Liter) UNP,,0,0,24,0,329.28,287.087879,814.8
+--,106004,"Diatomaceous Earth Capsules (200 capsules, 275 mg) EBE",,0,0,250,0,527.5,393.638211,4487.5
+--,106009,"Prebiotic Supplement (100 Capsules, 325 mg) POI ",,0,0,55,0,64.9,42.414335,767.25
+--,106023,"Wheatgrass Capsules (100 Capsules, 800 mg) POI",,0,0,46,0,60.26,40.987774,641.7
+--,106025,"Valerian Root Capsules (100 Capsules, 700 mg) POI",,0,0,44,0,69.52,51.950665,701.8
+--,106032,Pomegranate Juice Powder (1 lb) POI,,0,0,45,0,351.45,301.696666,956.25
+--,106035,Bitter Melon Powder (1 lb) POI,,0,0,45,0,310.5,260.944666,893.25
+--,106038,Slippery Elm Bark Powder (1 lb),,0,0,45,0,310.5,260.944666,1167.75
+--,106039,Slippery Elm Bark Powder (2 lb),,0,0,23,0,294.86,262.168124,642.85
+--,106041,Acerola Cherry Powder (1 lb) POI,,0,0,21,0,221.13,199.097066,565.95
+--,106055,"Ice Melt Pellets (8 lb, 1 Gallon) POI",,0,0,636,0,5088,2910.305903,20981.64
+--,10674,Mineral Oil (8 oz) EBE ,,0,0,480,0,1142.4,602.075676,4488
+--,10678,"Mineral Oil (Half Gallon, 64 oz) EBE",,0,0,64,0,635.52,513.00046,1596.8
+--,10679,"Mineral Oil (1 Gallon ,128 oz) EBE",,0,0,32,0,590.4,443.368,1279.68
+--,10689,Glycerin (8 fl oz) EBE,,0,0,60,0,112.8,59.758696,483
+--,10701,Propylene Glycol (8 fl oz) EBE,,0,0,180,0,360,323.159016,1359
+--,10711,"Propylene Glycol (Half Gallon, 64 fl oz) KOP",,0,0,152,0,1194.72,1006.462439,2886.48
+--,10719,"Baking Soda (1 gallon, 10 lbs) UNP (Single Listing)",,0,0,280,0,2018.8,1591.054015,7277.2
+--,10721,"Baking Soda (5 Gallon Bucket, 50 lbs) UNP",,0,0,62,0,1713.06,1617.012061,5269.38
+--,10754,Calcium Carbonate (2 lb) POI (Single Listing),,0,0,161,0,455.63,267.000978,1769.39
+Built,10011,POI Aluminum Oxide 32oz X23,,29,0,0,0,124.99,87.964565,462.55
+Built,10023,Vitamin C (1 lb) POI,,90,0,0,0,577.8,410.295333,1435.5
+Built,10032,Borax Tub (2 lb) EBE,,400,0,0,0,1424,960.512273,4780
+Built,10033,Clove Essential Oil (15ml) POI,,30,0,0,0,15.3,52.065451,299.7
+Built,10036,Calcium Carbonate 16oz,,360,0,0,0,676.8,335.240138,3582
+Built,10043,Calcium Sulfate (4 oz) POI,,100,0,0,0,118,651.588235,849
+Built,10055,Corn Starch (1 lb) POI,,225,0,0,0,396,180.986607,2137.5
+Built,10067,Diatomaceous Earth (1 lb) POI,,11,0,0,0,18.7,10.921063,197.89
+Built,10090,Monosodium Phosphate (4 oz) POI,,100,0,0,0,171,86.466368,875
+Built,10103,Oregano Essential Oil (15 ml) POI,,7,0,0,0,3.57,7.455,69.93
+Built,10106,Oxalic Acid (4 oz) POI (RET),,50,0,0,0,61,60.433333,299.5
+Built,10111,Potassium Bicarbonate 16oz,,180,0,0,0,594,417.671366,2340
+Built,10114,Propylene Glycol (16 oz.) POI,,30,0,0,0,87,64.244,337.5
+Built,10117,"Coconut Oil (1 Gallon Bucket, 8 lb) POI",,155,0,0,0,3048.85,1916.053061,6198.45
+Built,10118,Coconut Oil (16 oz) POI (,,39,0,0,0,130.26,0,428.61
+Built,10119,Rosemary Essential Oil (15 ml) POI,,60,0,0,0,28.2,7.640506,479.4
+Built,10128,Sodium Tripolyphosphate (1 lb) POI,,45,0,0,0,140.85,46.441304,582.75
+Built,10129,Sodium Tripolyphosphate (2.5 lb) POI,,18,0,0,0,111.6,44.416552,341.1
+Built,10130,Sodium Tripolyphosphate (8 oz) POI,,50,0,0,0,101.5,41.401575,375
+Built,10131,Salicylic Acid (4 oz.) POI,,133,0,0,0,244.72,127.167559,1130.5
+Built,10139,Sodium Bicarbonate (2 lb) POI,,2086,0,0,0,4568.34,2327.905583,28891.1
+Built,10146,Titanium Dioxide 8oz,,44,0,0,0,107.8,59.645385,363
+Built,10156,Zinc Oxide (1.5 lb) POI,,90,0,0,0,443.7,328.748276,1395
+Built,10164,Calcium Oxide (2 lb) POI (RET),,50,0,0,0,108,48.45,747.5
+Built,10169,Cream of Tartar (4 oz.) POI,,150,0,0,0,267,665.617347,1125
+Built,10189,Magnesium Chloride 32oz POI,,-1,0,0,0,-6.89,-6.284929,-21.55
+Built,10198,Sodium Bicarbonate (5 lb) POI,,180,0,0,0,671.4,450.838494,3735
+Built,10200,Ice Melt (1 Gallon (8 lbs)) EBE,,-10,0,0,0,-54.2,-53.112734,-269.9
+Built,10338,Magnesium Oil (8 fl oz) POI,,100,0,0,0,163,207.747573,995
+Built,10339,Magnesium Oil (16 fl oz) POI,,150,0,0,0,315,581.472857,2092.5
+Built,10363,Eucalyptus Essential Oil (15 ml) POI,,25,0,0,0,12.75,1.91215,249.75
+Built,10366,Baking Soda Tub Sodium Bicarbonate,,180,0,0,0,612,433.251818,2430
+Built,10367,Amber Dropper 30ml 2pk,,30,0,0,0,0,20.537143,0
+Built,10384,"Cobalt Spray Bottle, 2 oz, 2-Pack",,50,0,0,0,1,47.10084,0
+Built,10411,Cream Of Tartar (2 lb Tub) EBE,,120,0,0,0,1014,943.522148,2100
+Built,104237,"Potassium Bicarbonate (100 Capsules, 2,860 mg) POI",,442,0,0,0,1339.26,1333.142338,4397.9
+Built,104243,"Triple Hit Detox Capsules (100 Capsules, 300 mg) POI (KILL)",,34,0,0,0,105.06,0,338.3
+Built,104252,Baking Soda 3.5 Gallon Bucket (EBE),,78,0,0,0,1679.34,1644.67663,5460
+Built,104257,Borax 1 Gallon Bucket,,300,0,0,0,2115,1796.979346,6885
+Built,104263,White Rice Flour 3 Lbs,,60,0,0,0,188.4,110.273885,897
+Built,104264,Potato Starch 1.5 lb (Shortage),,461,0,0,0,1101.79,815.18085,5301.5
+Built,104269,Citric Acid 1 Gallon Bucket EBE,,300,0,0,0,3576,3034.721088,7950
+Built,104275,Guar Gum (16 oz.) POI,,46,0,0,0,112.7,59.315247,597.54
+Built,104279,"Washing soda (3.5 Gallon Bucket, 38 lb) EBE",,6,0,0,0,140.58,176.717222,449.7
+Built,104298,Salicylic Acid 5% With Neutralizer Set POI,,40,0,0,0,156,0,880
+Built,10430,"Epsom Salt (3.5 Gallon Bucket, 32 lb) EBE",,55,0,0,0,1348.6,1719.407536,3272.5
+Built,104304,"Magnesium Chloride (1 Gallon, 8 lb) EBE",,18,0,0,0,396.36,443.643429,945
+Built,104308,SLSA (5 lb) POI,,90,0,0,0,2792.7,2646.376817,6025.5
+Built,104321,Cardamom Essential Oil (5 ml),,150,0,0,0,30,0,1498.5
+Built,104327,Melaleuca (Tea Tree) Essential Oil (15 ml) POI,,-10.24,0,0,0,-58.9824,-Infinity,-92.0576
+Built,10433,Salicylic Acid 5% Skin peel POI,,40,0,0,0,82,22.488889,560
+Built,104334,White Grapefruit Essential Oil (15 ml) POI,,32,0,0,0,41.92,0,283.2
+Built,104338,Soy Flour (1 lb) POI ,,45,0,0,0,94.05,51.91993,472.5
+Built,104339,Soy Flour (2 lb) POI,,46,0,0,0,141.22,89.551496,687.7
+Built,104350,Acacia Fiber (1 lb) POI,,354,0,0,0,1943.46,815.238646,5487
+Built,104356,"Pure Soap Flakes (3.5 Gallon Bucket, 18 lb) EBE",,8,0,0,0,222.32,233.328571,488
+Built,104375,Dextrose (2 lb) POI,,2,0,0,0,5.08,3.847579,21.6
+Built,104382,Maltodextrin (2 lb) POI,,88,0,0,0,385.44,329.016471,1319.12
+Built,104383,Maltodextrin (5 lb) POI,,81,0,0,0,734.67,672.280599,2101.95
+Built,104386,"Dextrose Sports Nutrition (Tub, 1.5 lb w/ Scoop) UPN",,12,0,0,0,39.24,0,167.4
+Built,104395,Siberian Fir Essential Oil (15 ml) POI,,30,0,0,0,39.3,0,268.5
+Built,104398,Decorative Sand (5 lb) POI,,18,0,0,0,39.78,31.411073,261.9
+Built,104408,"Baking Soda Capsules (150 Count, 750 mg) UPN",,50,0,0,0,219,66.753704,627.5
+Built,104412,"Malic Acid Capsules (150 Count, 600 mg) UNP (KILL)",,22,0,0,0,91.74,51.045077,269.5
+Built,104431,"Amber Dropper Bottle 1 oz, 12pk",,30,0,0,0,137.1,0,0
+Built,104432,"Amber Dropper Bottle 2 oz, 4 pack",,1,0,0,0,2.24,1.471037,0
+Built,104433,"Amber Dropper Bottle 2 oz, 2 pack",,68,0,0,0,122.4,47.285061,0
+Built,104435,"Cobalt Dropper Bottle 2 oz, 4pk",,125,0,0,0,0,222.965426,0
+Built,104460,Mineral Oil (8 oz) POI (Single Listing) ,,30,0,0,0,69.3,37.225094,262.5
+Built,104464,"Glycerin (Half Gallon, 64 fl oz) POI (Single Listing)",,242,0,0,0,1788.38,1385.712229,4779.5
+Built,104466,Glycerin (16 fl oz) POI (Single Listing),,120,0,0,0,330,155.755752,1410
+Built,104467,Potato Starch (6 lb) POI (Shortage),,50,0,0,0,339,321.883117,1197.5
+Built,104472,Potato Starch (5 lb) POI (Single Listing) (Shortage),,9,0,0,0,51.57,43.292143,191.25
+Built,104477,Propylene Glycol (16 fl oz) POI (Single Listing),,30,0,0,0,87,65.909589,337.5
+Built,104486,SLSA (11 oz) POI (Single Listing),,38,0,0,0,199.88,162.78173,513
+Built,104487,SLSA (2 lb) POI (Single Listing),,23,0,0,0,298.54,276.5581,643.77
+Built,104495,Borax (11 oz) POI (Single Listing),,100,0,0,0,136,38.415842,755
+Built,104499,Citric Acid (1 lb) POI (Single Listing),,19,0,0,0,45.22,30.110954,170.05
+Built,104504,Cream of Tartar (4 oz) POI (Single Listing),,332,0,0,0,587.64,494.00682,2307.4
+Built,104505,Cream of Tartar (5 lb) POI (Single Listing),,19,0,0,0,311.41,328.217453,626.05
+Built,104510,"Borax/Washing Soda/Soap Flakes/Baking Soda Combo (2 lb each, 8 lb total) POI",,46,0,0,0,367.54,267.773077,1288
+Built,104518,"Activated Charcoal (1 Gallon Bucket, 3 lbs) EBE",,1,0,0,0,22.18,15.575161,64.95
+Built,104543,Soap Flakes (1 lb.) POI (Single Listing) ,,69,0,0,0,172.5,99.264114,679.65
+Built,104544,Pure Soap Flakes (2 lb) POI,,39,0,0,0,144.3,93.08625,536.25
+Built,104553,"Zinc Oxide (1 Gallon Bucket, 6 lb) EBE",,30,0,0,0,516,955.356,1080
+Built,104565,Cream Of Tartar (3.5 Gallon Bucket) EBE (Single Listing),,16,0,0,0,1537.28,1401.372632,2719.2
+Built,104586,Diatomaceous Earth (10 lb) POI (Single Listing),,2,0,0,0,13.58,13.438214,90
+Built,104587,Epsom Salt (2 lb) POI,,3,0,0,0,7.41,4.272649,35.25
+Built,104588,Epsom Salt (2 lb) POI (Single Listing),,1,0,0,0,2.47,1.534124,11.75
+Built,104589,Epsom Salt (10 lb) POI,,156,0,0,0,1106.04,902.54797,3892.2
+Built,104591,"Calcium Carbonate (1 Gallon Bucket, 8 lb) EBE",,2,0,0,0,17.86,22.717538,51.9
+Built,104596,"Calcium Carbonate (5 Gallon Bucket, 40 lb) EBE (Single Listing)",,11,0,0,0,332.31,434.721692,923.45
+Built,104607,"Maltodextrin (3.5 Gallon Bucket, 14 lb) EBE",,16,0,0,0,443.52,569.44,831.84
+Built,104618,Aluminum Sulfate (2 lb) POI (Single Listing),,46,0,0,0,107.18,108.804557,503.7
+Built,10487,Calcium Chloride (50 lb.) POI (RET),,2,0,0,0,55.68,0,250
+Built,105053,"Corn Starch (1 Gallon Bucket, 4.5 lb) EBE",,3,0,0,0,21.51,15.423167,65.85
+Built,105055,"Corn Starch (5 Gallon Bucket, 25 lb) EBE",,20,0,0,0,545.4,371.744379,1139
+Built,105056,"Vitamin C Powder (1 Gallon Bucket, 8 lb) EBE",,2,0,0,0,87.84,80.77776,139.9
+Built,105059,"SLSA (1 Gallon Bucket, 6 lb) EBE",,66,0,0,0,2497.44,2639.606237,4603.5
+Built,105561,Tapioca Starch Flour (2 lb) POI (Single Listing),,2,0,0,0,5.6,4.086005,21
+Built,105565,Tapioca Starch Flour (5 lb) POI,,1,0,0,0,5.19,3.601532,23.99
+Built,105586,Hulled Millet (3 lb) POI,,164,0,0,0,647.8,403.906193,2451.8
+Built,105589,Cocoa Powder (1 lb) POI,,45,0,0,0,178.65,159.274286,582.75
+Built,105591,Cinnamon Sticks (1 lb) POI,,2,0,0,0,12.48,11.729281,29.9
+Built,105601,"Borax Powder (1 Gallon Bucket, 9 lb) POI",,2,0,0,0,16.78,10.283868,45
+Built,105604,"Cocoa Powder Capsules (100 Capsules, 300 MG) POI",,26,0,0,0,76.18,303.741905,240.5
+Built,105608,"Turmeric Capsules (100 capsules, 250 mg) POI",,27,0,0,0,78.03,25.615059,265.95
+Built,105624,"Mineral Oil (1 Gallon Bucket, 7 lbs) POI",,32,0,0,0,626.56,3102.953143,1278.4
+Built,105632,"Guar Gum (Tub, 1.5 lb) EBE",,84,0,0,0,374.64,240.906369,1533
+Built,105634,"Soy Flour (1 Gallon Bucket, 5 lbs) EBE",,64,0,0,0,501.12,391.790504,1596.8
+Built,105637,Turmeric (8 oz) POI,,50,0,0,0,112.5,61.526316,407.5
+Built,105641,Arrowroot Powder (2 lb) POI ,,60,0,0,0,274.8,220.129907,777
+Built,105646,"Cayenne Pepper Capsules (200 Capsules, 250 mg) EBE",,150,0,0,0,865.5,229.259615,1942.5
+Built,105650,Smoked Paprika (1 lb) POI ,,10,0,0,0,50.7,36.39893,149.5
+Built,105652,Whole Blue English Poppy Seeds (2 lb) POI ,,11,0,0,0,55.88,39.873103,219.45
+Built,105668,"Play Sand (1 Gallon Bucket, 13 lb) EBE",,1,0,0,0,7.49,2.909246,24.99
+Built,105669,"Play Sand (3.5 Gallon Bucket, 50 lb) EBE",,10,0,0,0,250.5,114.743396,719.9
+Built,105687,"Portland Cement (1 Gallon Bucket, 10 lb) EBE",,16,0,0,0,110.88,259.359407,463.2
+Built,105688,"Monosodium Phosphate (Tub, 3 lb) EBE",,15,0,0,0,160.2,135.478378,374.85
+Built,105691,"Ground Ginger (Shaker, 8 oz) UNP ",,30,0,0,0,104.7,72.545,277.5
+Built,105725,Wild Orange Oil (15 ml),,60,0,0,0,148.2,4.596103,525
+Built,105755,"Chukka Boots (Blue Grey, Size 8) San Polos Men's, Model 2921 ",,25,0,0,0,788,0,1625
+Built,105765,Yellow Plastic Pail Opener QPD,,-1,0,0,0,-1.66,-1.042877,-6.75
+Built,105769,Whole Nutmeg (8 oz Shaker) UNP,,24,0,0,0,154.8,105.866667,334.8
+Built,105779,"Eucalyptus Epsom Salt (1 Gallon Bucket, 8 lb) EBE",,20,0,0,0,176.8,212.485714,499
+Built,105799,Baking Soda (2 lb) UNP,,92,0,0,0,235.52,89.628057,1265
+Built,105810,Corn Starch (3 lb) UNP,,60,0,0,0,199.8,86.462069,837
+Built,105916,Baking Soda (1.5 lb) UNP,,180,0,0,0,340.2,132.761593,2205
+Built,105917,Citric Acid (1 lb) UNP,,45,0,0,0,100.8,52.845395,618.75
+Built,105967,Rainbow Sprinkles (1.5 lb) UNP,,120,0,0,0,373.2,256.824291,1566
+Built,105986,Moringa Powder (1 lb) POI,,45,0,0,0,394.65,337.885,989.55
+Built,105993,Sunflower Seed Oil (16 oz) POI,,30,0,0,0,81,0,358.5
+Built,106055,"Ice Melt Pellets (8 lb, 1 Gallon) POI",,1,0,0,0,8,4.575953,32.99
+Built,10669,Cinnamon (1 lb) POI,,45,0,0,0,241.2,146.757921,582.75
+Built,10670,Cinnamon (2 lb) POI,,19,0,0,0,179.93,118.488222,379.81
+Built,10687,Almond Flour (1 lb Tub) EBE,,13,0,0,0,88.66,80.282257,207.87
+Built,10692,"Glycerin (1 Gallon, 128 fl oz) EBE",,4,0,0,0,50.04,52.18,116.2
+Built,10702,Propylene Glycol (16 fl oz) EBE,,262,0,0,0,759.8,474.339091,2947.5
+Built,10716,"Baking Soda (1 gallon, 10 lbs) UNP",,345,0,0,0,2487.45,1926.470841,8966.55
+Built,10719,"Baking Soda (1 gallon, 10 lbs) UNP (Single Listing)",,2,0,0,0,14.42,11.364672,51.98
+Built,10727,"Collagen Peptide Capsules (100 count, 250 mg) POI",,16,0,0,0,62.24,45.202353,255.84
+Built,10734,Borax 55 Lb Bag,,1,0,0,0,24.68,48.458333,13.35
+Built,10741,Quick Oats (10 lbs) POI,,30,0,0,0,326.1,265.595327,898.5
+Built,10746,"Propylene Glycol (1 Gallon, 128 oz.) EBE",,40,0,0,0,600.4,474.125301,1142
+WIP,104937,Boschettu Foundation Twin XL,,-1,0,0,0,-25.68304,-Infinity,-115.95
+WIP,104938,Boschettu Foundation Full,,-1,0,0,0,-36.4701,-Infinity,-154.95
+WIP,104939,Boschettu Foundation Queen,,-1,0,0,0,-38.45375,-Infinity,-164.95
+WIP,104940,Boschettu Foundation King,,-1,0,0,0,-44.89375,-Infinity,-174.95
+WIP,104963,"Turin Kids 7"" Blue Covered Full Mattress",,-1,0,0,0,-87.43491,-Infinity,-164.95
+WIP,105037,Ancona Protector Twin XL,,-1,0,0,0,-18.36252,-Infinity,-48.95
+WIP,105045,Trieste Protector Full,,-1,0,0,0,-12.9174,-Infinity,-41.95
+WIP,105047,Trieste Protector Queen,,-1,0,0,0,-14.35312,-Infinity,-43.95
+WIP,105048,Trieste Protector King,,-1,0,0,0,-16.80981,-Infinity,-45.95
+WIP,10510,"Knock Off Mattress Twin 7"" Supportive",,-1,0,0,0,0,-Infinity,0
+WIP,10598,Knock Off Twin XL Mattress Protector,,-1,0,0,0,0,-Infinity,-34.95
+FBA,10005,Arborvitae Essential Oil 5 ml,,34,0,0,0,17,0,339.66
+FBA,10006,Activated Charcoal Powder (2 oz) EBE,,138,0,0,0,298.08,0,931.5
+FBA,10007,Activated Charcoal Powder (1 lb.) POI,,7,0,0,0,54.18,43.311579,209.65
+FBA,10008,Activated Charcoal Powder (2 lb.) POI,,50,0,0,0,714,570.710843,2497.5
+FBA,10010,Aluminum Oxide (8 oz) POI,,10,0,0,0,17.8,158.255725,79.5
+FBA,10011,POI Aluminum Oxide 32oz X23,,-4,0,0,0,-17.24,-12.133043,-63.8
+FBA,10012,Aluminum Sulfate (1 lb) POI,,85,0,0,0,193.8,95.325,913.75
+FBA,10013,Aluminum Sulfate (2 lb) POI,,115,0,0,0,382.95,225.072628,1489.25
+FBA,10014,Aluminum Sulfate (4 oz) POI,,44,0,0,0,55.88,19.594286,288.2
+FBA,10015,Ammonium Bicarbonate 11oz,,2640,0,0,0,4408.8,2093.254773,19140
+FBA,10016,Ammonium Bicarbonate 16oz,,394,0,0,0,799.82,518.444672,3920.3
+FBA,10017,Ammonium Bicarbonate 4oz,,1786,0,0,0,2214.64,540.06227,11162.5
+FBA,10018,Ammonium Sulfate (16 oz) POI,,55,0,0,0,114.4,40.819872,576.95
+FBA,10019,Ammonium Sulfate (2 lb) POI X23,,36,0,0,0,117.72,96.9168,477
+FBA,10020,Ammonium Sulfate (8 oz) POI,,63,0,0,0,95.76,33.479764,471.87
+FBA,10021,Ammonium Bicarbonate (32 oz) POI,,64,0,0,0,195.2,140.475493,976
+FBA,10022,Artisan Laundry 40oz (RET),,8,0,0,0,28,0,152
+FBA,10023,Vitamin C (1 lb) POI,,1255,0,0,0,8057.1,5721.340481,20017.25
+FBA,10024,Vitamin C (2 lb) POI (KILL),,282,0,0,0,3271.2,2645.477592,6753.9
+FBA,10025,Borax (1 lb) POI,,149,0,0,0,262.24,149.617071,1482.55
+FBA,10026,Borax (11 oz) POI,,171,0,0,0,230.85,85.243877,1291.05
+FBA,10027,Borax (2 lb) POI,,192,0,0,0,435.84,264.435877,2448
+FBA,10028,Borax (4 oz) POI,,872,0,0,0,967.92,1450.864229,4229.2
+FBA,10029,BORAX (B/O 25 DAY LEAD TIME) 5 MOL (55.1156 LBS),,-3,0,0,0,-57.8712,-57.871279,0
+FBA,10030,Borax (5 lb) POI (Single),,324,0,0,0,1208.52,761.800235,5167.8
+FBA,10031,Borax (5 lb) POI,,423,0,0,0,1577.79,1702.289019,6746.85
+FBA,10032,Borax Tub (2 lb) EBE,,460,0,0,0,1637.6,1104.589114,5497
+FBA,10033,Clove Essential Oil (15ml) POI,,40,0,0,0,20.4,69.420601,399.6
+FBA,10034,Cedarwood Essential Oil (15 ml),,68,0,0,0,33.32,3.122963,611.32
+FBA,10035,Calcium Carbonate (11 oz.) POI (KILL) (Closed 9/24/18),,1,0,0,0,1.2,0,7.95
+FBA,10036,Calcium Carbonate 16oz,,440,0,0,0,827.2,409.737947,4378
+FBA,10037, Calcium Carbonate 32oz,,170,0,0,0,431.8,274.932275,2201.5
+FBA,10038,Calcium Carbonate 4oz,,199,0,0,0,240.79,606.478436,1550.21
+FBA,10041,Calcium Sulfate (11 oz) POI,,98,0,0,0,135.24,49,881.02
+FBA,10042,Calcium Sulfate (2 lb) POI,,230,0,0,0,526.7,340.214943,2987.7
+FBA,10043,Calcium Sulfate (4 oz) POI,,60,0,0,0,70.8,390.952941,509.4
+FBA,10044,Calcium Chloride (1 lb.) POI,,127,0,0,0,228.6,87.271211,1301.75
+FBA,10045,Calcium Chloride (2 lb.) POI,,170,0,0,0,399.5,195.758036,2031.5
+FBA,10046,Calcium Chloride (4 oz.) POI,,231,0,0,0,270.27,44.597658,1212.75
+FBA,10048,Citric Acid (5 lb) POI,,135,0,0,0,957.15,776.120813,2328.75
+FBA,10049,Citric Acid (11 oz) POI,,160,0,0,0,286.4,156.333603,1048
+FBA,10050,Citric Acid (16 oz) POI,,162,0,0,0,385.56,190.849533,1449.9
+FBA,10051,Citric Acid (2 lb) POI,,345,0,0,0,1231.65,946.220758,3846.75
+FBA,10052,Citric Acid (4 oz) POI,,1114,0,0,0,1448.2,825.282375,6405.5
+FBA,10054,Citric Acid (2 lb Tub) EBE,,148,0,0,0,711.88,557.692261,2220
+FBA,10055,Corn Starch (1 lb) POI,,204,0,0,0,359.04,164.094524,1938
+FBA,10056,Corn Starch (2 lb) POI,,1061,0,0,0,2843.48,1519.400764,11617.95
+FBA,10057,Corn Starch (3 lb) POI,,646,0,0,0,2248.08,1586.948214,9657.7
+FBA,10058,Corn Starch (4 oz) POI,,107,0,0,0,128.4,36.215075,640.93
+FBA,10059,Corn Starch (8 oz) POI,,143,0,0,0,197.34,50.312653,993.85
+FBA,10060,Cream of Tartar (1 lb) POI,,913,0,0,0,3743.3,3242.464779,10910.35
+FBA,10061,Cream of Tartar (2 lb.) POI,,198,0,0,0,1443.42,1338.453644,3356.1
+FBA,10062,Cream of Tartar (5 lb.) POI,,162,0,0,0,2655.18,2819.084686,5661.9
+FBA,10067,Diatomaceous Earth (1 lb) POI,,307,0,0,0,521.9,304.796929,5522.93
+FBA,10068,Diatomaceous Earth (4 oz) POI,,145,0,0,0,217.5,72.686634,2318.55
+FBA,10069,Douglas Fir 5ml,,61,0,0,0,396.5,0,853.39
+FBA,10070,Dishwasher Cleaner & Detergent Booster (2 lb Tub) POI,,22,0,0,0,108.46,25.96,328.9
+FBA,10071,Epsom Salt (1 lb) POI,,782,0,0,0,1454.52,600.808022,8211
+FBA,10072,Epsom Salt (4 oz) POI,,307,0,0,0,362.26,1328.386283,2072.25
+FBA,10073,Epsom Salt (5 lb) POI,,557,0,0,0,2395.1,1707.445917,10304.5
+FBA,10074,Fennel Oil (15 ml) POI,,58,0,0,0,27.26,154.067679,463.42
+FBA,10076,Grapefruit Oil 15ml,,8,0,0,0,3.84,0,70.8
+FBA,10077,"Glycerin (Half Gallon, 64 fl oz) POI",,86,0,0,0,635.54,465.831585,1698.5
+FBA,10078,"Glycerin (16 fl oz, Weight 23 oz) POI",,344,0,0,0,946,738.317934,4042
+FBA,10086,Juniper Berry (5 ml) POI,,25,0,0,0,11.75,0,211.25
+FBA,10087,Lime Essential Oil (15 ml) POI,,68,0,0,0,31.96,0,543.32
+FBA,10088,Lemongrass Essential Oil (15 ml) POI,,41,0,0,0,18.86,0,322.26
+FBA,10089,Monosodium Phosphate (2 lb) POI,,108,0,0,0,669.6,555.945231,2266.92
+FBA,10090,Monosodium Phosphate (4 oz) POI,,93,0,0,0,159.03,80.413722,813.75
+FBA,10092,DL Malic (2 lb) POI,,121,0,0,0,416.24,259.828227,1450.79
+FBA,10093,DL Malic Acid (4 oz) POI,,257,0,0,0,354.66,149.643722,1670.5
+FBA,10094,Methylcellulose (16 oz) POI ,,78,0,0,0,966.42,856.72,1793.22
+FBA,10096,Mineral Oil (16 oz) POI,,103,0,0,0,350.2,143.382059,1519.25
+FBA,10097,Mineral Oil (8 oz) POI,,122,0,0,0,280.6,152.823866,1067.5
+FBA,10098,Natural Washing (11 oz.) POI (KILL) (Closed 10/9/18),,-2,0,0,0,-2.18,-0.683147,-12.98
+FBA,10099,Washing Soda (1 lb) POI,,237,0,0,0,410.01,173.264174,2381.85
+FBA,10100,Washing Soda (2 lb) POI,,889,0,0,0,3262.63,990.426818,10623.55
+FBA,10101,Washing Soda (4 oz) POI,,175,0,0,0,231,53.181579,1093.75
+FBA,10102,Washing Soda (5 lb) POI,,905,0,0,0,3375.65,2665.424407,14706.25
+FBA,10103,Oregano Essential Oil (15 ml) POI,,83,0,0,0,42.33,88.395,829.17
+FBA,10108,Portland Cement 16oz,,105,0,0,0,189,36.323437,1783.95
+FBA,10109,Portland Cement 80oz,,86,0,0,0,292.4,124.533134,1801.7
+FBA,10110,Portland Cement 8oz,,154,0,0,0,178.64,67.794222,1070.3
+FBA,10111,Potassium Bicarbonate 16oz,,264,0,0,0,871.2,612.58467,3432
+FBA,10112,Potassium Bicarbonate 32oz,,274,0,0,0,1468.64,1206.340703,4178.5
+FBA,10113,Potassium Bicarbonate 4oz,,148,0,0,0,226.44,86.620946,1108.52
+FBA,10114,Propylene Glycol (16 oz.) POI,,41,0,0,0,118.9,87.800133,461.25
+FBA,10115,Propylene Glycol (64 oz.) POI,,173,0,0,0,1363.24,1306.490887,3416.75
+FBA,10116,Propylene Glycol (8 oz.) POI,,334,0,0,0,664.66,462.696992,2354.7
+FBA,10117,"Coconut Oil (1 Gallon Bucket, 8 lb) POI",,178,0,0,0,3501.26,2200.370612,7118.22
+FBA,10118,Coconut Oil (16 oz) POI (,,147,0,0,0,490.98,0,1615.53
+FBA,10119,Rosemary Essential Oil (15 ml) POI,,66,0,0,0,31.02,8.404557,527.34
+FBA,10121,SLSA (11 oz.) POI,,259,0,0,0,1362.34,1065.419181,3496.5
+FBA,10122,SLSA (1 lb.) POI,,770,0,0,0,5544,4770.358173,14976.5
+FBA,10123,SLSA (2 lb.) POI,,275,0,0,0,3569.5,3300.091973,7697.25
+FBA,10124,SLSA (3 lb.) POI,,200,0,0,0,3760,3552.879479,7598
+FBA,10125,SLSA (4 oz.) POI,,27,0,0,0,67.5,38.431915,256.5
+FBA,10126,Sodium Propionate (2 lb) POI,,97,0,0,0,478.21,403.016104,1479.25
+FBA,10127,Sodium Propionate (8 oz) POI,,144,0,0,0,272.16,145.300909,1150.56
+FBA,10128,Sodium Tripolyphosphate (1 lb) POI,,46,0,0,0,143.98,47.473333,595.7
+FBA,10129,Sodium Tripolyphosphate (2.5 lb) POI,,54,0,0,0,334.8,133.249655,1023.3
+FBA,10130,Sodium Tripolyphosphate (8 oz) POI,,62,0,0,0,125.86,51.337953,465
+FBA,10131,Salicylic Acid (4 oz.) POI,,80,0,0,0,147.2,76.491765,680
+FBA,10132,Pure Soap 16oz,,285,0,0,0,718.2,425.08341,3132.15
+FBA,10133,Pure Soap 48oz,,280,0,0,0,1411.2,1153.806982,4886
+FBA,10134,Pure Soap 4oz (Kill) (Closed 12/11/18),,18,0,0,0,23.58,0,108
+FBA,10135,Pure Soap 8oz,,200,0,0,0,320,136.762295,1390
+FBA,10138,Sodium Bicarbonate (1 lb) POI,,497,0,0,0,879.69,329.021588,6088.25
+FBA,10139,Sodium Bicarbonate (2 lb) POI,,2647,0,0,0,5796.93,2953.962646,36660.95
+FBA,10140,Sodium Bicarbonate (4 oz) POI,,764,0,0,0,863.32,1362.608148,4545.8
+FBA,10142,Titanium Dioxide 4oz,,309,0,0,0,525.3,3050.18577,2085.75
+FBA,10144,Titanium dioxide 16oz,,82,0,0,0,324.72,215.15517,983.18
+FBA,10145,Titanium Dioxide (1.5 lb.) POI,,124,0,0,0,669.6,481.065356,1922
+FBA,10146,Titanium Dioxide 8oz,,84,0,0,0,205.8,113.868462,693
+FBA,10147,Vetiver Oil 15ml,,50,0,0,0,27,1.898649,587.5
+FBA,10148,Wintergreen Essential Oil (15 ml) POI,,22,0,0,0,10.56,1.685238,186.78
+FBA,10154,Ylang Ylang Essential Oil (15 ml) POI ,,14,0,0,0,34.3,1.072424,139.86
+FBA,10155,Zinc Oxide (1 lb) POI,,464,0,0,0,1716.8,1192.077126,5336
+FBA,10156,Zinc Oxide (1.5 lb) POI,,125,0,0,0,616.25,456.594828,1937.5
+FBA,10157,Zinc Oxide (4 oz) POI,,811,0,0,0,1297.6,572.623403,4857.89
+FBA,10158,Zinc Oxide (8 oz) POI,,376,0,0,0,830.96,439.82481,2989.2
+FBA,10161,Vitamin C (4 oz) POI,,151,0,0,0,206.87,1204.280119,979.99
+FBA,10162,Vitamin C (5 lb) POI (KILL),,96,0,0,0,2602.56,2247.164444,4795.2
+FBA,10163,Calcium Oxide (11 oz) POI (Check RET Inventory and KILL) (Closed 1/15/19),,10,0,0,0,14.1,5.94127,89.5
+FBA,10164,Calcium Oxide (2 lb) POI (RET),,-1,0,0,0,-2.16,-0.969,-14.95
+FBA,10169,Cream of Tartar (4 oz.) POI,,135,0,0,0,240.3,599.055612,1012.5
+FBA,10170,Diatomaceous Earth (2 oz) POI,,103,0,0,0,128.75,39.347873,1493.5
+FBA,10171,EDTA 16oz,,248,0,0,0,1872.4,1548.227292,6693.52
+FBA,10172,EDTA 4oz,,101,0,0,0,261.59,154.971661,1059.49
+FBA,10178,"Glycerin (1 Gallon, 128 fl oz) POI",,247,0,0,0,3092.44,3109.602371,9126.65
+FBA,10179,Glycerin (8 fl oz Weight 12 oz) POI,,1885,0,0,0,3694.6,1928.124993,18378.75
+FBA,10182,Indian Healing Clay (2 lb.) POI,,9,0,0,0,67.86,50.932462,155.25
+FBA,10183,Indian Healing Clay (3 lb.) POI,,5,0,0,0,53.35,30.821255,114.75
+FBA,10184,Indian Healing Clay (5 lb.) POI,,4,0,0,0,68.12,15.614027,130
+FBA,10186,Ice Melt (3.5 Gallon (25 lbs)) EBE (Lower Feb 1)  (Raise Nov 1),,51,0,0,0,864.96,845.160705,3059.49
+FBA,10188,Magnesium Chloride 16oz POI,,530,0,0,0,2151.8,1668.679265,7923.5
+FBA,10189,Magnesium Chloride 32oz POI,,391,0,0,0,2693.99,2457.407354,8426.05
+FBA,10190,Magnesium Chloride (4 oz) POI,,174,0,0,0,299.28,1162.9,1261.5
+FBA,10191,Magnesium Chloride 64oz,,138,0,0,0,1707.06,1642.870058,4353.9
+FBA,10192,DL Malic (8 oz) POI,,183,0,0,0,320.25,137.203248,1462.17
+FBA,10194,EBE SLSA Tub 24 oz.,,303,0,0,0,3390.57,3333.894317,6590.25
+FBA,10196,Salicylic Acid (1 lb.) POI,,64,0,0,0,300.8,266.378129,1084.8
+FBA,10197,Salicylic Acid (8 oz.) POI,,198,0,0,0,532.62,341.730224,2079
+FBA,10198,Sodium Bicarbonate (5 lb) POI,,410,0,0,0,1529.3,1026.909902,8507.5
+FBA,10200,Ice Melt (1 Gallon (8 lbs)) EBE,,579,0,0,0,3138.18,3075.22729,15627.21
+FBA,10201,"Ice Melt (5 Gallon, 40 lbs) EBE (Lower Feb 1)  (Raise Nov 1)",,20,0,0,0,418,470.295425,1519.8
+FBA,10210,Vitamin C Powder Tub 32oz,,8,0,0,0,101.28,88.365675,191.6
+FBA,10313,"AMBER GLASS 16 oz, 28-400 (60/case)",,-8,0,0,0,-3.44,-3.44,0
+FBA,10314,"SPREYER/STEAM/OFF TRIGGER, 28-400, 9.25"" dip (300/case)",,-8,0,0,0,-2.32,-2.32,0
+FBA,10332,"Epsom Salt (5 Gallon Bucket, 45 lb) EBE",,71,0,0,0,2248.57,2571.568829,5644.5
+FBA,10333,"Vitamin C Capsules (200 count, 600 mg) EBE",,104,0,0,0,733.2,388.048873,1346.8
+FBA,10334,"Epsom Salt (1 Gallon Bucket, 8 lbs) EBE",,849,0,0,0,6308.07,7278.243908,19144.95
+FBA,10335,Corn Starch (1.5 lb Tub) EBE  ,,52,0,0,0,184.6,115.448595,546
+FBA,10336,Zinc Oxide Tub 24 oz,,89,0,0,0,540.23,444.618571,1423.11
+FBA,10337,Washing soda (2 lb Tub) EBE,,487,0,0,0,1665.54,1023.370978,6306.65
+FBA,10338,Magnesium Oil (8 fl oz) POI,,71,0,0,0,115.73,147.500777,706.45
+FBA,10339,Magnesium Oil (16 fl oz) POI,,199,0,0,0,417.9,771.420657,2776.05
+FBA,10340,10 ml roller bottle 6 pack,,24,0,0,0,4.8,36.345,162
+FBA,10341,10 ml roller bottle 8 pack,,24,0,0,0,5.76,48.63,186
+FBA,10342,10 ml roller bottle 12 pack,,23,0,0,0,7.59,69.455963,241.5
+FBA,10356,"SQU STICKERS 2.625"" x 1"" Standard White Matte ",,-0.1332,0,0,0,-0.010656,-0.010867,-0.010656
+FBA,10358,Cypress Essential Oil (15 ml) POI,,18,0,0,0,8.46,1.378831,143.1
+FBA,10359,Ginger Essential Oil (15 ml) POI,,64,0,0,0,33.92,1.236975,703.36
+FBA,10360,Marjoram EO (15 ml) POI,,43,0,0,0,21.93,3.282333,429.57
+FBA,10361,Lemon Essential Oil (15 ml) POI,,29,0,0,0,14.21,0.810682,260.71
+FBA,10363,Eucalyptus Essential Oil (15 ml) POI,,86,0,0,0,43.86,6.577797,859.14
+FBA,10364,Lavender Essential Oil (15 ml) POI,,129,0,0,0,65.79,9.881621,1288.71
+FBA,10365,Peppermint Essential Oil (15 ml) POI,,49,0,0,0,169.05,0,489.51
+FBA,10366,Baking Soda Tub Sodium Bicarbonate,,209,0,0,0,710.6,503.0535,2821.5
+FBA,10367,Amber Dropper 30ml 2pk,,97,0,0,0,0,66.403429,0
+FBA,10368,Amber Dropper 30ml 3pk,,107,0,0,0,0,107.375299,0
+FBA,10369,Amber Dropper 30ml 4pk,,30,0,0,0,0,51.49887,0
+FBA,10370,"1 oz, Cobalt Blue Glass Bottle 2pk",,43,0,0,0,0,30.53,0
+FBA,10371,"1 oz, Cobalt Blue Glass Bottle 3pk",,20,0,0,0,0,21.921996,0
+FBA,10372,"1 oz, Cobalt Blue Glass Bottle 4pk",,25,0,0,0,0,36.032894,0
+FBA,10377,"LABEL 2"" X .75"" Weatherproof Polyester Laser (glass bottle stickers)",,-0.28,0,0,0,-0.3556,-0.185422,-35.546
+FBA,10381,"Amber Spray Bottle, 2 oz, 2-Pack",,138,0,0,0,5.52,146.479862,966
+FBA,10382,"Amber Spray Bottle, 2 oz, 3-Pack",,19,0,0,0,1.14,0,0
+FBA,10383,"Amber Spray Bottle, 2 oz, 4-Pack",,46,0,0,0,3.68,91.514444,0
+FBA,10384,"Cobalt Spray Bottle, 2 oz, 2-Pack",,60,0,0,0,1.2,56.521008,0
+FBA,10386,"Cobalt Spray Bottle, 2 oz, 4-Pack",,52,0,0,0,4.16,99.534303,0
+FBA,10390,"Activated Charcoal Capsules (200 Count, 525 mg) EBE",,179,0,0,0,1031.04,575.725201,2908.75
+FBA,10391,"Activated Charcoal Capsules (100 Count, 525 mg) POI",,161,0,0,0,481.39,1345.087917,2495.5
+FBA,10392,"Vitamin C Capsules (100 count, 600 mg) POI",,214,0,0,0,776.82,288.78931,2129.3
+FBA,10393,16 oz Amber Spray Bottle,,134,0,0,0,0,98.51913,804
+FBA,10394,"16 oz Amber Spray Bottle, 2 pk",,40,0,0,0,0,65.116968,0
+FBA,10405,"18"" x 12"" x 12"" Shipping Boxes, 32 ECT, Brown, 25/Bundle (181212)",,-0.4,0,0,0,-0.31984,-0.319836,-0.31984
+FBA,10407,"POLY BAG 8X12 2MIL (1,000/case)",,-4,0,0,0,-0.168,-0.168053,-0.168
+FBA,10411,Cream Of Tartar (2 lb Tub) EBE,,142,0,0,0,1199.9,1116.501208,2485
+FBA,10412,"Baking Soda Capsules (100 Count, 750 mg) POI",,569,0,0,0,1598.89,1177.482278,6116.75
+FBA,10415,Propylene Glycol (1 Gallon) POI,,26,0,0,0,360.1,306.499375,799.5
+FBA,104234,"EDTA Capsules (100 Capsules, 425 mg) POI (KILL)",,598,0,0,0,819.26,958.234029,9562.02
+FBA,104236,"Malic Acid Capsules (100 Capsules, 600 mg) POI(KILL)",,241,0,0,0,694.08,246.046916,2422.05
+FBA,104237,"Potassium Bicarbonate (100 Capsules, 2,860 mg) POI",,430,0,0,0,1302.9,1296.948428,4278.5
+FBA,104238,POI Bentonite Clay Capsules (KILL) (Closed 1/29/19),,-3,0,0,0,-8.34,-Infinity,-29.25
+FBA,104240,"Diatomaceous Earth Capsules POI (WRONG SIZE) (100 Capsules, 750 mg) (Deativate when Sold out)",,388,0,0,0,1129.08,390.551946,4652.12
+FBA,104241,Diatomaceous Earth Tub 12oz EBE,,126,0,0,0,380.52,232.647939,1253.7
+FBA,104242,Potassium Bicarbonate (32 oz. tub) EBE,,225,0,0,0,1705.5,1199.879664,4331.25
+FBA,104243,"Triple Hit Detox Capsules (100 Capsules, 300 mg) POI (KILL)",,280,0,0,0,865.2,0,2786
+FBA,104244,Calcium Carbonate Dietary Supplement Tub 24oz,,154,0,0,0,580.58,413.41847,2040.5
+FBA,104245,"Calcium Carbonate Capsules (100 Capsules, 500 mg) POI",,220,0,0,0,611.6,172.196899,3509
+FBA,104246,"Mineral Oil (Half Gallon, 64 oz) POI",,119,0,0,0,1181.67,903.466181,2850.05
+FBA,104247,"Mineral Oil (1 Gallon, 128 oz) POI (Single Listing)",,24,0,0,0,444.72,197.050909,934.8
+FBA,104248,"Activated Charcoal Tub, 12 oz",,27,0,0,0,189,159.665893,431.73
+FBA,104251,Baking Soda 1 Gallon Bucket (EBE),,992,0,0,0,7182.08,7205.2928,27032
+FBA,104252,Baking Soda 3.5 Gallon Bucket (EBE),,95,0,0,0,2045.35,2003.131793,6650
+FBA,104253,Baking Soda 5 Gallon Bucket (EBE),,31,0,0,0,860.25,885.738889,2821
+FBA,104254,Cooking Essential Oil Kit Boxed Set 4pk,,10,0,0,0,17.3,21.248865,250
+FBA,104257,Borax 1 Gallon Bucket,,596,0,0,0,4201.8,3569.998967,13678.2
+FBA,104258,Borax 3.5 Gallon Bucket,,77,0,0,0,1742.51,2544.348889,5232.15
+FBA,104259,Borax 5 Gallon Bucket,,170,0,0,0,4574.7,5460.386179,12741.5
+FBA,104261,"Potassium Bicarbonate (200 Capsules, 2,860 mg) EBE",,154,0,0,0,903.98,396.950056,2579.5
+FBA,104262,Guar Gum (8 oz.) POI,,31,0,0,0,49.29,34.801335,232.5
+FBA,104263,White Rice Flour 3 Lbs,,80,0,0,0,251.2,147.031847,1196
+FBA,104264,Potato Starch 1.5 lb (Shortage),,306,0,0,0,731.34,541.096182,3519
+FBA,104265,Potato Starch 3 Lb (Shortage),,180,0,0,0,718.2,574.832877,2925
+FBA,104266,Potato Starch 5 Lb (Shortage),,271,0,0,0,1552.83,1318.579377,5758.75
+FBA,104267,Salicylic Acid 2% Serum,,258,0,0,0,394.74,202.655141,2257.5
+FBA,104268,Salicylic Acid 20% Skin Peel,,680,0,0,0,1149.2,328.978099,10030
+FBA,104269,Citric Acid 1 Gallon Bucket EBE,,935,0,0,0,11145.2,9458.214059,24777.5
+FBA,104270,Citric Acid 3.5 Gallon Bucket,,82,0,0,0,2899.52,2898.340204,7380
+FBA,104271,Citric Acid 5 Gallon Bucket,,95,0,0,0,4933.35,4436.544531,11870.25
+FBA,104272,White Rice Flour 5 Lbs,,302,0,0,0,1371.08,1047.175345,5587
+FBA,104273,White Rice Flour 1.5 Lbs,,90,0,0,0,178.2,102.876238,900
+FBA,104274,Guar Gum (10 oz.) POI,,-1,0,0,0,-1.74,-0.75586,-8
+FBA,104275,Guar Gum (16 oz.) POI,,68,0,0,0,166.6,87.683408,883.32
+FBA,104276,Chemical Peel Neutralizer (1 oz) POI,,71,0,0,0,108.63,0,852
+FBA,104277,"Washing Soda (1 Gallon Bucket, 9 lb) EBE",,198,0,0,0,1382.04,1129.803735,5336.1
+FBA,104278,"Washing soda (5 Gallon Bucket, 50 lb) EBE",,98,0,0,0,2814.56,2423.6625,9795.1
+FBA,104279,"Washing soda (3.5 Gallon Bucket, 38 lb) EBE",,98,0,0,0,2296.14,2886.381296,7345.1
+FBA,104284,"Diatomaceous Earth (1 Gallon Bucket, 3 lb) EBE",,402,0,0,0,1857.24,2601.329324,12055.98
+FBA,104285,"Diatomaceous Earth (3.5 Gallon Bucket, 11 lb) EBE",,116,0,0,0,1411.72,2372.592903,6958.84
+FBA,104286,"Diatomaceous Earth (5 Gallon Bucket, 15 lb) EBE ",,22,0,0,0,306.46,463.063333,1540
+FBA,104288,"EDTA Capsules (200 Capsules, 425 mg) EBE (KILL)",,632,0,0,0,1655.84,1165.355645,10712.4
+FBA,104289,"Baking Soda Capsules (200 Capsules, 750 mg) EBE",,937,0,0,0,5041.06,1491.267681,13071.15
+FBA,10429,SHIPPING LABEL 4 x 6 Direct Thermal Blank for Zebra (250/roll),,-0.4,0,0,0,-0.143984,-0.005543,-35.996
+FBA,104290,"Bentonite Clay Capsules (WRONG SIZE) (200 Capsules, 1000 mg) EBE (Deativate when Sold out)",,-1,0,0,0,-5.34,-2.885976,-13.75
+FBA,104291,Sodium Citrate (1 lb) POI,,88,0,0,0,227.92,138.022752,1016.4
+FBA,104292,"Malic Acid Capsules (200 Capsules, 600 mg) EBE (KILL)",,250,0,0,0,1390,449.339172,3747.5
+FBA,104293,"Diatomaceous Earth Capsules (200 capsules, 675 mg) EBE  (WRONG SIZE)",,233,0,0,0,1297.81,597.678422,3611.5
+FBA,104297,Salicylic Acid 20% with Neutralizer Set (2 oz) ,,125,0,0,0,371.25,0,2248.75
+FBA,104298,Salicylic Acid 5% With Neutralizer Set POI,,20,0,0,0,78,0,440
+FBA,104299,(NEED NEW SOURCE) Potassium Sorbate (5 lb) POI,,161,0,0,0,1180.13,3073.687951,5232.5
+FBA,10430,"Epsom Salt (3.5 Gallon Bucket, 32 lb) EBE",,335,0,0,0,8214.2,10472.75499,19932.5
+FBA,104302,Sodium Citrate (2 lb) POI,,147,0,0,0,582.12,460.585588,2197.65
+FBA,104303,Potassium Sorbate (1 lb) POI,,63,0,0,0,253.26,230.188171,689.85
+FBA,104304,"Magnesium Chloride (1 Gallon, 8 lb) EBE",,14,0,0,0,308.28,345.056,735
+FBA,104305,"Magnesium Chloride (3.5 Gallon, 28 lb) EBE",,25,0,0,0,2076.5,2033.200902,3475
+FBA,104306,"Magnesium Chloride (5 Gallon Bucket, 36 lb) EBE",,10,0,0,0,1046.9,0,1720
+FBA,104307,Potassium Sorbate (2 lb) POI,,97,0,0,0,339.5,379.340545,1673.25
+FBA,104308,SLSA (5 lb) POI,,175,0,0,0,5430.25,5145.732699,11716.25
+FBA,104314,Acai Powder (2 oz) POI (KILL),,27,0,0,0,131.49,0,215.73
+FBA,104315,Acai Powder (8 oz) POI,,185,0,0,0,3046.95,665.62075,2773.15
+FBA,104316,Acai Powder (1 lb) POI,,643,0,0,0,20627.44,4817.29612,16068.57
+FBA,104321,Cardamom Essential Oil (5 ml),,43,0,0,0,8.6,0,429.57
+FBA,104323,Frankincense Essential Oil (15 m) POI ,,76,0,0,0,649.8,0,0
+FBA,104324,Bergamot Essential Oil 15 ml,,21,0,0,0,120.96,0,188.79
+FBA,104325,Clary Sage Essential Oil (15 ml) POI,,-5,0,0,0,-39.1,-Infinity,-64.95
+FBA,104327,Melaleuca (Tea Tree) Essential Oil (15 ml) POI,,56,0,0,0,322.56,0,503.44
+FBA,104328,Myrrh Essential Oil (15 ml) POI,,30,0,0,0,265.5,0,449.7
+FBA,10433,Salicylic Acid 5% Skin peel POI,,19,0,0,0,38.95,10.682222,266
+FBA,104330,Tangerine Pure Essential Oil 5 mL,,53,0,0,0,304.22,0,368.35
+FBA,104331,Petitgrain Essential Oil (15 ml) POI,,29,0,0,0,226.78,0,288.55
+FBA,104332,Thyme Essential Oil (15 ml) POI ,,35,0,0,0,219.8,0,349.65
+FBA,104333,Camphor Essential Oil (15 ml) ,,39,0,0,0,54.21,0,349.05
+FBA,104334,White Grapefruit Essential Oil (15 ml) POI,,17,0,0,0,22.27,0,150.45
+FBA,104335,Bay Laurel Leaf (15 ml),,57,0,0,0,75.81,0,567.15
+FBA,104337,Coriander Essential Oil (15 ml) POI,,66,0,0,0,423.72,0,676.5
+FBA,104338,Soy Flour (1 lb) POI ,,72,0,0,0,150.48,83.071888,756
+FBA,104339,Soy Flour (2 lb) POI,,71,0,0,0,217.97,138.220787,1061.45
+FBA,104340,Soy Flour (4 lb) POI (KILL),,12,0,0,0,57.84,61.803,243
+FBA,104341,Gum Arabic (Acacia) (2 oz) POI,,367,0,0,0,1603.79,122.381782,2565.33
+FBA,104342,Almond Flour (2 lb) POI,,346,0,0,0,3435.78,2938.126441,7608.54
+FBA,104343,Gum Arabic (Acacia) (4 oz) POI ,,432,0,0,0,1179.36,956.981426,4747.68
+FBA,104344,Gum Arabic (Acacia) (1 lb) POI,,315,0,0,0,1713.6,1666.027474,5512.5
+FBA,104347,Ammonium Sulfate (5 lb) POI,,67,0,0,0,415.4,180.158533,1470.65
+FBA,104350,Acacia Fiber (1 lb) POI,,184,0,0,0,1010.16,423.739861,2852
+FBA,104351,Acacia Fiber (2 lb) POI,,120,0,0,0,1113.6,503.513793,2634
+FBA,104352,Mineral Oil (4 oz) POI,,-2,0,0,0,-3.48,-2.795769,-16.5
+FBA,104353,Propylene Glycol (4 fl oz) POI,,127,0,0,0,199.39,135.459107,857.25
+FBA,104354,Glycerin (4 fl oz) POI,,84,0,0,0,128.52,70.267037,567
+FBA,104355,"Pure Soap Flakes (1 Gallon Bucket, 5 lbs) EBE",,261,0,0,0,2304.63,1934.75464,6511.95
+FBA,104356,"Pure Soap Flakes (3.5 Gallon Bucket, 18 lb) EBE",,47,0,0,0,1306.13,1370.805357,2867
+FBA,104357,"Pure Soap Flakes (5 Gallon Bucket, 25 lb) EBE",,68,0,0,0,2439.84,3464.667042,5776.6
+FBA,104358,Calcium Carbonate (5 lb) POI,,119,0,0,0,529.55,527.624079,2374.05
+FBA,104360,Oxalic Acid (5 Gallon Bucket) (KILL) (Closed 10/2/18),,5,0,0,0,127.45,436.770763,599.95
+FBA,104362,Methylcellulose (25 lbs) POI,,2,0,0,0,563.5,0,999.9
+FBA,104363,Stone Casting Powder (2 lb) POI,,42,0,0,0,84.42,56.435217,441
+FBA,104364,Stone Casting Powder (4 lb) POI,,77,0,0,0,257.95,203.34,1001
+FBA,104365,"Salicylic Acid (Tub, 1.5 lb) EBE",,14,0,0,0,104.86,98.334194,405.86
+FBA,104367,Play Sand (5 lb) POI,,465,0,0,0,1241.55,722.539118,7091.25
+FBA,104369,Egg Replacer (1 lb) (Soy Flour) POI,,124,0,0,0,259.16,157.815424,1362.76
+FBA,104370,Egg Replacer (2 lb) (Soy Flour) POI,,101,0,0,0,437.33,223.499754,1363.5
+FBA,104372,"MASON JARS (12 count, 8 oz)",,19,0,0,0,26.22,268.838713,494
+FBA,104373,Dextrose (1 lb) POI,,156,0,0,0,293.28,170.76365,1443
+FBA,104374,Dextrose (8 oz) POI,,174,0,0,0,229.68,86.1039,1129.26
+FBA,104375,Dextrose (2 lb) POI,,221,0,0,0,561.34,425.157474,2386.8
+FBA,104376,Dextrose (5 lb) POI,,176,0,0,0,799.04,502.590991,3168
+FBA,104381,Maltodextrin (1 lb) POI,,46,0,0,0,128.8,109.487931,517.5
+FBA,104382,Maltodextrin (2 lb) POI,,32,0,0,0,140.16,119.642353,479.68
+FBA,104383,Maltodextrin (5 lb) POI,,70,0,0,0,634.9,580.983234,1816.5
+FBA,104384,"DL Malic Acid (Tub, 2 lb) EBE",,1,0,0,0,5.39,3.96547,14.5
+FBA,104385,"Maltodextrin (Tub, 1 lb) EBE (no scoop)",,39,0,0,0,159.12,369.13,583.05
+FBA,104386,"Dextrose Sports Nutrition (Tub, 1.5 lb w/ Scoop) UPN",,37,0,0,0,120.99,0,516.15
+FBA,104387,Psyllium Husk Powder (12 oz) POI,,25,0,0,0,147,138.992424,387.5
+FBA,104388,Psyllium Husk Powder (1 lb) POI,,118,0,0,0,907.42,354.54289,2153.5
+FBA,104389,Psyllium Husk Powder (1.5 lb) POI,,60,0,0,0,657.6,337.535065,1377
+FBA,104390,Psyllium Husk Powder (2 lb) POI,,46,0,0,0,651.36,588.593333,1322.5
+FBA,104393,Decorative Sand (2 lb) POI,,247,0,0,0,405.08,190.140676,2531.75
+FBA,104395,Siberian Fir Essential Oil (15 ml) POI,,8,0,0,0,10.48,0,71.6
+FBA,104397,Soy Flour (10 lb) POI,,66,0,0,0,649.44,642.67726,2343
+FBA,104398,Decorative Sand (5 lb) POI,,437,0,0,0,965.77,762.591046,6358.35
+FBA,104407,"Activated Charcoal Capsules (150 Capsules, 525 mg) UPN",,112,0,0,0,488.32,239.284706,1338.4
+FBA,104408,"Baking Soda Capsules (150 Count, 750 mg) UPN",,218,0,0,0,954.84,291.046148,2735.9
+FBA,104409,"Vitamin C Capsules (150 count, 600 mg) UPN",,47,0,0,0,249.1,70.630107,552.25
+FBA,104410,"Diatomaceous Earth Capsules (150 count, 275 mg) UNP",,137,0,0,0,572.66,235.834755,1849.5
+FBA,104411,"Calcium Carbonate Capsules (150 count, 550 mg) UPN",,99,0,0,0,396.99,166.368058,1143.45
+FBA,104412,"Malic Acid Capsules (150 Count, 600 mg) UNP (KILL)",,107,0,0,0,446.19,248.264692,1310.75
+FBA,104413,"Psyllium Husk Capsules (100 Count, 1,500 mg) POI",,56,0,0,0,184.8,253.804444,1005.2
+FBA,104414,"Psyllium Husk Capsules (200 Capsules, 1,500 mg) EBE",,158,0,0,0,1008.04,394.224906,2836.1
+FBA,104415,"Psyllium Husk Capsules (150 Count, 1500 mg) UPN",,96,0,0,0,458.88,362.157526,1224
+FBA,104417,"Malic Acid Capsules (200 count, 600 mg) KOP",,49,0,0,0,268.52,206.389661,683.55
+FBA,104418,Tartaric Acid (1 lb) (Closed 11/27/18),,1,0,0,0,5.47,0,14.25
+FBA,104419,"Activated Charcoal Capsules (200 count, 525 mg) KOP",,57,0,0,0,328.32,272.498644,829.35
+FBA,104421,"Calcium Carbonate Capsules (200 count, 550 mg) KOP",,10,0,0,0,52.8,175.97476,135
+FBA,104422,"Vitamin C Capsules (200 count, 600 mg) KOP",,85,0,0,0,593.3,238.2125,1104.15
+FBA,104423,"Diatomaceous Earth Capsules (200 count, 750 mg) KOP (WRONG SIZE)",,119,0,0,0,410.55,338.370935,1487.5
+FBA,104424,"Potassium Bicarbonate Capsules (200 count, 2,860 mg) KOP",,96,0,0,0,553.92,330.648889,1243.2
+FBA,104425,"Baking Soda Capsules (200 count, 750 mg) KOP",,127,0,0,0,678.18,298.079583,1746.25
+FBA,104428,"Potassium Bicarbonate (3.5 Gallon Bucket, 40 lbs) EBE",,5,0,0,0,385.75,578.91,734.75
+FBA,104429,"Potassium Bicarbonate (5 Gallon Bucket, 50 lbs) EBE",,5,0,0,0,485.85,688.057739,924.75
+FBA,104430,"Soap Flakes (Tub, 1.5 lb) EBE",,184,0,0,0,787.52,557.633231,2392
+FBA,104431,"Amber Dropper Bottle 1 oz, 12pk",,8,0,0,0,36.56,0,0
+FBA,104432,"Amber Dropper Bottle 2 oz, 4 pack",,-3,0,0,0,-6.72,-4.413112,0
+FBA,104433,"Amber Dropper Bottle 2 oz, 2 pack",,264,0,0,0,475.2,183.577297,0
+FBA,104435,"Cobalt Dropper Bottle 2 oz, 4pk",,3,0,0,0,0,5.35117,0
+FBA,104436,"Cobalt Dropper Bottle 2 oz, 2 pk",,4,0,0,0,11.12,3.827126,27.96
+FBA,104437,"Magnesium Chloride (Tub, 2 lb) EBE (No Scoop)",,33,0,0,0,272.58,237.829167,594
+FBA,104438,"Indian Healing Clay (Tub, 1.5 lb w/scoop) EBE",,13,0,0,0,93.08,76.057272,201.5
+FBA,104439,Tapioca Starch Flour (8 oz) POI,,29,0,0,0,42.34,12.21929,188.5
+FBA,104442,Borax (2 lb) POI (Single Listing),,86,0,0,0,192.64,122.112773,838.5
+FBA,104443,Sodium Bicarbonate (1 lb) POI (Single Listing),,1498,0,0,0,2651.46,1014.250842,18350.5
+FBA,104445,Guar Gum (2 lb) POI,,23,0,0,0,82.8,48.307535,321.77
+FBA,104446,Guar Gum (4 lb) POI,,20,0,0,0,120.2,86.429468,399.8
+FBA,104447,Guar Gum (10 lb) POI (Single Listing),,83,0,0,0,1080.66,911.370741,4066.17
+FBA,104448,"Psyllium Husk Powder (Tub, 1.5 lb) EBE",,18,0,0,0,77.22,192.779353,396
+FBA,104452,"Cream Of Tartar (1 Gallon Bucket, 8 lb) EBE",,127,0,0,0,3404.87,3806.476774,6546.85
+FBA,104453,"Cream Of Tartar (3.5 Gallon Bucket, 30 lb) EBE",,11,0,0,0,1056.88,1140.74,1869.45
+FBA,104454,"Cream Of Tartar (5 Gallon Bucket, 45 lb) EBE",,28,0,0,0,3943.8,3589.053023,7140
+FBA,104455,Epsom Salt (5 lb) POI (Single Listing),,167,0,0,0,724.78,521.684214,3089.5
+FBA,104456,"Epsom Salt (Tub, 2 lb) EBE",,76,0,0,0,189.24,223.998824,950
+FBA,104457,Epsom Salt (4 oz) POI (Single Listing),,155,0,0,0,182.9,295.04537,1046.25
+FBA,104458,Epsom Salt (1 lb) POI (Single Listing),,88,0,0,0,173.36,66.759084,1386
+FBA,104459,Sodium Bicarbonate (5 lb) POI (Single Listing),,495,0,0,0,1846.35,1520.01,10271.25
+FBA,10446,Zinc Oxide (4 lb) POI,,42,0,0,0,444.36,425.391148,1049.58
+FBA,104460,Mineral Oil (8 oz) POI (Single Listing) ,,135,0,0,0,311.85,167.512921,1181.25
+FBA,104461,Mineral Oil (16 oz) POI (Single Listing),,24,0,0,0,82.08,54.962609,354
+FBA,104462,"Mineral Oil (Half Gallon, 64 oz) POI (Single Listing)",,126,0,0,0,1251.18,1104.697125,3017.7
+FBA,104463,"Glycerin (1 Gallon, 128 fl oz) POI (Single Listing)",,98,0,0,0,1226.96,1111.213091,3327.1
+FBA,104464,"Glycerin (Half Gallon, 64 fl oz) POI (Single Listing)",,400,0,0,0,2956,2290.433437,7900
+FBA,104466,Glycerin (16 fl oz) POI (Single Listing),,-7,0,0,0,-19.25,-9.085752,-82.25
+FBA,104467,Potato Starch (6 lb) POI (Shortage),,25,0,0,0,169.5,160.941558,598.75
+FBA,104468,Potato Starch (10 lb) POI (Shortage),,126,0,0,0,1354.5,1106.841022,4403.7
+FBA,104471,Potato Starch (3 lb) POI (Single Listing) (Shortage),,210,0,0,0,837.9,656.023707,3412.5
+FBA,104472,Potato Starch (5 lb) POI (Single Listing) (Shortage),,178,0,0,0,1019.94,856.222381,3782.5
+FBA,104474,Potato Starch (10 lb) POI (Single Listing)  (Shortage),,72,0,0,0,774,678.588079,2516.4
+FBA,104475,"Propylene Glycol (1 Gallon, 128 fl oz) POI (Single Listing)",,100,0,0,0,1379,1351.738318,2797
+FBA,104476,"Propylene Glycol (Half Gallon, 64 fl oz) POI (Single Listing)",,63,0,0,0,496.44,448.578,1244.25
+FBA,104477,Propylene Glycol (16 fl oz) POI (Single Listing),,43,0,0,0,124.7,94.470411,483.75
+FBA,104479,Titanium Dioxide (1 lb) POI (Single Listing) (Do Not Send More),,-1,0,0,0,-3.62,-2.627343,-11.99
+FBA,104482,Titanium Dioxide (1.5 lb) POI (Single Listing),,54,0,0,0,291.6,240.628872,837
+FBA,104485,SLSA (4 oz) POI (Single Listing),,164,0,0,0,410,304.332282,1558
+FBA,104486,SLSA (11 oz) POI (Single Listing),,225,0,0,0,1183.5,963.839189,3037.5
+FBA,104487,SLSA (2 lb) POI (Single Listing),,214,0,0,0,2777.72,2573.19276,5989.86
+FBA,104488,SLSA (3 lb) POI (Single Listing),,166,0,0,0,3120.8,2986.888038,6306.34
+FBA,104491,Washing Soda (1 lb) POI (Single Listing),,372,0,0,0,643.56,254.483276,3738.6
+FBA,104494,Borax (1 lb) POI (Single Listing) (Kill),,57,0,0,0,99.75,171.513471,567.15
+FBA,104495,Borax (11 oz) POI (Single Listing),,94,0,0,0,127.84,36.110891,709.7
+FBA,104496,Sodium Bicarbonate (4 oz) POI (Single Listing),,712,0,0,0,804.56,335.161163,4236.4
+FBA,104497,Citric Acid (4 oz) POI (Single Listing),,237,0,0,0,308.1,1547.275467,1386.45
+FBA,104498,Citric Acid (11 oz) POI (Single Listing),,97,0,0,0,173.63,100.163358,635.35
+FBA,104499,Citric Acid (1 lb) POI (Single Listing),,484,0,0,0,1151.92,767.036934,4331.8
+FBA,104501,Citric Acid (5 lb) POI (Single Listing),,186,0,0,0,1318.74,1143.175325,3208.5
+FBA,104503,Cream of Tartar (1 lb) POI (Single Listing),,237,0,0,0,971.7,813.230752,2832.15
+FBA,104504,Cream of Tartar (4 oz) POI (Single Listing),,145,0,0,0,256.65,215.755991,1007.75
+FBA,104505,Cream of Tartar (5 lb) POI (Single Listing),,371,0,0,0,6080.69,6408.87764,12224.45
+FBA,104506,"Borax/Washing Soda 2 lb. Combo (2 lb each, 4 lb total) POI",,157,0,0,0,580.9,416.086301,2512
+FBA,104507,"Borax/Washing Soda/Soap Flakes Combo (2 lb each, 6 lb total) POI",,61,0,0,0,401.38,379.168375,1342
+FBA,104510,"Borax/Washing Soda/Soap Flakes/Baking Soda Combo (2 lb each, 8 lb total) POI",,30,0,0,0,239.7,174.634615,840
+FBA,104511,Potassium Bicarbonate (4 oz) POI (Single Listing),,58,0,0,0,89.9,35.607189,455.3
+FBA,104512,Guar Gum (2 lb) POI (Single Listing),,64,0,0,0,230.4,163.092114,895.36
+FBA,104513,Guar Gum (4 lb) POI (Single Listing),,121,0,0,0,727.21,1062.61375,2418.79
+FBA,104517,"Activated Charcoal (3.5 Gallon Bucket, 10 lbs) EBE",,19,0,0,0,1343.49,2197.635,3324.05
+FBA,104518,"Activated Charcoal (1 Gallon Bucket, 3 lbs) EBE",,28,0,0,0,621.04,436.104516,1818.6
+FBA,104520,Citric Acid (10 lb) POI,,62,0,0,0,817.16,707.96619,1736
+FBA,104521,Mineral Oil 5 gallon (35 lb.) EBE,,6,0,0,0,506.28,393.254286,887.7
+FBA,104522,Mineral Oil 3.5 gallon (24 lb.) EBE,,41,0,0,0,2471.89,1859.672766,4835.95
+FBA,104523,"Mineral Oil (1 Gallon Bucket, 128 fl oz) EBE ",,33,0,0,0,604.89,490.2425,1384.35
+FBA,104537,Potassium Bicarbonate (2 lb) POI (Single Listing),,82,0,0,0,285.36,363.988103,1250.5
+FBA,104539,Portland Cement (1 lb.) POI (Single Listing) (KILL),,33,0,0,0,56.1,17.603959,560.67
+FBA,104540,Portland Cement (5 lb) POI (Single Listing),,85,0,0,0,289,133.323404,1780.75
+FBA,104541,Soap Flakes (4 oz.) POI (Single Listing) (KILL),,37,0,0,0,48.1,22.822487,203.5
+FBA,104542,Soap Flakes (8 oz) POI (Single Listing),,74,0,0,0,118.4,70.982338,514.3
+FBA,104543,Soap Flakes (1 lb.) POI (Single Listing) ,,225,0,0,0,562.5,323.68733,2216.25
+FBA,104544,Pure Soap Flakes (2 lb) POI,,19,0,0,0,70.3,45.349712,261.25
+FBA,104545,Soap Flakes (2 lb) POI (Single Listing),,23,0,0,0,85.1,63.182175,316.25
+FBA,104546,Soap Flakes (3 lb) POI (Single Listing),,84,0,0,0,423.36,297.962609,1465.8
+FBA,104547,"Citric Acid Capsules (100 Capsules, 1200 mg/serving) POI",,781,0,0,0,2264.9,781.056594,8583.19
+FBA,104550,"Activated Charcoal (3.5 Gallon Bucket, 10 lbs) EBE (Single Listing)",,32,0,0,0,2262.72,3021.372121,3808
+FBA,104551,"Activated Charcoal (1 Gallon Bucket, 3 lb) EBE (Single Listing)",,9,0,0,0,199.62,486.901344,369
+FBA,104552,"Activated Charcoal (5 Gallon Bucket, 14 lb) EBE (Single Listing)",,30,0,0,0,2883.3,3214.418182,4650
+FBA,104553,"Zinc Oxide (1 Gallon Bucket, 6 lb) EBE",,57,0,0,0,980.4,1815.1764,2052
+FBA,104554,"Zinc Oxide (3.5 Gallon Bucket, 25 lb) EBE",,15,0,0,0,985.35,1711.696875,1799.25
+FBA,104555,"Zinc Oxide (5 Gallon Bucket, 30 lb) EBE",,9,0,0,0,697.95,853.56,1232.55
+FBA,104556,"Potassium Bicarbonate (1 Gallon Bucket, 10 lb) EBE (Single Listing)",,66,0,0,0,1527.24,0,3296.7
+FBA,104557,"Zinc Oxide (1 Gallon Bucket, 6 lb) EBE (Single Listing)",,6,0,0,0,103.2,223.076353,216
+FBA,104558,"Zinc Oxide (3.5 Gallon Bucket, 25 lb) EBE (Single Listing)",,20,0,0,0,1318.4,2282.26,2399
+FBA,104560,"Potassium Bicarbonate (3.5 Gallon Bucket, 40 lb) EBE (Single Listing)",,47,0,0,0,3626.05,4098.8794,6906.65
+FBA,104561,"Potassium Bicarbonate (5 Gallon Bucket, 50 lb) EBE (Single Listing)",,27,0,0,0,2623.59,3006.142326,4993.65
+FBA,104564,"Cream Of Tartar (1 Gallon Bucket, 8 lb) EBE (Single Listing)",,56,0,0,0,1501.36,1479.485241,2886.8
+FBA,104565,Cream Of Tartar (3.5 Gallon Bucket) EBE (Single Listing),,3,0,0,0,288.24,262.757368,509.85
+FBA,104566,Tapioca Starch Flour (3 lb) POI,,51,0,0,0,190.23,134.864224,765
+FBA,104567,"Epsom Salt (100 Capsules, 560 MG) POI (KILL) Bad Review (Closed 2/12/19)",,280,0,0,0,848.4,382.34094,3497.2
+FBA,104570,"Cream Of Tartar (5 Gallon Bucket, 40 lb) EBE (Single Listing)",,4,0,0,0,563.4,737.489989,1159.96
+FBA,104572,"Acai Powder Capsules (100 Capsules, 300 mg) POI",,52,0,0,0,249.6,104.823333,621.4
+FBA,104576,Calcium Sulfate (4 oz) POI (Single Listing),,195,0,0,0,224.25,86.4825,1335.75
+FBA,104586,Diatomaceous Earth (10 lb) POI (Single Listing),,45,0,0,0,305.55,302.359821,2025
+FBA,104587,Epsom Salt (2 lb) POI,,302,0,0,0,745.94,430.113297,3548.5
+FBA,104588,Epsom Salt (2 lb) POI (Single Listing),,137,0,0,0,338.39,210.174948,1609.75
+FBA,104589,Epsom Salt (10 lb) POI,,198,0,0,0,1403.82,1145.541654,4940.1
+FBA,104590,Epsom Salt (10 lb) POI (Single Listing),,148,0,0,0,1120.36,1295.256804,3692.6
+FBA,104591,"Calcium Carbonate (1 Gallon Bucket, 8 lb) EBE",,58,0,0,0,517.94,658.808615,1505.1
+FBA,104592,"Calcium Carbonate (1 Gallon Bucket, 8 lb) EBE (Single Listing)",,54,0,0,0,417.42,541.826471,1401.3
+FBA,104593,"Calcium Carbonate (3.5 Gallon Bucket, 30 lb) EBE",,20,0,0,0,488.4,492.980952,1339
+FBA,104594,"Calcium Carbonate (3.5 Gallon Bucket, 30 lb) EBE (Single Listing)",,7,0,0,0,170.94,316.37,468.65
+FBA,104595,"Calcium Carbonate (5 Gallon Bucket, 40 lb) EBE ",,25,0,0,0,755.25,834.919643,2098.75
+FBA,104596,"Calcium Carbonate (5 Gallon Bucket, 40 lb) EBE (Single Listing)",,49,0,0,0,1480.29,1936.487538,4113.55
+FBA,104597,"Bentonite Clay Capsules (WRONG SIZE) (100 Capsules, 1,000 MG) POI (Deativate when Sold out)",,72,0,0,0,200.16,115.533061,702
+FBA,104601,Corn Starch (8 oz) POI (Single Listing),,39,0,0,0,53.82,21.255755,271.05
+FBA,104603,Corn Starch  (2 lb) POI (Single Listing),,275,0,0,0,737,414.099342,3011.25
+FBA,104604,Corn Starch (3 lb) POI (Single Listing),,81,0,0,0,281.88,248.772761,1194.75
+FBA,104606,"Maltodextrin (1 Gallon Bucket, 4 lb) EBE",,16,0,0,0,143.52,135.468108,319.84
+FBA,104607,"Maltodextrin (3.5 Gallon Bucket, 14 lb) EBE",,-1,0,0,0,-27.72,-35.59,-51.99
+FBA,104608,"Maltodextrin (5 Gallon Bucket, 20 lb) EBE",,31,0,0,0,1135.53,1360.870938,2076.69
+FBA,104614,Salicylic Acid (8 oz) POI (Single Listing),,38,0,0,0,102.6,67.286372,399
+FBA,104615,Salicylic Acid (1 lb) POI (Single Listing),,34,0,0,0,159.8,155.321842,576.3
+FBA,104616,Aluminum Sulfate (4 oz) POI (Single Listing),,92,0,0,0,115.92,319.25472,547.4
+FBA,104618,Aluminum Sulfate (2 lb) POI (Single Listing),,91,0,0,0,212.03,215.243797,996.45
+FBA,104619,Vitamin C (4 oz) POI (Single Listing),,84,0,0,0,189.84,120.302095,693
+FBA,104621,Vitamin C (2 lb) POI (Single Listing),,241,0,0,0,2781.14,2368.167474,5771.95
+FBA,104622,Vitamin C (5 lb) POI (Single Listing),,9,0,0,0,243.99,192.396176,449.55
+FBA,104623,Calcium Chloride (4 oz) POI (Single Listing),,163,0,0,0,189.08,69.429461,855.75
+FBA,104624,Calcium Chloride (1 lb) POI (Single Listing),,93,0,0,0,164.61,70.697714,832.35
+FBA,104625,Calcium Chloride (2 lb) POI (Single Listing),,115,0,0,0,265.65,136.247356,1148.85
+FBA,104627,Cinnamon (4 oz) POI,,24,0,0,0,50.64,0,167.76
+FBA,104628,"Tapioca Starch Flour (1 Gallon Bucket, 5 lb) EBE",,20,0,0,0,124.6,90.708403,399
+FBA,104630,"Tapioca Starch Flour (3.5 Gallon Bucket, 20 lb) EBE",,25,0,0,0,531.5,619.179688,1248.75
+FBA,104634,Bentonite Clay (2 lb) POI,,29,0,0,0,208.8,493.413932,666.71
+FBA,104926,"Calcium Carbonate Capsules (200 Capsules, 550 MG) EBE",,195,0,0,0,1043.25,629.49308,3500.25
+FBA,104927,Calcium Sulfate (5 lb) POI,,104,0,0,0,391.04,284.536296,1970.8
+FBA,10499,"Potato Starch (1 Gallon Bucket, 6.5 lb) EBE (Shortage)",,153,0,0,0,1054.17,1209.772577,4169.25
+FBA,10500,"Potato Starch (3.5 Gallon Bucket, 25 lb) EBE (Shortage)",,33,0,0,0,735.9,1192.968333,2310
+FBA,10501,"Potato Starch (5 Gallon Bucket, 35 lb) EBE (Shortage)",,20,0,0,0,739.4,835.816,1800
+FBA,105053,"Corn Starch (1 Gallon Bucket, 4.5 lb) EBE",,473,0,0,0,3391.41,2431.719299,10382.35
+FBA,105054,"Corn Starch (3.5 Gallon Bucket, 23 lb) EBE",,119,0,0,0,2683.45,2110.933067,5587.05
+FBA,105055,"Corn Starch (5 Gallon Bucket, 25 lb) EBE",,126,0,0,0,3436.02,2341.989586,7175.7
+FBA,105056,"Vitamin C Powder (1 Gallon Bucket, 8 lb) EBE",,117,0,0,0,5138.64,4725.49896,8184.15
+FBA,105057,"Vitamin C Powder (3.5 Gallon Bucket, 35 lb) EBE",,20,0,0,0,3719.4,3450.8,5195
+FBA,105058,"Vitamin C Powder (5 Gallon Bucket, 45 lb) EBE",,20,0,0,0,4739.8,4395.56,6795
+FBA,105059,"SLSA (1 Gallon Bucket, 6 lb) EBE",,174,0,0,0,6584.16,6958.961898,12136.5
+FBA,105060,SLSA 3.5 Gallon Bucket (23 LBS) EBE,,21,0,0,0,2948.19,3357.403636,5145
+FBA,105061,"SLSA (5 Gallon Bucket, 30 lbs) EBE",,29,0,0,0,5242.04,5319.88,8845
+FBA,105560,Tapioca Starch Flour (8 oz) POI (Single Listing),,110,0,0,0,160.6,47.284669,715
+FBA,105561,Tapioca Starch Flour (2 lb) POI (Single Listing),,27,0,0,0,75.6,55.161072,283.5
+FBA,105562,Tapioca Starch Flour (3 lb) POI (Single Listing),,7,0,0,0,26.11,25.708594,167.93
+FBA,105563,Tapioca Starch Flour (5 lb) POI (Single Listing),,258,0,0,0,1339.02,1051.081994,6189.42
+FBA,105564,Tapioca Starch Flour (2 lb) POI,,112,0,0,0,313.6,212.771491,1176
+FBA,105570,"Acacia Fiber Capsules (WRONG SIZE) (100 Capsules, 250MG) POI (Deativate when Sold out)",,200,0,0,0,596,49.440415,1990
+FBA,105584,"Acacia Fiber (Tub, 1.25 lb) EBE",,29,0,0,0,223.3,0,536.5
+FBA,105586,Hulled Millet (3 lb) POI,,44,0,0,0,173.8,108.365076,657.8
+FBA,105587,Quinoa Organic (4 lb) POI,,47,0,0,0,473.29,223.540545,1172.65
+FBA,105588,Cocoa Powder (2 lb) POI,,77,0,0,0,517.44,507.43939,1382.15
+FBA,105589,Cocoa Powder (1 lb) POI,,58,0,0,0,230.26,205.286857,751.1
+FBA,105590,"Calcium Carbonate (1 Gallon Bucket, 8 lb) POI",,56,0,0,0,495.6,431.546142,1455.44
+FBA,105591,Cinnamon Sticks (1 lb) POI,,69,0,0,0,430.56,404.660196,1031.55
+FBA,105592,Aluminum Oxide (8 oz) POI (Single Listing),,34,0,0,0,62.9,28.583453,270.3
+FBA,105595,Flaxseed Meal (1 lb) POI,,23,0,0,0,78.43,55.961041,281.75
+FBA,105597,"Washing Soda (5 Gallon Bucket, 50 lb) POI",,59,0,0,0,2136.98,1365.453443,5900
+FBA,105598,"Washing Soda (1 Gallon Bucket, 9 lb) POI",,62,0,0,0,510.26,288.93285,1354.7
+FBA,105599,Gum Arabic (Acacia) (4 oz) POI (Single),,94,0,0,0,200.22,50.760912,1033.06
+FBA,105601,"Borax Powder (1 Gallon Bucket, 9 lb) POI",,373,0,0,0,3129.47,1917.941346,8392.5
+FBA,105603,Soy Flour (2 lb) POI (Single Listing),,147,0,0,0,495.39,370.809649,2197.65
+FBA,105604,"Cocoa Powder Capsules (100 Capsules, 300 MG) POI",,54,0,0,0,158.22,630.848571,499.5
+FBA,105605,Soy Flour (1 lb Tub) EBE,,38,0,0,0,133.38,89.819024,492.1
+FBA,105607,"EDTA Powder (Tub, 2 lb) EBE",,14,0,0,0,215.04,185.808287,419.3
+FBA,105608,"Turmeric Capsules (100 capsules, 250 mg) POI",,50,0,0,0,144.5,47.435294,492.5
+FBA,105614,"Green Tea Capsules (100 capsules, 250 mg) POI",,53,0,0,0,186.56,155.935636,821.5
+FBA,105615,"Green Tea Capsules (200 capsules, 400 mg) EBE",,114,0,0,0,780.9,234.438197,1806.9
+FBA,105617,"Moringa Capsules (100 Capsules, 200 mg) POI",,56,0,0,0,177.52,70.743607,837.2
+FBA,105618,"Moringa Capsules (200 capsules, 200 mg) EBE",,55,0,0,0,338.25,107.36,1097.25
+FBA,105619,"Guar Gum (1 Gallon Bucket, 6.5 lb) EBE",,9,0,0,0,101.34,75.572609,269.55
+FBA,105620,"Dextrose (1 Gallon Bucket, 6 lb) EBE",,104,0,0,0,775.84,542.122171,2078.96
+FBA,105622,"Ammonium Sulfate (1 Gallon Bucket, 9 lbs) EBE",,71,0,0,0,709.29,530.452987,1774.29
+FBA,105623,Dextrose (1.5 lb Tub) EBE,,86,0,0,0,313.04,218.674545,993.3
+FBA,105624,"Mineral Oil (1 Gallon Bucket, 7 lbs) POI",,38,0,0,0,744.04,3684.756857,1518.1
+FBA,105625,"Tapioca Flour (Tub, 1.5 lb) EBE ",,16,0,0,0,61.92,35.207805,207.2
+FBA,105626,"Malic Acid (1 Gallon Bucket, 8 lb) EBE",,24,0,0,0,374.64,295.827692,767.76
+FBA,105629,"Acacia Fiber (1 Gallon Bucket, 5 lb) EBE",,32,0,0,0,757.44,374.31619,1406.4
+FBA,105630,"Gum Arabic (1 Gallon Bucket, 5 lb) EBE",,113,0,0,0,2676.97,1185.250634,4857.87
+FBA,105631,"Gum Arabic (Tub, 1.25 lb) EBE",,33,0,0,0,255.42,375.4905,717.75
+FBA,105632,"Guar Gum (Tub, 1.5 lb) EBE",,10,0,0,0,44.6,28.67933,182.5
+FBA,105634,"Soy Flour (1 Gallon Bucket, 5 lbs) EBE",,74,0,0,0,579.42,453.00777,1846.3
+FBA,105637,Turmeric (8 oz) POI,,43,0,0,0,96.75,52.912632,350.45
+FBA,105638,Turmeric (1 lb) POI,,84,0,0,0,320.88,217.073182,945
+FBA,105639,Arrowroot Powder (4 oz) POI ,,244,0,0,0,344.04,165.169894,1451.8
+FBA,105640,Arrowroot Powder (1 lb) POI ,,77,0,0,0,222.53,134.682625,766.15
+FBA,105641,Arrowroot Powder (2 lb) POI ,,151,0,0,0,691.58,553.993598,1955.45
+FBA,105642,Ground Cayenne Pepper (1 lb) POI,,30,0,0,0,287.1,59.45625,367.5
+FBA,105643,Ground Cayenne Pepper (2 lb) POI,,163,0,0,0,966.59,686.245524,2689.5
+FBA,105645,"Cayenne Pepper Capsules (100 Capsules, 250 mg) POI",,53,0,0,0,158.47,48.888919,527.35
+FBA,105646,"Cayenne Pepper Capsules (200 Capsules, 250 mg) EBE",,2,0,0,0,11.54,3.056795,25.9
+FBA,105647,Black Peppercorns (8 oz) POI,,102,0,0,0,436.56,303.366545,1014.9
+FBA,105648,Black Peppercorns (1 lb) POI,,163,0,0,0,1273.03,907.205135,2697.65
+FBA,105649,Smoked Paprika (8 oz) POI,,133,0,0,0,388.36,229.6644,1270.15
+FBA,105650,Smoked Paprika (1 lb) POI ,,133,0,0,0,674.31,484.105775,1988.35
+FBA,105651,"Almond Flour (1 Gallon Bucket, 4 lbs) POI",,106,0,0,0,2187.84,1594.154631,3708.94
+FBA,105652,Whole Blue English Poppy Seeds (2 lb) POI ,,-1,0,0,0,-5.08,-3.624828,-19.95
+FBA,105653,Whole Blue English Poppy Seeds (6 lb) POI (KILL),,95,0,0,0,1261.6,991.621368,4175.25
+FBA,105657,"Methylcellulose (Tub, 12 oz) EBE",,45,0,0,0,495.45,431.1,1034.55
+FBA,105658,"Ammonium Sulfate (Tub, 2.5 lb) EBE",,15,0,0,0,67.35,39.709884,209.85
+FBA,105661,"Ashwagandha Capsules (100 Capsules, 250 mg) POI",,50,0,0,0,169.5,80.324561,774.5
+FBA,105667,Play Sand (2 lb) POI,,101,0,0,0,208.06,102.294221,1166.55
+FBA,105668,"Play Sand (1 Gallon Bucket, 13 lb) EBE",,202,0,0,0,1512.98,587.667698,5047.98
+FBA,105669,"Play Sand (3.5 Gallon Bucket, 50 lb) EBE",,-2,0,0,0,-50.1,-22.948679,-143.98
+FBA,105683,"Calcium Chloride (1 Gallon Bucket, 7 lb) EBE",,36,0,0,0,265.32,161.171429,919.8
+FBA,105684,"Calcium Chloride (Tub, 2 lb) EBE",,114,0,0,0,440.04,248.674576,1480.86
+FBA,105686,"Titanium Dioxide (1 Gallon Bucket, 5.5 lb) EBE",,2,0,0,0,36.64,36.401656,123.98
+FBA,105687,"Portland Cement (1 Gallon Bucket, 10 lb) EBE",,19,0,0,0,131.67,307.989296,550.05
+FBA,105688,"Monosodium Phosphate (Tub, 3 lb) EBE",,85,0,0,0,907.8,767.710811,2124.15
+FBA,105689,White Rice Flour (1 Gallon Bucket) EBE,,154,0,0,0,1238.16,817.972791,3688.3
+FBA,105690,Turmeric Jug (5 lb) UNP,,20,0,0,0,251,280.895238,519
+FBA,105691,"Ground Ginger (Shaker, 8 oz) UNP ",,-1,0,0,0,-3.49,-2.418167,-9.25
+FBA,105692,"Ginger Capsules (100 Capsules, 400 mg) POI",,39,0,0,0,117,85.033929,389.61
+FBA,105698,"Salt of Magnesium (1 Gallon Bucket, 8 lbs) POI ",,63,0,0,0,504.63,564.643059,1606.5
+FBA,105717,Holiday Bliss Essential Oil Gift Set (4 - 15 ml bottles) POI,,10,0,0,0,78.3,0,139.9
+FBA,105720,"Chukka Boots (Mauss Brown, Size 7.5) San Polos Men's, Model 2926",,5,0,0,0,157.55,0,325
+FBA,105721,"Chukka Boots (Blue Grey, Size 7.5) San Polos Men's, Model 2921",,5,0,0,0,157.7,0,325
+FBA,105722,"Six Inch Workboots (Mauss Brown, Size 7.5) San Polos Men's, Model 2921",,5,0,0,0,175.2,0,325
+FBA,105723,"Six Inch Workboots (Honey, Size 7.5) San Polos Men's, Model 2921",,5,0,0,0,175.2,0,325
+FBA,105724,'Tis the Season Essential Oil Gift Set (4 - 15 ml bottles),,3,0,0,0,26.76,0,49.5
+FBA,105725,Wild Orange Oil (15 ml),,85,0,0,0,209.95,6.511146,743.75
+FBA,105726,"L-Arginine Capsules (100 Capsules, 400 mg) POI",,252,0,0,0,1091.16,353.005333,3263.4
+FBA,105734,"Six Inch Workboots (Honey, Size 8.5) San Polos Men's, Model 2921",,5,0,0,0,175.2,0,325
+FBA,105736,"Six Inch Workboots (Honey, Size 8) San Polos Men's, Model 2921",,5,0,0,0,175.2,0,325
+FBA,105737,"Six Inch Workboots (Honey, Size 9) San Polos Men's, Model 2921",,5,0,0,0,175.2,0,325
+FBA,105739,"Six Inch Workboots (Honey, Size 10) San Polos Men's, Model 2921",,5,0,0,0,175.2,0,325
+FBA,105740,"Six Inch Workboots (Honey, Size 10.5) San Polos Men's, Model 2921",,5,0,0,0,175.2,0,325
+FBA,105741,"Six Inch Workboots (Honey, Size 11.5) San Polos Men's, Model 2921",,5,0,0,0,175.2,0,325
+FBA,105742,"Six Inch Workboots (Mauss Brown, Size 8.5) San Polos Men's, Model 2921",,5,0,0,0,175.2,0,325
+FBA,105743,"Six Inch Workboots (Mauss Brown, Size 8) San Polos Men's, Model 2921",,5,0,0,0,168.7,0,0
+FBA,105744,"Six Inch Workboots (Mauss Brown, Size 9) San Polos Men's, Model 2921",,5,0,0,0,175.2,0,325
+FBA,105745,"Six Inch Workboots (Mauss Brown, Size 10) San Polos Men's, Model 2921",,5,0,0,0,175.2,0,325
+FBA,105746,"Six Inch Workboots (Mauss Brown, Size 10.5) San Polos Men's, Model 2921",,5,0,0,0,175.2,0,325
+FBA,105747,"Six Inch Workboots (Mauss Brown, Size 11.5) San Polos Men's, Model 2921",,5,0,0,0,175.2,0,325
+FBA,105748,"Chukka Boots (Mauss Brown, Size 8.5) San Polos Men's, Model 2926",,4,0,0,0,126.04,0.622222,260
+FBA,105749,"Chukka Boots (Mauss Brown, Size 8) San Polos Men's, Model 2926",,5,0,0,0,157.55,0,325
+FBA,105750,"Chukka Boots (Mauss Brown, Size 9) San Polos Men's, Model 2926",,4,0,0,0,126.04,0.497778,260
+FBA,105751,"Chukka Boots (Mauss Brown, Size 10) San Polos Men's, Model 2926",,2,0,0,0,63.02,0.35,130
+FBA,105752,"Chukka Boots (Mauss Brown, Size 10.5) San Polos Men's, Model 2926",,1,0,0,0,31.51,0.245,65
+FBA,105753,"Chukka Boots (Mauss Brown, Size 11.5) San Polos Men's, Model 2926",,2,0,0,0,63.02,0.35,130
+FBA,105754,"Chukka Boots (Blue Grey, Size 8.5) San Polos Men's, Model 2921 ",,5,0,0,0,157.6,0,325
+FBA,105755,"Chukka Boots (Blue Grey, Size 8) San Polos Men's, Model 2921 ",,5,0,0,0,157.6,0,325
+FBA,105756,"Chukka Boots (Blue Grey, Size 9) San Polos Men's, Model 2921 ",,5,0,0,0,157.6,0,325
+FBA,105757,"Chukka Boots (Blue Grey, Size 10) San Polos Men's, Model 2921 ",,5,0,0,0,157.6,0,325
+FBA,105758,"Chukka Boots (Blue Grey, Size 10.5) San Polos Men's, Model 2921 ",,5,0,0,0,157.6,0.7,325
+FBA,105759,"Chukka Boots (Blue Grey, Size 11.5) San Polos Men's, Model 2921 ",,5,0,0,0,157.6,0,325
+FBA,105765,Yellow Plastic Pail Opener QPD,,29,0,0,0,48.14,30.243443,195.75
+FBA,105769,Whole Nutmeg (8 oz Shaker) UNP,,30,0,0,0,193.5,132.333333,418.5
+FBA,105778,"Tea Tree Epsom Salt (1 Gallon Bucket, 8 lb) EBE",,40,0,0,0,359.2,0,998
+FBA,105780,"Lavender Epsom Salt (1 Gallon Bucket, 8 lb) EBE",,131,0,0,0,1156.73,884.392854,3268.45
+FBA,105788,"Rolled Oats (1 Gallon Bucket, 4 lb) UNP",,8,0,0,0,51.28,36.296068,151.6
+FBA,105789,"Cream of Tartar (Shaker, 1 lb) UNP",,11,0,0,0,64.35,58.150116,164.89
+FBA,105798,"Baking Soda (1 Gallon Bucket, 10 lbs) POI",,396,0,0,0,3433.32,1872.213018,11286
+FBA,105799,Baking Soda (2 lb) UNP,,108,0,0,0,276.48,105.215545,1485
+FBA,105800,Cream of Tartar (1.5 lb) UNP,,50,0,0,0,307,253.911765,877.5
+FBA,105802,Corn Starch (2 lb) UNP,,117,0,0,0,298.35,149.87232,1316.25
+FBA,105803,Almond Flour (2 lb) UNP,,42,0,0,0,433.02,362.910882,881.58
+FBA,105809,Corn Starch (1 lb) UNP,,43,0,0,0,85.57,47.751946,427.85
+FBA,105810,Corn Starch (3 lb) UNP,,74,0,0,0,246.42,106.636552,1032.3
+FBA,105818,Play Sand (22 lb) POI ,,56,0,0,0,576.24,195.367656,2237.2
+FBA,105819,Corn Syrup (1 Gallon Jug) UNP,,58,0,0,0,491.26,350.532,1389.1
+FBA,105840,Crushed Peppermint Candy Pieces (5 lbs) UNP (sell Sept-Feb),,17,0,0,0,330.14,302.467799,679.15
+FBA,105871,Flame Retardant Oven Mitts,,36,0,0,0,138.24,191.044823,359.64
+FBA,105874,Vitamin C Powder (8 oz) UNP,,46,0,0,0,175.26,86.925435,549.7
+FBA,105875,Vitamin C Powder (1 lb) UNP,,41,0,0,0,268.14,148.034253,727.75
+FBA,105880,"10"" Square Palm Leaf Plates (25 Count) QPD",,40,0,0,0,293.2,0,678
+FBA,105881,Textured Nitrile Gloves (Large) 1000 Count QPD,,10,0,0,0,409.9,392.262325,699.9
+FBA,105882,Textured Nitrile Gloves (Medium) 1000 Count QPD,,10,0,0,0,423.9,384.966789,699.9
+FBA,105883,Textured Nitrile Gloves (Small) 1000 Count QPD,,10,0,0,0,423.9,386.524032,699.9
+FBA,105916,Baking Soda (1.5 lb) UNP,,182,0,0,0,343.98,134.236721,2229.5
+FBA,105917,Citric Acid (1 lb) UNP,,31,0,0,0,69.44,36.404605,426.25
+FBA,105920,Holiday Sprinkles (2 lb) UNP,,21,0,0,0,106.05,84.34125,377.79
+FBA,105967,Rainbow Sprinkles (1.5 lb) UNP,,103,0,0,0,320.33,220.44085,1344.15
+FBA,105979,Rainbow Nonpareils Sprinkles (1.5 lb) UNP,,85,0,0,0,330.65,245.593956,1211.25
+FBA,105982,Hyaluronic Acid (1 oz) POI,,45,0,0,0,295.2,263.258132,672.75
+FBA,105983,"Salt of Magnesium (3.5 Gallon Bucket, 32 lb) POI",,19,0,0,0,529.15,1742.652857,1283.45
+FBA,105984,"Salt of Magnesium (5 Gallon Bucket, 45 lb) POI",,6,0,0,0,216.72,146.287814,532.5
+FBA,105985,Moringa Powder (8 oz) POI,,50,0,0,0,243.5,2821.074074,692.5
+FBA,105986,Moringa Powder (1 lb) POI,,45,0,0,0,394.65,337.885,989.55
+FBA,106004,"Diatomaceous Earth Capsules (200 capsules, 275 mg) EBE",,116,0,0,0,244.76,182.64813,2082.2
+FBA,106005,"Diatomaceous Earth Capsules (100 Capsules, 275 mg) POI",,233,0,0,0,253.97,158.388603,3716.35
+FBA,106008,"Acacia Fiber Capsules (100 Capsules, 325 MG) POI",,167,0,0,0,198.73,141.667363,2338
+FBA,106055,"Ice Melt Pellets (8 lb, 1 Gallon) POI",,3,0,0,0,24,13.727858,98.97
+FBA,106066,Chocolate Covered Cinnamon Bears (42 oz Bag),,-28,0,0,0,-247.8,-Infinity,-614.6
+FBA,10664,"Ceylon Cinnamon Capsule (100 Count, 300 mg) POI",,145,0,0,0,477.05,902.286039,1993.75
+FBA,10666,"Ceylon Cinnamon Capsules (200 Count, 300 mg) EBE",,82,0,0,0,523.98,293.924814,1389.9
+FBA,10667,"Ceylon Cinnamon Capsule (200 Count, 300 mg) KOP",,54,0,0,0,341.28,79.933988,823.5
+FBA,10669,Cinnamon (1 lb) POI,,52,0,0,0,278.72,169.586931,673.4
+FBA,10670,Cinnamon (2 lb) POI,,22,0,0,0,208.34,137.196889,439.78
+FBA,10674,Mineral Oil (8 oz) EBE ,,-12,0,0,0,-28.56,-15.051892,-112.2
+FBA,10677,Mineral Oil (16 oz) EBE,,9,0,0,0,30.78,17.310721,105.75
+FBA,10678,"Mineral Oil (Half Gallon, 64 oz) EBE",,21,0,0,0,208.53,168.328276,523.95
+FBA,10679,"Mineral Oil (1 Gallon ,128 oz) EBE",,6,0,0,0,110.7,83.1315,239.94
+FBA,10683,Almond Flour (1 lb) POI,,347,0,0,0,1929.32,1537.394745,5201.53
+FBA,10684,Almond Flour (3 lb) POI,,509,0,0,0,7217.62,6460.826909,13228.91
+FBA,10687,Almond Flour (1 lb Tub) EBE,,378,0,0,0,2577.96,2334.361019,6044.22
+FBA,10688,Glycerin (4 fl oz) EBE,,59,0,0,0,90.27,935.838017,415.95
+FBA,10689,Glycerin (8 fl oz) EBE,,13,0,0,0,24.44,12.947717,104.65
+FBA,10690,Glycerin (16 fl oz) EBE,,96,0,0,0,261.12,211.710826,715.2
+FBA,10691,"Glycerin (Half Gallon, 64 fl oz) EBE",,57,0,0,0,420.09,462.948571,1085.85
+FBA,10692,"Glycerin (1 Gallon, 128 fl oz) EBE",,26,0,0,0,325.26,339.17,755.3
+FBA,10700,Propylene Glycol (4 fl oz) EBE,,96,0,0,0,150.72,494.506667,671.04
+FBA,10701,Propylene Glycol (8 fl oz) EBE,,16,0,0,0,32,28.725246,120.8
+FBA,10702,Propylene Glycol (16 fl oz) EBE,,2,0,0,0,5.8,3.620909,22.5
+FBA,10703,Propylene Glycol (64 fl oz) EBE,,89,0,0,0,700.43,724.069769,1739.95
+FBA,10709,Propylene Glycol (8 fl oz) KOP,,136,0,0,0,270.64,212.204348,986
+FBA,10710,Propylene Glycol (16 oz) KOP,,97,0,0,0,258.99,245.903661,0
+FBA,10711,"Propylene Glycol (Half Gallon, 64 fl oz) KOP",,97,0,0,0,762.42,642.281951,1842.03
+FBA,10715,"Coconut Oil (1 Gallon Bucket, 8 lb) EBE",,33,0,0,0,649.11,444.876667,1319.67
+FBA,10716,"Baking Soda (1 gallon, 10 lbs) UNP",,641,0,0,0,4621.61,3579.326982,16659.59
+FBA,10717,"Baking Soda (3.5 Gallon Bucket, 35 lbs) UNP",,67,0,0,0,1437.15,1629.632625,4421.33
+FBA,10718,"Baking Soda (5 Gallon Bucket, 50 lbs) UNP (Single Listing)",,23,0,0,0,635.49,772.7,1954.77
+FBA,10719,"Baking Soda (1 gallon, 10 lbs) UNP (Single Listing)",,129,0,0,0,930.09,733.021314,3352.71
+FBA,10720,"Baking Soda (3.5 Gallon Bucket, 35 lbs) UNP (Single Listing)",,47,0,0,0,1008.15,1339.810806,3101.53
+FBA,10721,"Baking Soda (5 Gallon Bucket, 50 lbs) UNP",,53,0,0,0,1464.39,1382.284504,4504.47
+FBA,10722,Cinnamon (8 oz) POI,,25,0,0,0,78,54.866557,223.75
+FBA,10724,"Coconut Oil (1 Gallon, 8 lb) UNP",,96,0,0,0,1884.48,1265.543817,3647.04
+FBA,10726,"Citric Acid (1 Gallon Bucket, 8 lb) UNP",,258,0,0,0,3093.42,3451.548161,7737.42
+FBA,10727,"Collagen Peptide Capsules (100 count, 250 mg) POI",,50,0,0,0,194.5,141.257353,799.5
+FBA,10729,"Collagen Peptide Capsules (200 Capsules, 1,500 mg) EBE",,54,0,0,0,408.24,184.532434,1080
+FBA,10730,"Collagen Peptide Capsules (200 Capsules, 1,500 mg) KOP",,94,0,0,0,702.18,516.166368,1597.06
+FBA,10731,"Collagen Peptide Capsules (150 count, 1,500 mg) UNP",,59,0,0,0,333.94,246.114439,855.5
+FBA,10733,Quick Oats (5 lbs) POI,,125,0,0,0,723.75,605.253268,2493.75
+FBA,10734,Borax 55 Lb Bag,,10,0,0,0,246.8,484.583333,133.5
+FBA,10738,"Soy Flour (1 Gallon, 5 lbs) EBE",,4,0,0,0,31.32,47.954054,79.96
+FBA,10741,Quick Oats (10 lbs) POI,,74,0,0,0,804.38,655.13514,2216.3
+FBA,10743,Steel Cut Oats (5 lb) POI,,666,0,0,0,4002.66,2544.301843,13286.7
+FBA,10746,"Propylene Glycol (1 Gallon, 128 oz.) EBE",,39,0,0,0,585.39,462.272169,1113.45
+FBA,10748,"Psyllium Husk Powder (1 Gallon, 6.5 lb) EBE",,20,0,0,0,912.6,891.409783,1299.8
+FBA,10750,Steel Cut Oats (7 lb) POI,,465,0,0,0,3850.2,2577.037949,11741.25
+FBA,10753,"Psyllium Husk Powder (1 Gallon, 6.5 lb) UNP",,18,0,0,0,821.7,4026.240581,1187.1
+FBA,10754,Calcium Carbonate (2 lb) POI (Single Listing),,119,0,0,0,336.77,197.348549,1307.81
+FBA,10755,Rolled Oats (2 lb) POI,,58,0,0,0,186.18,148.110909,652.5
+FBA,10757,Rolled Oats (7 lb) POI,,100,0,0,0,843,623.286822,2295
+FBA,10761,Coconut Oil (2 lb Tub) EBE,,97,0,0,0,584.91,369.713704,1454.03
+RET,10000,misc employee shipments,,-1,0,0,0,0,0,0
+RET,10002,College Dorm Mattress Pedic Mattress (Twin XL),,4,0,0,0,0,0,919.96
+RET,10005,Arborvitae Essential Oil 5 ml,,11,0,0,0,5.5,0,109.89
+RET,10007,Activated Charcoal Powder (1 lb.) POI,,1,0,0,0,7.74,6.187368,29.95
+RET,10009,Activated Charcoal Powder 4oz (Kill) (Closed 12/11/18),,6,0,0,0,16.2,10.42,47.7
+RET,10011,POI Aluminum Oxide 32oz X23,,2,0,0,0,8.62,6.066522,31.9
+RET,10012,Aluminum Sulfate (1 lb) POI,,1,0,0,0,2.28,1.121471,10.75
+RET,10013,Aluminum Sulfate (2 lb) POI,,11,0,0,0,36.63,21.528686,142.45
+RET,10014,Aluminum Sulfate (4 oz) POI,,28,0,0,0,35.56,12.469091,183.4
+RET,10015,Ammonium Bicarbonate 11oz,,13,0,0,0,21.71,10.307694,94.25
+RET,10016,Ammonium Bicarbonate 16oz,,14,0,0,0,28.42,18.421892,139.3
+RET,10017,Ammonium Bicarbonate 4oz,,1,0,0,0,1.24,0.302386,6.25
+RET,10019,Ammonium Sulfate (2 lb) POI X23,,5,0,0,0,16.35,13.460667,66.25
+RET,10021,Ammonium Bicarbonate (32 oz) POI,,1,0,0,0,3.05,2.19493,15.25
+RET,10022,Artisan Laundry 40oz (RET),,4,0,0,0,14,0,76
+RET,10023,Vitamin C (1 lb) POI,,-1,0,0,0,-6.42,-4.558837,-15.95
+RET,10025,Borax (1 lb) POI,,17,0,0,0,29.92,17.070404,169.15
+RET,10026,Borax (11 oz) POI,,2,0,0,0,2.7,0.997004,15.1
+RET,10027,Borax (2 lb) POI,,21,0,0,0,47.67,28.922674,267.75
+RET,10028,Borax (4 oz) POI,,5,0,0,0,5.55,8.319176,24.25
+RET,10031,Borax (5 lb) POI,,5,0,0,0,18.65,20.12162,79.75
+RET,10032,Borax Tub (2 lb) EBE,,8,0,0,0,28.48,19.210245,95.6
+RET,10033,Clove Essential Oil (15ml) POI,,99,0,0,0,50.49,171.815987,989.01
+RET,10034,Cedarwood Essential Oil (15 ml),,-1,0,0,0,-0.49,-0.045926,-8.99
+RET,10036,Calcium Carbonate 16oz,,5,0,0,0,9.4,4.656113,49.75
+RET,10037, Calcium Carbonate 32oz,,7,0,0,0,17.78,11.320741,90.65
+RET,10038,Calcium Carbonate 4oz,,5,0,0,0,6.05,15.238152,38.95
+RET,10040,Cassia Essential Oil (15 ml) POI,,56,0,0,0,27.44,0,501.2
+RET,10041,Calcium Sulfate (11 oz) POI,,2,0,0,0,2.76,1,17.98
+RET,10042,Calcium Sulfate (2 lb) POI,,18,0,0,0,41.22,26.625517,233.82
+RET,10045,Calcium Chloride (2 lb.) POI,,49,0,0,0,115.15,56.424375,585.55
+RET,10047,Lye (Tub 2 lb) POI (Check RET Inventory and KILL),,96,0,0,0,294.72,561.201951,1531.2
+RET,10048,Citric Acid (5 lb) POI,,5,0,0,0,35.45,28.745215,86.25
+RET,10049,Citric Acid (11 oz) POI,,4,0,0,0,7.16,3.90834,26.2
+RET,10050,Citric Acid (16 oz) POI,,22,0,0,0,52.36,25.917838,196.9
+RET,10051,Citric Acid (2 lb) POI,,16,0,0,0,57.12,43.882702,178.4
+RET,10052,Citric Acid (4 oz) POI,,22,0,0,0,28.6,16.298216,126.5
+RET,10054,Citric Acid (2 lb Tub) EBE,,6,0,0,0,28.86,22.609146,90
+RET,10055,Corn Starch (1 lb) POI,,1,0,0,0,1.76,0.804385,9.5
+RET,10056,Corn Starch (2 lb) POI,,12,0,0,0,32.16,17.184552,131.4
+RET,10057,Corn Starch (3 lb) POI,,9,0,0,0,31.32,22.109186,134.55
+RET,10058,Corn Starch (4 oz) POI,,22,0,0,0,26.4,7.44609,131.78
+RET,10059,Corn Starch (8 oz) POI,,10,0,0,0,13.8,3.518367,69.5
+RET,10060,Cream of Tartar (1 lb) POI,,1,0,0,0,4.1,3.55144,11.95
+RET,10061,Cream of Tartar (2 lb.) POI,,17,0,0,0,123.93,114.917737,288.15
+RET,10062,Cream of Tartar (5 lb.) POI,,1,0,0,0,16.39,17.401757,34.95
+RET,10063,Copper Sulfate (1 lb) POI (Check RET Inventory and KILL),,8,0,0,0,30,0,114
+RET,10064,Copper Sulfate (2 lb) POI (Kill),,3,0,0,0,19.77,0,54.75
+RET,10065,Copper Sulfate (5 lb) POI (Kill),,6,0,0,0,88.08,0,179.7
+RET,10066,Copper Sulfate (8 oz) POI (Check RET Inventory and KILL),,38,0,0,0,88.92,0,302.1
+RET,10067,Diatomaceous Earth (1 lb) POI,,13,0,0,0,22.1,12.90671,233.87
+RET,10068,Diatomaceous Earth (4 oz) POI,,32,0,0,0,48,16.041188,511.68
+RET,10071,Epsom Salt (1 lb) POI,,5,0,0,0,9.3,3.841484,52.5
+RET,10072,Epsom Salt (4 oz) POI,,22,0,0,0,25.96,95.193805,148.5
+RET,10073,Epsom Salt (5 lb) POI,,4,0,0,0,17.2,12.26173,74
+RET,10074,Fennel Oil (15 ml) POI,,49,0,0,0,23.03,130.160625,391.51
+RET,10076,Grapefruit Oil 15ml,,27,0,0,0,12.96,0,238.95
+RET,10077,"Glycerin (Half Gallon, 64 fl oz) POI",,5,0,0,0,36.95,27.083232,98.75
+RET,10078,"Glycerin (16 fl oz, Weight 23 oz) POI",,-1,0,0,0,-2.75,-2.146273,-11.75
+RET,10079,(REDUCE PRICE) Honey 20oz,,10,0,0,0,97.9,0,184.9
+RET,10085,Silverton KING 1166,,-1,0,0,0,0,-Infinity,-490
+RET,10087,Lime Essential Oil (15 ml) POI,,46,0,0,0,21.62,0,367.54
+RET,10088,Lemongrass Essential Oil (15 ml) POI,,3,0,0,0,1.38,0,23.58
+RET,10089,Monosodium Phosphate (2 lb) POI,,10,0,0,0,62,51.47641,209.9
+RET,10090,Monosodium Phosphate (4 oz) POI,,1,0,0,0,1.71,0.864664,8.75
+RET,10091,MONOSOD PHOS ANHY GRADE:NSF (50 LBS),,-1,0,0,0,-120.82,-120.808,0
+RET,10092,DL Malic (2 lb) POI,,40,0,0,0,137.6,85.893629,479.6
+RET,10093,DL Malic Acid (4 oz) POI,,32,0,0,0,44.16,18.632681,208
+RET,10096,Mineral Oil (16 oz) POI,,2,0,0,0,6.8,2.784118,29.5
+RET,10098,Natural Washing (11 oz.) POI (KILL) (Closed 10/9/18),,1,0,0,0,1.09,0.341574,6.49
+RET,10099,Washing Soda (1 lb) POI,,14,0,0,0,24.22,10.235014,140.7
+RET,10100,Washing Soda (2 lb) POI,,20,0,0,0,73.4,22.281818,239
+RET,10101,Washing Soda (4 oz) POI,,101,0,0,0,133.32,30.693368,631.25
+RET,10103,Oregano Essential Oil (15 ml) POI,,31,0,0,0,15.81,33.015,309.69
+RET,10104,Oxalic Acid 11oz (RET),,42,0,0,0,67.2,76.3392,333.9
+RET,10105,Oxalic Acid 32oz (RET),,30,0,0,0,81.9,55.537138,412.5
+RET,10106,Oxalic Acid (4 oz) POI (RET),,13,0,0,0,15.86,15.712667,77.87
+RET,10110,Portland Cement 8oz,,4,0,0,0,4.64,1.760889,27.8
+RET,10112,Potassium Bicarbonate 32oz,,-1,0,0,0,-5.36,-4.402703,-15.25
+RET,10114,Propylene Glycol (16 oz.) POI,,4,0,0,0,11.6,8.565867,45
+RET,10119,Rosemary Essential Oil (15 ml) POI,,-2,0,0,0,-0.94,-0.254684,-15.98
+RET,10122,SLSA (1 lb.) POI,,4,0,0,0,28.8,24.781081,77.8
+RET,10123,SLSA (2 lb.) POI,,11,0,0,0,142.78,132.003679,307.89
+RET,10124,SLSA (3 lb.) POI,,5,0,0,0,94,88.821987,189.95
+RET,10125,SLSA (4 oz.) POI,,114,0,0,0,285,162.268085,1083
+RET,10128,Sodium Tripolyphosphate (1 lb) POI,,22,0,0,0,68.86,22.704638,284.9
+RET,10129,Sodium Tripolyphosphate (2.5 lb) POI,,10,0,0,0,62,24.675862,189.5
+RET,10130,Sodium Tripolyphosphate (8 oz) POI,,1,0,0,0,2.03,0.828031,7.5
+RET,10131,Salicylic Acid (4 oz.) POI,,1,0,0,0,1.84,0.956147,8.5
+RET,10132,Pure Soap 16oz,,24,0,0,0,60.48,35.796498,263.76
+RET,10133,Pure Soap 48oz,,6,0,0,0,30.24,24.724435,104.7
+RET,10135,Pure Soap 8oz,,11,0,0,0,17.6,7.521926,76.45
+RET,10136,Sodium Percarbonate (2 lb. tub) EBE (RET),,92,0,0,0,418.6,0,2093
+RET,10137,Sodium Metasilicate (Tub 2 lb) EBE (Check RET Inventory and KILL),,-1,0,0,0,-4.46,-Infinity,-14.95
+RET,10138,Sodium Bicarbonate (1 lb) POI,,10,0,0,0,17.7,6.620153,122.5
+RET,10139,Sodium Bicarbonate (2 lb) POI,,33,0,0,0,72.27,36.826886,457.05
+RET,10140,Sodium Bicarbonate (4 oz) POI,,3,0,0,0,3.39,5.350556,17.85
+RET,10142,Titanium Dioxide 4oz,,77,0,0,0,130.9,760.078655,519.75
+RET,10144,Titanium dioxide 16oz,,10,0,0,0,39.6,26.238435,119.9
+RET,10145,Titanium Dioxide (1.5 lb.) POI,,21,0,0,0,113.4,81.470746,325.5
+RET,10146,Titanium Dioxide 8oz,,6,0,0,0,14.7,8.133462,49.5
+RET,10147,Vetiver Oil 15ml,,21,0,0,0,11.34,0.797432,246.75
+RET,10148,Wintergreen Essential Oil (15 ml) POI,,23,0,0,0,11.04,1.761839,195.27
+RET,10152,Bluetooth Headphones Red,,27,0,0,0,0.54,0,539.73
+RET,10154,Ylang Ylang Essential Oil (15 ml) POI ,,90,0,0,0,220.5,6.894154,899.1
+RET,10156,Zinc Oxide (1.5 lb) POI,,3,0,0,0,14.79,10.958276,46.5
+RET,10157,Zinc Oxide (4 oz) POI,,97,0,0,0,155.2,68.488866,581.03
+RET,10158,Zinc Oxide (8 oz) POI,,10,0,0,0,22.1,11.697468,79.5
+RET,10160,(Inactive) Activated Carbon WaterCarb NSF,,4.986166,0,0,0,164.767855,164.792786,1196.67984
+RET,10164,Calcium Oxide (2 lb) POI (RET),,5,0,0,0,10.8,4.845,74.75
+RET,10170,Diatomaceous Earth (2 oz) POI,,46,0,0,0,57.5,17.572837,667
+RET,10171,EDTA 16oz,,8,0,0,0,60.4,49.942816,215.92
+RET,10172,EDTA 4oz,,1,0,0,0,2.59,1.534373,10.49
+RET,10178,"Glycerin (1 Gallon, 128 fl oz) POI",,2,0,0,0,25.04,25.178967,73.9
+RET,10179,Glycerin (8 fl oz Weight 12 oz) POI,,-2,0,0,0,-3.92,-2.045756,-19.5
+RET,10183,Indian Healing Clay (3 lb.) POI,,1,0,0,0,10.67,6.164251,22.95
+RET,10187,Juniper Berry 15ml,,48,0,0,0,24.48,0,477.6
+RET,10188,Magnesium Chloride 16oz POI,,8,0,0,0,32.48,25.187612,119.6
+RET,10189,Magnesium Chloride 32oz POI,,2,0,0,0,13.78,12.569859,43.1
+RET,10190,Magnesium Chloride (4 oz) POI,,2,0,0,0,3.44,13.366667,14.5
+RET,10191,Magnesium Chloride 64oz,,1,0,0,0,12.37,11.904855,31.55
+RET,10196,Salicylic Acid (1 lb.) POI,,8,0,0,0,37.6,33.297266,135.6
+RET,10198,Sodium Bicarbonate (5 lb) POI,,9,0,0,0,33.57,22.541925,186.75
+RET,10200,Ice Melt (1 Gallon (8 lbs)) EBE,,5,0,0,0,27.1,26.556367,134.95
+RET,10212,SODA ASH  (50 LBS) UL Grade,,-4,0,0,0,-60.48,-61.999512,0
+RET,10221,Copper Sulfate,,4,0,0,0,284.72,0,0
+RET,10232,Mag sulfate MAYBE TECH Grade,,13,0,0,0,221,0,0
+RET,10237,(Inactive) Aluminum Sulfate free Ground TECH grade,,0.8,0,0,0,20.04,0,0
+RET,10240,SODIUM BICARBONATE 4 GRANULAR USP Grade (KILL),,-3,0,0,0,-71.1,-71.129806,0
+RET,10245,MAGNESIUM SULFATE USP PQ (50 LBS),,-1,0,0,0,-21.04,-21.030989,0
+RET,10248,CREAM OF TARTAR (B/O 30 DAY LEAD TIME) FCC KSHR (55.1156 LBS),,-2,0,0,0,-305.230192,-305.229881,0
+RET,10280,Black PP 38-400 smooth skirt lid with F217 liner,,42,0,0,0,2.1,0,0
+RET,10319,(Inactive) 24 X 16 X 8 200# Kraft RSC Corrugated Carton,,170,0,0,0,42.84,0,0
+RET,10329,Thermal Shipping Labels for GX420D Printer,,10,0,0,0,36.5,0,0
+RET,10334,"Epsom Salt (1 Gallon Bucket, 8 lbs) EBE",,5,0,0,0,37.15,42.863627,112.75
+RET,10335,Corn Starch (1.5 lb Tub) EBE  ,,61,0,0,0,216.55,135.430083,640.5
+RET,10336,Zinc Oxide Tub 24 oz,,3,0,0,0,18.21,14.987143,47.97
+RET,10337,Washing soda (2 lb Tub) EBE,,7,0,0,0,23.94,14.709644,90.65
+RET,10338,Magnesium Oil (8 fl oz) POI,,19,0,0,0,30.97,39.472039,189.05
+RET,10339,Magnesium Oil (16 fl oz) POI,,1,0,0,0,2.1,3.876486,13.95
+RET,10358,Cypress Essential Oil (15 ml) POI,,94,0,0,0,44.18,7.200561,747.3
+RET,10359,Ginger Essential Oil (15 ml) POI,,87,0,0,0,46.11,1.681513,956.13
+RET,10360,Marjoram EO (15 ml) POI,,30,0,0,0,15.3,2.29,299.7
+RET,10361,Lemon Essential Oil (15 ml) POI,,89,0,0,0,43.61,2.487955,800.11
+RET,10362,Black Pepper Essential Oil (5 ml),,16,0,0,0,9.12,0,207.84
+RET,10364,Lavender Essential Oil (15 ml) POI,,2,0,0,0,1.02,0.153203,19.98
+RET,10365,Peppermint Essential Oil (15 ml) POI,,3,0,0,0,10.35,0,29.97
+RET,10384,"Cobalt Spray Bottle, 2 oz, 2-Pack",,-2,0,0,0,-0.04,-1.884034,0
+RET,10400,Oxalic Acid (Tub 2 lb) EBE (RET),,32,0,0,0,356.16,210.302609,507.2
+RET,10412,"Baking Soda Capsules (100 Count, 750 mg) POI",,-2,0,0,0,-5.62,-4.138778,-21.5
+RET,10414,Raw Honey (36 oz) POI (RET),,18,0,0,0,175.14,0,396
+RET,10421,(Inactive) Norit E Supra Activated Charcoal USP Grade 15kg,,1.490875,0,0,0,460.971394,460.971394,0
+RET,104237,"Potassium Bicarbonate (100 Capsules, 2,860 mg) POI",,-6,0,0,0,-18.18,-18.096955,-59.7
+RET,104241,Diatomaceous Earth Tub 12oz EBE,,4,0,0,0,12.08,7.385649,39.8
+RET,104242,Potassium Bicarbonate (32 oz. tub) EBE,,17,0,0,0,128.86,90.657575,327.25
+RET,104245,"Calcium Carbonate Capsules (100 Capsules, 500 mg) POI",,-2,0,0,0,-5.56,-1.565426,-31.9
+RET,104251,Baking Soda 1 Gallon Bucket (EBE),,3,0,0,0,21.72,21.7902,81.75
+RET,104255,Gift Box Light Brown Craft Rigid Gift Boxes 4 5/8 x 3 1/8 x 1 3/4,,100,0,0,0,91,91,0
+RET,104262,Guar Gum (8 oz.) POI,,16,0,0,0,25.44,17.96198,120
+RET,104264,Potato Starch 1.5 lb (Shortage),,1,0,0,0,2.39,1.768288,11.5
+RET,104267,Salicylic Acid 2% Serum,,5,0,0,0,7.65,3.927425,43.75
+RET,104268,Salicylic Acid 20% Skin Peel,,36,0,0,0,60.84,17.416488,531
+RET,104269,Citric Acid 1 Gallon Bucket EBE,,-3,0,0,0,-35.76,-30.347211,-79.5
+RET,104275,Guar Gum (16 oz.) POI,,26,0,0,0,63.7,33.526009,337.74
+RET,104276,Chemical Peel Neutralizer (1 oz) POI,,14,0,0,0,21.42,0,168
+RET,104284,"Diatomaceous Earth (1 Gallon Bucket, 3 lb) EBE",,14,0,0,0,64.68,90.593559,419.86
+RET,104285,"Diatomaceous Earth (3.5 Gallon Bucket, 11 lb) EBE",,1,0,0,0,12.17,20.453387,59.99
+RET,104291,Sodium Citrate (1 lb) POI,,2,0,0,0,5.18,3.136881,23.1
+RET,104297,Salicylic Acid 20% with Neutralizer Set (2 oz) ,,5,0,0,0,14.85,0,89.95
+RET,104302,Sodium Citrate (2 lb) POI,,10,0,0,0,39.6,31.332353,149.5
+RET,104303,Potassium Sorbate (1 lb) POI,,1,0,0,0,4.02,3.65378,10.95
+RET,104304,"Magnesium Chloride (1 Gallon, 8 lb) EBE",,5,0,0,0,110.1,123.234286,262.5
+RET,104308,SLSA (5 lb) POI,,14,0,0,0,434.42,411.658616,937.3
+RET,104315,Acai Powder (8 oz) POI,,20,0,0,0,329.4,71.959,299.8
+RET,104316,Acai Powder (1 lb) POI,,2,0,0,0,64.16,14.983814,49.98
+RET,104321,Cardamom Essential Oil (5 ml),,2,0,0,0,0.4,0,19.98
+RET,104323,Frankincense Essential Oil (15 m) POI ,,67,0,0,0,572.85,0,0
+RET,104324,Bergamot Essential Oil 15 ml,,7,0,0,0,40.32,0,62.93
+RET,104325,Clary Sage Essential Oil (15 ml) POI,,1,0,0,0,7.82,0,12.99
+RET,10433,Salicylic Acid 5% Skin peel POI,,9,0,0,0,18.45,5.06,126
+RET,104331,Petitgrain Essential Oil (15 ml) POI,,3,0,0,0,23.46,0,29.85
+RET,104332,Thyme Essential Oil (15 ml) POI ,,3,0,0,0,18.84,0,29.97
+RET,104333,Camphor Essential Oil (15 ml) ,,3,0,0,0,4.17,0,26.85
+RET,104336,Cinnamon Leaf Essential Oil (15 ml) POI,,1,0,0,0,7.82,0,12.99
+RET,104338,Soy Flour (1 lb) POI ,,16,0,0,0,33.44,18.46042,168
+RET,104342,Almond Flour (2 lb) POI,,3,0,0,0,29.79,25.475085,65.97
+RET,104344,Gum Arabic (Acacia) (1 lb) POI,,16,0,0,0,87.04,84.623618,280
+RET,104345,Oxalic Acid (5 lb) POI (RET),,6,0,0,0,30.72,23.97133,105.3
+RET,104346,Oxalic Acid (10 lb) POI (RET),,4,0,0,0,36.52,0,100
+RET,104350,Acacia Fiber (1 lb) POI,,11,0,0,0,60.39,25.332274,170.5
+RET,104355,"Pure Soap Flakes (1 Gallon Bucket, 5 lbs) EBE",,2,0,0,0,17.66,14.825706,49.9
+RET,104363,Stone Casting Powder (2 lb) POI,,1,0,0,0,2.01,1.343696,10.5
+RET,104364,Stone Casting Powder (4 lb) POI,,2,0,0,0,6.7,5.281558,26
+RET,104367,Play Sand (5 lb) POI,,10,0,0,0,26.7,15.538476,152.5
+RET,104370,Egg Replacer (2 lb) (Soy Flour) POI,,7,0,0,0,30.31,15.490082,94.5
+RET,104373,Dextrose (1 lb) POI,,1,0,0,0,1.88,1.094639,9.25
+RET,104376,Dextrose (5 lb) POI,,3,0,0,0,13.62,8.566892,54
+RET,104383,Maltodextrin (5 lb) POI,,6,0,0,0,54.42,49.798563,155.7
+RET,104388,Psyllium Husk Powder (1 lb) POI,,1,0,0,0,7.69,3.004601,18.25
+RET,104389,Psyllium Husk Powder (1.5 lb) POI,,1,0,0,0,10.96,5.625584,22.95
+RET,104390,Psyllium Husk Powder (2 lb) POI,,1,0,0,0,14.16,12.795507,28.75
+RET,104393,Decorative Sand (2 lb) POI,,1,0,0,0,1.64,0.7698,10.25
+RET,104398,Decorative Sand (5 lb) POI,,10,0,0,0,22.1,17.450596,145.5
+RET,104431,"Amber Dropper Bottle 1 oz, 12pk",,-1,0,0,0,-4.57,-Infinity,0
+RET,104432,"Amber Dropper Bottle 2 oz, 4 pack",,-3,0,0,0,-6.72,-4.413112,0
+RET,104433,"Amber Dropper Bottle 2 oz, 2 pack",,-1,0,0,0,-1.8,-0.695369,0
+RET,104439,Tapioca Starch Flour (8 oz) POI,,6,0,0,0,8.76,2.528129,39
+RET,104445,Guar Gum (2 lb) POI,,5,0,0,0,18,10.501638,69.95
+RET,104446,Guar Gum (4 lb) POI,,1,0,0,0,6.01,4.321473,19.99
+RET,104462,"Mineral Oil (Half Gallon, 64 oz) POI (Single Listing)",,4,0,0,0,39.72,35.06975,95.8
+RET,104464,"Glycerin (Half Gallon, 64 fl oz) POI (Single Listing)",,3,0,0,0,22.17,17.178251,59.25
+RET,104467,Potato Starch (6 lb) POI (Shortage),,1,0,0,0,6.78,6.437662,23.95
+RET,104468,Potato Starch (10 lb) POI (Shortage),,2,0,0,0,21.5,17.568905,69.9
+RET,10448,"18 x 36"" 6 Mil Poly Bags 200/carton (old, Don't use)",,99.865,0,0,0,81.8893,0,0
+RET,10449,"20 x 36"" 6 Mil Poly Bags 200/carton (Old, Don't Use)",,19.865,0,0,0,18.2758,0,0
+RET,104537,Potassium Bicarbonate (2 lb) POI (Single Listing),,1,0,0,0,3.48,4.438879,15.25
+RET,104539,Portland Cement (1 lb.) POI (Single Listing) (KILL),,19,0,0,0,32.3,10.135613,322.81
+RET,104540,Portland Cement (5 lb) POI (Single Listing),,5,0,0,0,17,7.842553,104.75
+RET,104542,Soap Flakes (8 oz) POI (Single Listing),,11,0,0,0,17.6,10.551429,76.45
+RET,104543,Soap Flakes (1 lb.) POI (Single Listing) ,,24,0,0,0,60,34.526649,236.4
+RET,104544,Pure Soap Flakes (2 lb) POI,,9,0,0,0,33.3,21.481442,123.75
+RET,104561,"Potassium Bicarbonate (5 Gallon Bucket, 50 lb) EBE (Single Listing)",,2,0,0,0,194.34,222.677209,369.9
+RET,104564,"Cream Of Tartar (1 Gallon Bucket, 8 lb) EBE (Single Listing)",,2,0,0,0,53.62,52.838759,103.1
+RET,104568,"Acai Powder (Tub, 14 oz.) EBE",,19,0,0,0,559.36,0,854.81
+RET,104572,"Acai Powder Capsules (100 Capsules, 300 mg) POI",,1,0,0,0,4.8,2.015833,11.95
+RET,104587,Epsom Salt (2 lb) POI,,3,0,0,0,7.41,4.272649,35.25
+RET,104628,"Tapioca Starch Flour (1 Gallon Bucket, 5 lb) EBE",,2,0,0,0,12.46,9.07084,39.9
+RET,104928,"Support Plus 7"" Twin Mattress",,2,0,0,0,117.36984,0,319.9
+RET,104929,"Support Plus 7"" Twin XL Mattress",,-1,0,0,0,-63.18441,-Infinity,-164.95
+RET,104931,"Boschettu Support Plus 7"" Full XL",,3,0,0,0,362.4,0,1215
+RET,104934,Ice Melt (55 lbs) EBE (Lower Feb 1) (Raise Nov 1),,-1,0,0,0,-27.14,-Infinity,-105.99
+RET,104935,Zinc Oxide (55 lbs) POI,,-3,0,0,0,-395.82,-Infinity,-614.97
+RET,104937,Boschettu Foundation Twin XL,,-1,0,0,0,-25.68304,-Infinity,-115.95
+RET,104938,Boschettu Foundation Full,,4,0,0,0,145.8804,0,619.8
+RET,104939,Boschettu Foundation Queen,,-1,0,0,0,-38.45375,-Infinity,-164.95
+RET,104941,Boschettu Foundation California King,,-1,0,0,0,-44.89375,-Infinity,-174.95
+RET,104942,Milan Twin Mattress,,3,0,0,0,160.69326,0,437.85
+RET,104943,Milan Twin XL Mattress,,8,0,0,0,456.12384,0,1191.6
+RET,104947,Florence Twin Mattress,,4,0,0,0,362.84604,0,819.8
+RET,104962,"Turin Kids 7"" Blue Covered Twin Mattress",,-3,0,0,0,-192.16701,-Infinity,-350.85
+RET,104974,"Portofino 8"" Full",,4,0,0,0,472.4628,0,1099.8
+RET,104976,"Portofino 8"" Queen",,200,0,0,0,27648.64,0,62990
+RET,104982,"Portofino 10"" Twin XL",,200,0,0,0,21798.64,0,44990
+RET,104983,"Portofino 10"" Full",,4,0,0,0,565.1564,0,1231.8
+RET,104987,"Portofino 10"" King",,200,0,0,0,40696.68,0,0
+RET,104988,"Portofino 10"" STK",,200,0,0,0,41178.86,0,0
+RET,104991,"Portofino 12"" Twin XL",,200,0,0,0,25618.9,0,53590
+RET,105009,"Salerno 2"" Topper Twin XL",,-1,0,0,0,-30.47225,-Infinity,-65.95
+RET,105014,Ravello Pillow,,-1,0,0,0,-6.047886,-Infinity,-29.95
+RET,105016,Ancona Low Profile,,3,0,0,0,51.35913,0,143.85
+RET,105017,Ancona Medium Profile,,-3,0,0,0,-54.45189,-Infinity,-146.85
+RET,105018,Ancona High Profile,,-2,0,0,0,-38.3989,-Infinity,-109.9
+RET,105019,King Size Ancona Low Profile,,4,0,0,0,96.66068,0,247.8
+RET,105020,King Size Ancona Medium Profile,,2,0,0,0,53.01634,0,129.9
+RET,105021,King Size Ancona High Profile,,4,0,0,0,110.71868,0,263.8
+RET,105023,Siena Pillow,,200,0,0,0,2730.414,0,8390
+RET,105025,Genoa Protector Twin XL,,-2,0,0,0,-12.51989,-Infinity,-63.9
+RET,105031,Bari Protector Twin XL,,-3,0,0,0,-15.206295,-Infinity,-92.85
+RET,105032,Bari Protector Full,,4,0,0,0,23.16778,0,127.8
+RET,105036,Ancona Protector Twin,,2,0,0,0,36.51234,0,95.9
+RET,105037,Ancona Protector Twin XL,,-7,0,0,0,-128.53764,-Infinity,-342.65
+RET,105038,Ancona Protector Full,,-3,0,0,0,-71.86959,-Infinity,-167.85
+RET,10504,"Knock Off Mattress Twin Foundation, Replaces Box Spring and Bed Frame, All in one unit, 1 minute setup 1200 pounds distrubuted weight capacity",,4,0,0,0,0,0,0
+RET,105040,Ancona Protector Queen,,-7,0,0,0,-187.2003,-Infinity,-419.65
+RET,105041,Ancona Protector King,,-14,0,0,0,-458.82116,-Infinity,-937.3
+RET,105042,Ancona Protector California King,,2,0,0,0,62.78078,0,133.9
+RET,105044,Trieste Protector Twin XL,,-5,0,0,0,-55.6004,-Infinity,-194.75
+RET,105047,Trieste Protector Queen,,-8,0,0,0,-114.82496,-Infinity,-351.6
+RET,105049,Trieste Protector California King,,-2,0,0,0,-33.44946,-Infinity,-91.9
+RET,10505,"Knock Off Mattress Twin XL Foundation, Replaces Box Spring and Bed Frame, All in one unit, 1 minute setup 1200 pounds distrubuted weight capacity",,3,0,0,0,0,0,0
+RET,105050,Sorrento Low Profile,,-24,0,0,0,-205.5252,-Infinity,-766.8
+RET,105051,Sorrento Medium profile,,-11,0,0,0,-96.07081,-Infinity,-351.45
+RET,105052,Sorrento High Profile,,-5,0,0,0,-44.51935,-Infinity,-164.75
+RET,105057,"Vitamin C Powder (3.5 Gallon Bucket, 35 lb) EBE",,1,0,0,0,185.97,172.54,259.75
+RET,105058,"Vitamin C Powder (5 Gallon Bucket, 45 lb) EBE",,1,0,0,0,236.99,219.778,339.75
+RET,105061,"SLSA (5 Gallon Bucket, 30 lbs) EBE",,1,0,0,0,180.76,183.444138,305
+RET,10508,"Knock Off Mattress King Foundation, Replaces Box Spring and Bed Frame, All in one unit, 1 minute setup 1200 pounds distrubuted weight capacity",,-1,0,0,0,0,-Infinity,0
+RET,10510,"Knock Off Mattress Twin 7"" Supportive",,-1,0,0,0,0,-Infinity,0
+RET,10511,"Knock Off Mattress Twin XL S 7"" Supportive",,-4,0,0,0,0,-Infinity,0
+RET,10516,"Knock Off Mattress Queen 11"" Hybrid Coil",,200,0,0,0,0,0,0
+RET,10517,"Knock Off Mattress King 11"" Hybrid Coil",,200,0,0,0,0,0,0
+RET,10520,"Knock Off Mattress COMBO Twin XL 11"" Hybrid Coil",,198,0,0,0,0,0,0
+RET,10521,"Knock Off Mattress COMBO Full 11"" Hybrid Coil",,20,0,0,0,0,0,0
+RET,10522,"Knock Off Mattress COMBO Queen 11"" Hybrid Coil",,19,0,0,0,0,0,0
+RET,10525,"Knock Off Mattress Kids Twin Red 5"" Mattress",,4,0,0,0,0,0,0
+RET,10528,"Knock Off Mattress Kids Full 7"" Mattress and Blue Water Resistant Cover",,-2,0,0,0,0,-Infinity,0
+RET,10532,"Knock Off Mattress 8"" Memory Foam Twin XL soft luxurious zip off anti microbial cover",,200,0,0,0,0,0,0
+RET,10533,"Knock Off Mattress 8"" Memory Foam",,200,0,0,0,0,0,0
+RET,10534,"Knock Off Mattress 8"" Memory Foam Queen",,200,0,0,0,0,0,0
+RET,10538,"Knock Off Mattress Twin XL Super Support 7"" Memory Foam Mattress",,199,0,0,0,0,0,0
+RET,10541,"Knock Off Mattress Queen Super Support 7"" Memory Foam Mattress",,-1,0,0,0,0,-Infinity,0
+RET,10545,"Knock Off Mattress 8"" Twin XL Mattress with 4 layer memory foam",,-1,0,0,0,0,-Infinity,0
+RET,105564,Tapioca Starch Flour (2 lb) POI,,3,0,0,0,8.4,5.699236,31.5
+RET,105565,Tapioca Starch Flour (5 lb) POI,,1,0,0,0,5.19,3.601532,23.99
+RET,105579,MACA POWDER (KILL-DO NOT BUY) (1 LB),,-1,0,0,0,-10.97,-Infinity,0
+RET,105587,Quinoa Organic (4 lb) POI,,1,0,0,0,10.07,4.756182,24.95
+RET,105589,Cocoa Powder (1 lb) POI,,1,0,0,0,3.97,3.539429,12.95
+RET,105591,Cinnamon Sticks (1 lb) POI,,3,0,0,0,18.72,17.593922,44.85
+RET,105595,Flaxseed Meal (1 lb) POI,,1,0,0,0,3.41,2.433089,12.25
+RET,105597,"Washing Soda (5 Gallon Bucket, 50 lb) POI",,1,0,0,0,36.22,23.143279,100
+RET,105601,"Borax Powder (1 Gallon Bucket, 9 lb) POI",,1,0,0,0,8.39,5.141934,22.5
+RET,105603,Soy Flour (2 lb) POI (Single Listing),,2,0,0,0,6.74,5.045029,29.9
+RET,105605,Soy Flour (1 lb Tub) EBE,,1,0,0,0,3.51,2.363659,12.95
+RET,105618,"Moringa Capsules (200 capsules, 200 mg) EBE",,-1,0,0,0,-6.15,-1.952,-19.95
+RET,105619,"Guar Gum (1 Gallon Bucket, 6.5 lb) EBE",,1,0,0,0,11.26,8.396957,29.95
+RET,105621,ESSENTIAL OIL GIFT BOX,,80,0,0,0,72.8,72.8,0
+RET,105622,"Ammonium Sulfate (1 Gallon Bucket, 9 lbs) EBE",,1,0,0,0,9.99,7.471169,24.99
+RET,105623,Dextrose (1.5 lb Tub) EBE,,1,0,0,0,3.64,2.542727,11.55
+RET,105625,"Tapioca Flour (Tub, 1.5 lb) EBE ",,1,0,0,0,3.87,2.200488,12.95
+RET,105629,"Acacia Fiber (1 Gallon Bucket, 5 lb) EBE",,2,0,0,0,47.34,23.394762,87.9
+RET,105634,"Soy Flour (1 Gallon Bucket, 5 lbs) EBE",,1,0,0,0,7.83,6.121727,24.95
+RET,105636,Titanium Dioxide (1 lb) POI (Single Listing) (Closed),,17,0,0,0,64.09,0,203.83
+RET,105637,Turmeric (8 oz) POI,,1,0,0,0,2.25,1.230526,8.15
+RET,105638,Turmeric (1 lb) POI,,1,0,0,0,3.82,2.584205,11.25
+RET,105641,Arrowroot Powder (2 lb) POI ,,-1,0,0,0,-4.58,-3.668832,-12.95
+RET,105645,"Cayenne Pepper Capsules (100 Capsules, 250 mg) POI",,1,0,0,0,2.99,0.922432,9.95
+RET,105646,"Cayenne Pepper Capsules (200 Capsules, 250 mg) EBE",,1,0,0,0,5.77,1.528397,12.95
+RET,105648,Black Peppercorns (1 lb) POI,,2,0,0,0,15.62,11.131351,33.1
+RET,105650,Smoked Paprika (1 lb) POI ,,15,0,0,0,76.05,54.598396,224.25
+RET,105654,Mushroom Popcorn Kernels (5 lb) POI (Closed 12/3/18),,-1,0,0,0,-5.4,-3.33879,-15.95
+RET,105655,Mushroom Popcorn Kernels (15 lb) POI (Closed 12/3/18),,1,0,0,0,13.76,10.163775,34.95
+RET,105657,"Methylcellulose (Tub, 12 oz) EBE",,1,0,0,0,11.01,9.58,22.99
+RET,105660,"Aluminum Oxide (Tub, 4 lb) EBE",,1,0,0,0,9.08,6.90041,20.99
+RET,10568,"Knock Off Pillow Hybrid For Side, Back, and Front Sleepers",,-1,0,0,0,0,-Infinity,0
+RET,105683,"Calcium Chloride (1 Gallon Bucket, 7 lb) EBE",,8,0,0,0,58.96,35.815873,204.4
+RET,105688,"Monosodium Phosphate (Tub, 3 lb) EBE",,7,0,0,0,74.76,63.223243,174.93
+RET,105689,White Rice Flour (1 Gallon Bucket) EBE,,3,0,0,0,24.12,15.934535,71.85
+RET,10569,"Knock Off Pillow is a foam, latex and gel hybrid pillow",,-2,0,0,0,0,-Infinity,0
+RET,105698,"Salt of Magnesium (1 Gallon Bucket, 8 lbs) POI ",,1,0,0,0,8.01,8.962588,25.5
+RET,10570,Knock Off Piilow Cold Technology Lo-Profile,,-1,0,0,0,0,-Infinity,0
+RET,105700,Distilled water,,3.8913,0,0,0,0,0,0
+RET,10571,Knock Off Piilow Fused Foam and Gel,,-2,0,0,0,0,-Infinity,0
+RET,105718,Holiday Spice Essential Oil Gift Set (4 - 15 ml bottles) POI,,9,0,0,0,79.56,0,134.91
+RET,105719,Classic Christmas Essential Oil Gift Set (4 - 15 ml bottles) POI,,4,0,0,0,32.28,0,79.96
+RET,10572,Knock Off Pillow Gel layered,,-2,0,0,0,0,-Infinity,0
+RET,105725,Wild Orange Oil (15 ml),,-2,0,0,0,-4.94,-0.153203,-17.5
+RET,105726,"L-Arginine Capsules (100 Capsules, 400 mg) POI",,1,0,0,0,4.33,1.400815,12.95
+RET,10573,Knock Off Pillow King Gel layered Low Profile,,-3,0,0,0,0,-Infinity,0
+RET,10574,Knock Off Medium Profile King Size Pillow Gel,,-2,0,0,0,0,-Infinity,0
+RET,10575,Knock Off Pillow King Gel High Profile,,-3,0,0,0,0,-Infinity,0
+RET,10576,Knock Off Pillow Unique Curve Design,,-7,0,0,0,0,-Infinity,0
+RET,105765,Yellow Plastic Pail Opener QPD,,1,0,0,0,1.66,1.042877,6.75
+RET,105780,"Lavender Epsom Salt (1 Gallon Bucket, 8 lb) EBE",,2,0,0,0,17.66,13.502181,49.9
+RET,105788,"Rolled Oats (1 Gallon Bucket, 4 lb) UNP",,4,0,0,0,25.64,18.148034,75.8
+RET,105798,"Baking Soda (1 Gallon Bucket, 10 lbs) POI",,5,0,0,0,43.35,23.639053,142.5
+RET,10580,Knock Off Matresses Twin XL Protector 100% waterproof,,4,0,0,0,0,0,0
+RET,105800,Cream of Tartar (1.5 lb) UNP,,1,0,0,0,6.14,5.078235,17.55
+RET,105818,Play Sand (22 lb) POI ,,1,0,0,0,10.29,3.488708,39.95
+RET,105823,Coupon (Map all Coupons to this product),,-1,0,0,0,0,-Infinity,0
+RET,105824,Split King Premium Mattress Protector (Set of 2) BOS,,-12,0,0,0,0,-Infinity,0
+RET,105829,Split King Waterproof Mattress Protectors (Set of 2) KO,,-13,0,0,0,0,-Infinity,0
+RET,105830,Split King Terry Cloth Mattress Protector Set of 2 BOS,,-2,0,0,0,0,-Infinity,0
+RET,10587,Knock Off Mattress Full Mattress Protector 100% waterproof,,200,0,0,0,0,0,0
+RET,10592,Knock Off Twin XL Mattress Protector,,-12,0,0,0,0,-Infinity,0
+RET,105920,Holiday Sprinkles (2 lb) UNP,,1,0,0,0,5.05,4.01625,17.99
+RET,10593,Knock Off Full Mattress Protector,,2,0,0,0,0,0,0
+RET,10594,Knock Off Queen Mattress Protecto,,-7,0,0,0,0,-Infinity,0
+RET,10595,Knock Off King Mattress Protector,,-1,0,0,0,0,-Infinity,0
+RET,10596,Knock Off California King Mattress Protector,,-5,0,0,0,0,-Infinity,0
+RET,105979,Rainbow Nonpareils Sprinkles (1.5 lb) UNP,,1,0,0,0,3.89,2.889341,14.25
+RET,105985,Moringa Powder (8 oz) POI,,4,0,0,0,19.48,225.685926,55.4
+RET,10599,Knock Off Full Mattress Protector,,-1,0,0,0,0,-Infinity,0
+RET,10600,Knock Off Queen Mattress Protector,,-1,0,0,0,0,-Infinity,0
+RET,10602,Knock Off California King Mattress Protector,,200,0,0,0,0,0,0
+RET,10603,Knock Off Pillow Low Profile cool to the touch,,200,0,0,0,0,0,0
+RET,106034,Pomegranate Juice Powder (8 oz) POI,,4,0,0,0,16.84,13.246246,50
+RET,10615,Florence Combo King,,4,0,0,0,0,0,3215.2
+RET,10616,Florence Combo Twin XL,,4,0,0,0,0,0,1543.4
+RET,10620,Florence Combo California King,,-1,0,0,0,0,-Infinity,-1000
+RET,10669,Cinnamon (1 lb) POI,,1,0,0,0,5.36,3.261287,12.95
+RET,10670,Cinnamon (2 lb) POI,,1,0,0,0,9.47,6.236222,19.99
+RET,10674,Mineral Oil (8 oz) EBE ,,13,0,0,0,30.94,16.306216,121.55
+RET,10678,"Mineral Oil (Half Gallon, 64 oz) EBE",,2,0,0,0,19.86,16.031264,49.9
+RET,10684,Almond Flour (3 lb) POI,,8,0,0,0,113.44,101.545413,207.92
+RET,10687,Almond Flour (1 lb Tub) EBE,,13,0,0,0,88.66,80.282257,207.87
+RET,10688,Glycerin (4 fl oz) EBE,,5,0,0,0,7.65,79.308307,35.25
+RET,10689,Glycerin (8 fl oz) EBE,,5,0,0,0,9.4,4.979891,40.25
+RET,10690,Glycerin (16 fl oz) EBE,,15,0,0,0,40.8,33.079817,111.75
+RET,10700,Propylene Glycol (4 fl oz) EBE,,3,0,0,0,4.71,15.453333,20.97
+RET,10701,Propylene Glycol (8 fl oz) EBE,,53,0,0,0,106,95.152377,400.15
+RET,10716,"Baking Soda (1 gallon, 10 lbs) UNP",,2,0,0,0,14.42,11.167947,51.98
+RET,10733,Quick Oats (5 lbs) POI,,6,0,0,0,34.74,29.052157,119.7
+RET,10734,Borax 55 Lb Bag,,1,0,0,0,24.68,48.458333,13.35
+RET,10743,Steel Cut Oats (5 lb) POI,,2,0,0,0,12.02,7.640546,39.9
+RET,10748,"Psyllium Husk Powder (1 Gallon, 6.5 lb) EBE",,1,0,0,0,45.63,44.570489,64.99
+RET,10750,Steel Cut Oats (7 lb) POI,,1,0,0,0,8.28,5.542017,25.25
+RET,10755,Rolled Oats (2 lb) POI,,1,0,0,0,3.21,2.553636,11.25
+RET,10757,Rolled Oats (7 lb) POI,,1,0,0,0,8.43,6.232868,22.95
+RET,10761,Coconut Oil (2 lb Tub) EBE,,1,0,0,0,6.03,3.811481,14.99
+INV,10029,BORAX (B/O 25 DAY LEAD TIME) 5 MOL (55.1156 LBS),,70.531468,0,0,0,1360.58023,1360.582091,0
+INV,10039,CALCIUM CARBONATE FOOD GRADE (50 LBS),,19.776,0,0,0,540.8736,540.87622,0
+INV,10091,MONOSOD PHOS ANHY GRADE:NSF (50 LBS),,1.42,0,0,0,171.5644,171.54736,0
+INV,10107,OXALIC ACID (55 LBS) (RET),,86.88,0,0,0,3218.791056,2790.031464,23892
+INV,10120,SLSA - LATHANOL COARSE  (200 LBS),,1.9529,0,0,0,2152.0958,2157.325228,2144.2842
+INV,10159,ZINC OXIDE ZOCO 112 (55 LBS),,11.066125,0,0,0,1287.875627,1272.045732,0
+INV,10160,(Inactive) Activated Carbon WaterCarb NSF,,4.986166,0,0,0,164.767855,164.792786,1196.67984
+INV,10180,BENTONITE KWK GRANULAR (B/O 45 DAY LEAD TIME) VOLCLAY FCC  (50 LBS) B/O,,0.005006,0,0,0,0.065203,0,0
+INV,10195,SODIUM TRIPOLYPHOSPHATE (50 LBS) TECH (DO NOT ORDER),,2.3,0,0,0,152.743,58.541053,0
+INV,10202,BAG 1: 2 oz Kraft Foil Flat Pouch,4000/1,2039,0,0,0,203.9,181.479579,0
+INV,10203,BAG 2: 4 oz Natural Kraft Foil Flat Pouch,4000/1,2380,0,0,0,238,225.952286,0
+INV,10204,BAG 3: 4 oz Kraft Box Pouch,1500/1,809,0,0,0,129.44,141.516659,0
+INV,10205,BAG 4: 8 oz Kraft Box Pouch,1000/1,1688,0,0,0,422,521.583373,0
+INV,10206,BAG 5: 12 oz Natural Kraft Box Pouch,1000/1,2046,0,0,0,736.56,734.51,0
+INV,10207,"BAG 6: 16 oz Natural Kraft Box Pouch, no valve",,1391,0,0,0,555.009,571.13,0
+INV,10211,NORFOX 92 SOAP GRANULES (50 LBS),,10.3,0,0,0,484.1,484.102429,0
+INV,10212,SODA ASH  (50 LBS) UL Grade,,149.5,0,0,0,2260.44,2317.231768,0
+INV,10220,CALCIUM SULFATE DIHY TERRA ALBA GRADE: FCCNFKOS (50 LBS),,37.77,0,0,0,745.9575,745.945717,0
+INV,10221,Copper Sulfate,,4,0,0,0,284.72,0,0
+INV,10223,CALCIUM OXIDE QUICKLIME POLYCAL TECH,,4.44,0,0,0,75.924,75.8796,0
+INV,10224,SODIUM PROPIONATE GRADE:FCC (50 LBS),,0.9,0,0,0,71.073,70.302857,0
+INV,10225,AMMONIUM BICARBONATE (B/O 24 DAY LEAD TIME) TRTD FCC (50 LBS),,0.9676,0,0,0,42.98563,42.985879,0
+INV,10228,DIATAMACEOUS EARTH DICALITE 2500 FOOD GRADE (KILL),,0.0202,0,0,0,0.304212,0.304275,0
+INV,10229,MALIC ACID FOOD GRADE FINE ( 50 LB),,1.95636,0,0,0,117.3816,117.381247,0
+INV,10230,SALICYLIC (B/O 17 DAY LEAD TIME) CRYSTAL USP (55.1156 LBS),,0.0858,0,0,0,21.563857,21.544982,0
+INV,10231,CORN STARCH KARI-OUT CO (50 LBS),,1.59,0,0,0,25.2492,25.2492,0
+INV,10232,Mag sulfate MAYBE TECH Grade,,13,0,0,0,221,0,0
+INV,10233,SODIUM PERCARBONATE COATED,,8.28,0,0,0,410.63004,338.4864,0
+INV,10235,"AMMONIUM SULFATE (B/O 33 DAY LEAD TIME)  NSF GRADE (50 LBS) Up in Feb, Slow in Aug",,1.2,0,0,0,26.634,24.073868,0
+INV,10236,ALUMINUM SULFATE FREE GRAN FOOD GRADE,,0.34,0,0,0,14.416,12.499229,0
+INV,10237,(Inactive) Aluminum Sulfate free Ground TECH grade,,0.8,0,0,0,20.04,0,0
+INV,10238,CALCIUM CHLORIDE ANHY 94-97% PELLETS FCC GRADE (50 LBS) KILL,,19,0,0,0,401.1755,0,0
+INV,10239,POTASSIUM BICARBONATE GRANULAR USP Grade SLC,,3.37,0,0,0,324.88485,324.888307,0
+INV,10240,SODIUM BICARBONATE 4 GRANULAR USP Grade (KILL),,-3,0,0,0,-71.1,-71.129806,0
+INV,10241,PROPYLENE GLYCOL USP (474 LBS),,0.964925,0,0,0,484.816917,498.281179,0
+INV,10242,GLYCERINE 99.7% 200ZGL01 USPFCC LIQ (551.15 LBS),,2.5896,0,0,0,827.809663,827.859028,0
+INV,10244,COCONUT OIL 76 WHT 550 KOSHER (420 LBS),,0.206526,0,0,0,75.261565,110.746169,0
+INV,10245,MAGNESIUM SULFATE USP PQ (50 LBS),,28.6259,0,0,0,602.288936,602.030989,0
+INV,10246,MAGNESIUM CHLORIDE (B/O Direct) HEXAHYDRATE CRYSTAL USP (55.12 LBS),,5.57096,0,0,0,823.069229,823.070879,0
+INV,10248,CREAM OF TARTAR (B/O 30 DAY LEAD TIME) FCC KSHR (55.1156 LBS),,18.354185,0,0,0,2801.125706,2801.122855,0
+INV,10249,EDTA Versene USP FCC POWDER (100 lbs),,1.13,0,0,0,664.666,664.66374,0
+INV,10251,Chlorine Powder,,1,0,0,0,144.1,0,0
+INV,10252,ASCORBIC ACID LUWEI USPFCC (55.1156 LBS),,0.00289,0,0,0,0.757077,0.757054,0
+INV,10256,CALCIUM CHLORIDE (B/O 41 DAY LEAD TIME) FCC KSHR GRANULAR (55 LBS),,3.35715,0,0,0,59.824413,59.486039,0
+INV,10261,"LABEL 2.625"" x 1"" Weatherproof Polyester Laser  (5 ml oil wrap)",,39.606917,0,0,0,19.783655,0,19.01132
+INV,10262,"LABEL 3.75"" x 1.4375"" Weatherproof Polyester Laser ",,956.69872,0,0,0,440.081411,439.878994,440.081411
+INV,10263,"LABEL 4"" x 2"" Weatherproof Polyester Laser Shipping Labels",,69.2,0,0,0,31.832,31.812086,31.832
+INV,10264,"LABEL 4"" x 2.5"" Weatherproof Polyester Laser ",,231.25,0,0,0,106.375,106.3565,106.375
+INV,10265,"LABEL 4"" x 3.33"" Weatherproof Polyester Laser ",,472.9964,0,0,0,208.118416,208.061656,0
+INV,10266,"LABEL 4"" x 4 Weatherproof Polyester Laser  Square Labels",,1000.25,0,0,0,459.91495,419.541479,400.1
+INV,10267,"LABEL  7"" x 2"" Weatherproof Polyester Laser (500 Sheets)",,765.4,0,0,0,336.776,305.462067,0
+INV,10268,"LABEL 8.1875"" x 1.375"" Weatherproof Polyester Laser  Eco Water Bottle Labels",,230,0,0,0,16.1,17.865637,0
+INV,10269,"LABEL 1.875"" x 12"" Weatherproof Polyester Laser  Large Format Labels ",,203.5,0,0,0,28.49,0,0
+INV,10270,"LABEL CLEAR GLOSS 3"" x 2"" for inkjet (5 ML oil wrap/36 oz Honey)",,180,0,0,0,90,107.91,0
+INV,10271,"LABEL CLEAR GLOSS 3.75"" x 1.4375"" for Laser  (15 ML oil wrap)",,974.179,0,0,0,584.5074,389.534436,0
+INV,10272,JAR 6 oz clear PET 70-400 (480/case) ,,481,0,0,0,91.39,120.25,0
+INV,10273,(Inactive) Black PP 70-400 smooth skirt unlined lid,,329,0,0,0,46.06,46.06,0
+INV,10274,"LID, GOLD METAL 70-400, foam liner (870/case)",,222,0,0,0,139.86,139.86,0
+INV,10275,JAR 16 oz clear PET 89 - 400 (245/case),,777,0,0,0,194.25,0,178.71
+INV,10276,"LID, White 6 oz, unlined",,98,0,0,0,24.696,0,0
+INV,10277,"LID, BLACK SMOOTH SKIRT, 89-400 (PS liner) ",,749,0,0,0,112.35,239.68,0
+INV,10278,"LID, White 16 oz ",,24,0,0,0,4.56,0,0
+INV,10279,"F-STYLE CONTAINER, 64 oz (1/2 gallon), 38/400 (58/case)",,250,0,0,0,235,234.248028,0
+INV,10280,Black PP 38-400 smooth skirt lid with F217 liner,,42,0,0,0,2.1,0,0
+INV,10281,Press n Seal 13/16 Poly cushion,,192,0,0,0,0,0,0
+INV,10282,"F-STYLE CONTAINER, 1 gallon, 38-400 (224/pack)",,57,0,0,0,58.14,58.747126,0
+INV,10283,"LID, SMOOTH SKIRT BLACK 38-400 (PS liner) (2900/case) ",,2399,0,0,0,119.95,119.106688,0
+INV,10284,"COSMO ROUND BOTTLE 8 oz, 24-410 (468/case)",,2369,0,0,0,450.11,450.11,0
+INV,10285,"DISC TOP CAP, Black PP 24-410 (3000/case)",,6076,0,0,0,303.8,303.8,0
+INV,10287,"BULLET ROUND BOTTLE, 16 oz clear PET, 24-410 (162/case)",,2776,0,0,0,860.56,860.56,0
+INV,10288,"BLACK LOTION PUMP, 16 oz pump",,120,0,0,0,33.6,0,0
+INV,10289,"TUB, 36 oz white HDPE 120mm neck (95/case)",,483,0,0,0,342.93,342.93,0
+INV,10291,"LID, White PP 120 mm Foam Liner, (PS) liner (198/case)",,239,0,0,0,107.55,107.620554,107.55
+INV,10292,"LID, Blue 120 mm foam liner  (198/ Case)",,331,0,0,0,168.81,168.81,0
+INV,10293,"SPRAYER FINE-MIST, Natural 24-410, 7 9/16"" (1,200/ Case)",,30,0,0,0,5.7,5.617895,0
+INV,10294,BUCKET 1 GALLON White 65 mil thickness ( 225/pallet),,1912,0,0,0,1854.64,1854.64442,1682.56
+INV,10295,LID 1 Gallon White HDPE with gasket of 65 mil thickness (225/ pallet),,1912,0,0,0,592.72,592.71558,0
+INV,10296,BUCKET 3.5 GALLON white HDPE pail 90 mil with handle (120/PALLET),,781,0,0,0,3045.9,3050.563579,3045.9
+INV,10297,BUCKET 5 GALLON white HDPE pail 90 mil with handle (120/PALLET),,2413,0,0,0,7938.77,7938.779466,7938.77
+INV,10298,"LID 3.5 & 5 GALLON White HDPE gasket 90 mil (60/CASE, 2/PALLET)",,3202,0,0,0,3490.18,3490.233337,3490.18
+INV,10299,PLASTIC SCOOP 20 cc natural ( 1500/case),,1065,0,0,0,127.8,127.8,0
+INV,10300,24 mm white foam printed pressure sensitive (PS) liner - uninstalled,,4754,0,0,0,95.08,95.08,0
+INV,10301,"DROPPER for 15 mL bottle, 18-400 (468/case)",,300,0,0,0,24,0,0
+INV,10302,DROPPER for 5 mL bottle 18-400 (765/case),,50,0,0,0,3.5,0,0
+INV,10303,DROPPER CAP Black PP 18 mm (1.2 mm orifice) (5000/case),,4008,0,0,0,280.1592,281.167879,0
+INV,10304,"COBALT BLUE 1 oz, 20-400 (308/case)",,506,0,0,0,65.78,80.96,0
+INV,10305,"AMBER GLASS 1 oz, 20-400 (360/case)",,670,0,0,0,67,67,0
+INV,10306,"DROPPER (fits 1 oz bottle) RIBBED, BLACK 20-400 (1800/case)",,1510,0,0,0,271.8,268.975596,0
+INV,10307,"COBALT BLUE 2 oz, 20-400 ( 240/case)",,1040,0,0,0,208,208,0
+INV,10308,"AMBER GLASS 2 oz, 20-400 (240/case)",,44,0,0,0,4.84,4.84,0
+INV,10309,"SPRAYER FINE-MIST, BLACK 20-410, 3.75"" dip (1700/case)",,1541,0,0,0,295.07068,295.598682,0
+INV,10310,"COBALT BLUE 10 ml, perfume bottle (",,578,0,0,0,52.02,52.02,0
+INV,10311,BLACK SCREW CAP (for 10 ml glass perfume bottle) (6912/case),,578,0,0,0,11.56,11.56,0
+INV,10312,"ROLLED BALL, Steel, Natural-colored for 10 mL perfume bottle (4100/case)",,578,0,0,0,69.36,69.36,0
+INV,10313,"AMBER GLASS 16 oz, 28-400 (60/case)",,32,0,0,0,13.76,13.76,0
+INV,10314,"SPREYER/STEAM/OFF TRIGGER, 28-400, 9.25"" dip (300/case)",,140,0,0,0,40.6,40.6,0
+INV,10315,"(Inactive) 20 x 36"" 6 Mil Poly Bags 200/carton (40 lb bag) clear",,393,0,0,0,361.56,357.63,0
+INV,10317,"12"" x 12"" x 12"" Shipping Boxes, 32 ECT, Brown, 25/Bundle (121212)",,1245.225856,0,0,0,746.637423,746.606425,0
+INV,10318,"24"" X 12"" X 12"" 200# Kraft RSC Corrugated Carton Boxes Bundle 20",,36.276358,0,0,0,47.01416,47.788308,47.01416
+INV,10319,(Inactive) 24 X 16 X 8 200# Kraft RSC Corrugated Carton,,170,0,0,0,42.84,0,0
+INV,10320,"10"" x 10"" x 10"" Shipping Boxes, 32 ECT, Brown, 25/Bundle (PRA0035)",,148.1032,0,0,0,62.144103,62.14623,62.144103
+INV,10323,Envelope 1: Kraft Bubble Mailers #000,,436,0,0,0,63.63856,54.311845,0
+INV,10324,Envelope 2: Kraft Bubble Mailer #0,,585,0,0,0,87.75,87.708803,0
+INV,10325,Envelope 4: Kraft Bubble Mailers #3,,345,0,0,0,96.5655,96.5655,0
+INV,10326,Envelope 5: Kraft Bubble Mailer #5,,74,0,0,0,26.64,0,0
+INV,10327,Envelope 6: Priority Mail Bubble,,-3.828,0,0,0,0,0,0
+INV,10328,Envelope 7: Priority Mail Express Bubble,,75,0,0,0,0,0,0
+INV,10329,Thermal Shipping Labels for GX420D Printer,,10,0,0,0,36.5,0,0
+INV,10330,MINERAL OIL DRUM ( 390 LBS) (B/O),,0.007,0,0,0,1.925,1.924997,0
+INV,10331,PORTLAND CEMENT (92.6 LBS),,0.0061,0,0,0,0.073261,0.073262,0
+INV,10343,"SPRAYER FINGERTIP, black, 24-410 (1300/case)",,1329,0,0,0,252.51,252.51,0
+INV,10344,SHRINK BAND 135x40 (250/case),,-368,0,0,0,0,-Infinity,0
+INV,10345,SHRINK BAND 48x74 (250/case),,245,0,0,0,3.92,0,0
+INV,10346,SHRINK BAND 72x55 (250/case),,245,0,0,0,0,0,0
+INV,10347,SHRINK BAND 97x60 (250/case),,245,0,0,0,3.185,0,0
+INV,10348,SHRINK BANDS 190x35 (250/case) ,,65,0,0,0,1.235,0,0
+INV,10349,SHRINK BAND 118x70 (250/case),,240,0,0,0,4.8,4.8,0
+INV,10350,JAR 8 oz clear PET with 70 - 400 neck finish (360/case),,1544,0,0,0,277.92,276.372048,0
+INV,10351,"LABEL CLEAR GLOSS 2.625"" x 1"" for Laser (5 ML oil wrap)",,56.606887,0,0,0,28.303444,0,0
+INV,10352,"LABEL 4.25"" x 6.75"" Standard White Matte ",,73,0,0,0,8.03,0,0
+INV,10353,"LABEL 8.5"" x 11"" Standard White Matte (full page sticker)",,350,0,0,0,36.575,36.575,0
+INV,10354,"LABEL 6"" x 2"" Weatherproof Polyester Laser (POI Capsules)",,2015.437,0,0,0,806.1748,807.63,806.1748
+INV,10355,"LABEL 8"" x 5"" Weatherproof Polyester Laser  (2/sheet)",,765.75,0,0,0,306.3,308.284311,306.3
+INV,10356,"SQU STICKERS 2.625"" x 1"" Standard White Matte ",,2549.411958,0,0,0,203.952957,207.983178,203.952957
+INV,10364,Lavender Essential Oil (15 ml) POI,,25,0,0,0,12.75,1.915043,249.75
+INV,10373,INK BLACK Laserjet 508X,,5,0,0,0,1004.95,999.05,1004.95
+INV,10374,INK YELLOW Laserjet 508X,,6,0,0,0,1745.94,1676.74,1745.94
+INV,10375,INK MAJENTA Laserjet 508X ,,6,0,0,0,1745.94,1676.74,1745.94
+INV,10376,INK CYAN Laserjet 508X ,,7,0,0,0,2036.93,1950.43,2036.93
+INV,10377,"LABEL 2"" X .75"" Weatherproof Polyester Laser (glass bottle stickers)",,237.29922,0,0,0,301.370009,157.145021,30125.135979
+INV,10399,"LABEL 7"" x 1"" Weatherproof Polyester Laser (10/sheet)",,267.8,0,0,0,117.832,133.9,0
+INV,10402,"LID, BLACK (PS liner), 70-400 (760/case)",,1120,0,0,0,98.6048,98.611579,0
+INV,10404,"18"" x 14""  x 12"" KILL THIS SIZE Shipping Boxes 32 ECT Brown 25Bundle PRA0101",,25.965224,0,0,0,30.628578,26.485482,0
+INV,10405,"18"" x 12"" x 12"" Shipping Boxes, 32 ECT, Brown, 25/Bundle (181212)",,2520.615288,0,0,0,2015.483984,2015.455988,2015.483984
+INV,10407,"POLY BAG 8X12 2MIL (1,000/case)",,1551,0,0,0,65.142,65.162363,65.142
+INV,10408,"POLY BAG 8X10 2MIL (1,000/case)",,2183.96,0,0,0,58.96692,58.95798,58.96692
+INV,10409,"POLY BAG 9X12 2MIL (1,000/case)",,1518,0,0,0,66.792,66.790273,0
+INV,10410,"4 Mil Poly Tubing Roll - 18"" x 750'",,2,0,0,0,0.88,0,0
+INV,10416,PRESSURE SENSITIVE LINER 120MM ,,945,0,0,0,9.45,103.95,0
+INV,10417,SHRINK BANDS 120MM For Canisters (250/Stack),,4212,0,0,0,294.84,273.78,0
+INV,10418,"LID, WHITE 38-400 With (PS) liner (2900/case)",,808,0,0,0,32.32,32.306999,0
+INV,10419,"PILL PACKER 150 cc black, 38-400 (415/case)",,611,0,0,0,73.32,73.32,0
+INV,10420,"PILL PACKER 150 cc white, 38-400 (415/case)",,1225,0,0,0,147,147,0
+INV,10421,(Inactive) Norit E Supra Activated Charcoal USP Grade 15kg,,1.490875,0,0,0,460.971394,460.971394,0
+INV,104249,"LABEL 4""X 5"" Weatherproof Polyester for Laser   ",,1362,0,0,0,599.28,544.509354,0
+INV,104250,"JAR 32 oz, 89-400 (105/case)",,2,0,0,0,1.42,1.42,0
+INV,104255,Gift Box Light Brown Craft Rigid Gift Boxes 4 5/8 x 3 1/8 x 1 3/4,,100,0,0,0,91,91,0
+INV,10427,"TAPE Carton Seal 2"" X 110 YD 1.6 MIL (36/Case) $/roll",,216,0,0,0,236.939904,321.84,0
+INV,10428,RESPIRATOR Harmful Dust N- 95 Valved Particulate  (10/case),,340,0,0,0,227.46,229.86,227.46
+INV,10429,SHIPPING LABEL 4 x 6 Direct Thermal Blank for Zebra (250/roll),,6472.246657,0,0,0,2329.749907,89.682835,582437.476663
+INV,104301,(Inactive) Priority Mail Mailing Box,,570,0,0,0,0,0,0
+INV,10431,"24"" x 16"" x 8"" Shipping Boxes, 32 ECT, Brown, 20/Bundle",,22.099958,0,0,0,41.97887,46.191814,41.97887
+INV,10432,"18.5"" x 12.5"" x 8"" Shipping Boxes, 32 ECT, Brown, 25/Bundle",,168.000388,0,0,0,235.133343,236.182118,235.133343
+INV,104327,Melaleuca (Tea Tree) Essential Oil (15 ml) POI,,5.7037,0,0,0,32.853312,0,51.276263
+INV,10434,5X7 2MIL Preopen Bag on a roll (1750 bags per roll),,1750,0,0,0,0,0,0
+INV,10435,TARTARIC ACID (55.12 LBS),,0.000029,0,0,0,0.006308,0,0
+INV,10436,RICE FLOUR (50 LBS),,16.02,0,0,0,320.4,320.4,0
+INV,10437,POTATO STARCH (50 LBS) B/O 1/20/19,,-2.84,0,0,0,-127.8,-127.783496,0
+INV,10438,GUAR GUM (B/O MID FEB.) (50 LBS),,1.5175,0,0,0,67.52875,67.528935,0
+INV,10439,"SHRINK BAND 38x25, 20 mm (250/case) ",,440,0,0,0,3.432,3.4232,3.432
+INV,104398,Decorative Sand (5 lb) POI,,54,0,0,0,119.34,94.233219,785.7
+INV,10440, POLY BAG 5X8 2MIL (1000/case),,4513,0,0,0,0,67.698834,67.695
+INV,10441,"LID, BLACK (PS) liner, 28-410 (2700/case)",,500,0,0,0,25,25,0
+INV,10442,"COBALT BLUE BOTTLE 32 oz, 28-410 (1600/case)",,250,0,0,0,135,135,0
+INV,10443,"LABEL 7.375"" x 4.5"" Weatherproof Polyester for Laser",,250,0,0,0,114.95,114.95,0
+INV,10444,"COBALT BLUE BOTTLE 16 oz, 28-410 ( 144/case)",,250,0,0,0,80,80,0
+INV,10445,BAG 8: 5 lb Natural Kraft Box Pouch (600/case),,171,0,0,0,141.075,141.070759,0
+INV,10447,NATURAL KRAFT PAPER 24 oz,,1,0,0,0,0,0,1
+INV,10448,"18 x 36"" 6 Mil Poly Bags 200/carton (old, Don't use)",,99.865,0,0,0,81.8893,0,0
+INV,10449,"20 x 36"" 6 Mil Poly Bags 200/carton (Old, Don't Use)",,19.865,0,0,0,18.2758,0,0
+INV,10450,SODIUM CITRATE DIHYDRATE 8% WATER USP/FCC/EP/JP/BP,,0.45,0,0,0,25.425,28.785971,0
+INV,10451,"POTASSIUM SORBATE FCC, USP-NF, KOSHER POWDER",,13.36,0,0,0,1503,2161.051421,0
+INV,10453,ACAI POWDER (KILL-DO NOT BUY) (22.046 LBS),,0.8495,0,0,0,544.987041,291.150378,0
+INV,10454,"POLY TUBING ROLL 2 Mil - 5"" x 3,000'",,1,0,0,0,77,77,0
+INV,10455,Priority Mail Large Flatrate Mailers Box 12 x 12 x 5.5,,10,0,0,0,0,0,0
+INV,10456,Priority Mail Medium Flatrate Mailers Box 11 x 8.5 x 5.5,,54,0,0,0,0,0,0
+INV,10457,Regional Priority Flatrale Mailers Box 12.25 x 10.5 x 5.5,,5,0,0,0,0,0,0
+INV,10458,Priority Mailing Box 7 x 7 x 6,,50,0,0,0,0,0,0
+INV,10459,Priority Mailers Express Boxes 11.5 x 8.5 x 5.5,,50,0,0,0,0,0,0
+INV,10461,MALTODEXTRIN MALTDX STAR-DRI 1015 (50 LBS) DO NOT BUY,,16.41,0,0,0,1091.265,1091.265,0
+INV,10462,DEXTROSE CERELOSE (50 LBS) ,,10.41,0,0,0,297.726,302.221815,0
+INV,10463,BAKERS SOY FLOUR (B/O DIRECT 21 DAYS) ALLERGEN FOODKOSH (50 LBS),,45.96,0,0,0,1976.28,1975.99491,0
+INV,10465,PSYLLIUM HUSK (B/O 17 DAY LEAD TIME) FLOUR (55 LBS),,0.07183,0,0,0,24.220861,24.220754,0
+INV,10466,BENTONITE VOLCLAY POWDER (B/O 140 DAY LEAD TIME) (B/O 3/15) NF-BC (50 LBS),,0.001,0,0,0,0.144,0.144003,0
+INV,10467,KIRKLAND SIGNATURE BLANCHED ALMOND FLOUR (3 LBS) ,,1.41375,0,0,0,16.809488,16.809481,16.809488
+INV,10468, POLY TUBING 18 X 1600 3MIL (1000/case),,2095.487,0,0,0,398.163485,344.468521,0
+INV,10469,"MASON JARS 8 oz, 70-450G (12/case)",,48,0,0,0,28.8,28.8,0
+INV,10470,SILVER METAL BAND 70-450G  (1000/case),,188,0,0,0,18.8,19.165124,0
+INV,10471,SILVER METAL LID 70 mm ( 3000/case),,1156,0,0,0,115.6,110.477855,0
+INV,10472,"COSMO ROUND BOTTLE 4 oz, 24-410 ( 550/case)",,61,0,0,0,10.98,10.93761,0
+INV,10473,POLY BAG 18X36 6MIL (100/case),,213,0,0,0,178.92,157.62,0
+INV,10474,POLY BAG 20 X 36 6MIL (100/case),,317.985,0,0,0,292.5462,267.1074,0
+INV,10476,"LABEL 3.75"" x 4.75"" Weatherproof Polyester Laser ",,100.25,0,0,0,50.074875,50.074875,0
+INV,10477,"POLY BAG 14 x 24"" 6 (250/case)",,13,0,0,0,5.538,5.928,0
+INV,10478,"LABEL 8"" x 3.5"" Weatherproof Polyester Laser ",,538.956719,0,0,0,215.582688,215.584445,0
+INV,10479, POLY BAG 5X10 2MIL (1000/case),,1894.33808,0,0,0,31.730163,31.738676,0
+INV,10480, POLY BAG 10X14 2MIL (1000/case),,2028,0,0,0,111.54,111.526242,0
+INV,10481, POLY BAG 6X12 2MIL (1000/case),,1024,0,0,0,28.672,34.65011,0
+INV,10482,Cabot Norit Activated Carbon USP (Activated Charcoal),,0.002666,0,0,0,0.717181,0.717181,0
+INV,10483,"SHRINK BAND 152 X 33, 89-400",,4709,0,0,0,188.36,0,0
+INV,10484,"16"" x 16"" x 8"" Shipping Boxes, 32 ECT, Brown, 25/Bundle",,60.5,0,0,0,58.0558,58.056768,41766598.5
+INV,10485,"LABEL 3.75"" x 3"" Weatherproof Polyester Laser (6/sheet)",,416,0,0,0,207.792,207.769996,0
+INV,10488,SILICA SAND QUIKRETE (50 LBS),,6.9,0,0,0,49.197,49.197871,0
+INV,10490,"LABEL 8"" x 2.5"" Weatherproof Polyester Laser",,1114.25,0,0,0,556.567875,452.95,0
+INV,10491,POLY BAG 12X15 2MIL (1000/case),,1458.8908,0,0,0,101.392911,103.421777,0
+INV,10492,"PILL PACKER 255 cc white, 45-400 ( 280/case)",,164,0,0,0,25.22812,25.236157,0
+INV,10493,"PILL PACKER 300 cc white HDPE, 45-400 (204/case)",,176,0,0,0,34.62976,34.626087,0
+INV,10494,"LID, 45-400 White PS Liner Ribbed Skirt (2,000/case)",,383,0,0,0,15.6647,15.662236,0
+INV,10495,MINERAL OIL (55 GALLON DRUM) ,,5.259175,0,0,0,2892.54625,3615.689909,0
+INV,10496,"COATED GLOVES, 26"" Large, Cotton Lined, Chemical Resistant,  Nitrile, Atlas 772 (1/pack)",,1,0,0,0,13.35,13.35,0
+INV,10497,"STRETCH FILM 5"" X 1000' 80 G (1000 ft/roll,15 rolls/case)",,174719.69,0,0,0,545.824312,808.360806,0
+INV,10502,TAPIOCA STARCH (B/O END OF MARCH) (50 LBS) ,,0.00011,0,0,0,0.00286,0.00286,0
+INV,10503,"DROPPER for 2 oz bottle, 20-400 (1700/case)",,1684,0,0,0,370.48,370.48,0
+INV,105566,Light Brown Kraft Rigid Gift Boxes 4 5/8 x 3 1/8 x 1 3/4,,200,0,0,0,182,182,182
+INV,105568,QUINOA ORGANIC (25 LBS),,1.2,0,0,0,54.048,43.582075,0
+INV,105571,ARROWROOT POWDER REGAL BULK (25 LBS),,7.33,0,0,0,236.9789,266.013615,0
+INV,105572,SMOKED PAPRIKA REGAL BULK (25 LBS),,1.3,0,0,0,102.544,102.54974,0
+INV,105573,GROUND CAYENNE PEPPER REGAL BULK (25 LBS),,1.251551,0,0,0,61.075689,55.729042,0
+INV,105574,TURMERIC GROUND REGAL (5 LBS),,18.4712,0,0,0,197.087704,192.79266,0
+INV,105575,POPPY SEED (B/O ???)  REGAL BULK  (25 LBS) ,,3.8,0,0,0,146.3,241.4,0
+INV,105577,MORINGA LEAF POWDER ORGANIC (2 LBS) KILL,,2.27257,0,0,0,40.90626,40.90626,0
+INV,105578,GREEN TEA (KILL-DO NOT BUY) (3 X 16 OZ) (3 LBS) ,,0.01,0,0,0,0.3999,0.3999,0
+INV,105579,MACA POWDER (KILL-DO NOT BUY) (1 LB),,1,0,0,0,10.97,0,0
+INV,105581,ASHWAGANDHA ROOT POWDER TERRASOUL SUPERFOODS (4 x 16 OZ) (4 LBS),,0.15942,0,0,0,7.172306,7.172306,0
+INV,105582,WHOLE BLACK PEPPERCORN REGAL (5 LBS),,33,0,0,0,878.46,878.47,0
+INV,105583,POPCORN KERNELS MAGIC MUSHROOM CONAGRA  (50 LBS) LOOKING FOR NEW SOURCE,,0.5,0,0,0,11.91,11.91,0
+INV,105585,POLY BAG 3X4 2MIL (1000/CS),,690,0,0,0,0,6.9,6.9
+INV,105593,POLY BAG 3X8 2MIL ,,970,0,0,0,11.64,11.64,0
+INV,105621,ESSENTIAL OIL GIFT BOX,,290,0,0,0,263.9,263.9,0
+INV,105627,"GINGER GROUND, REGAL (8 OZ) SHAKER",,37,0,0,0,83.62,83.62,0
+INV,105628,"GINGER GROUND, REGAL (5 LBS)",,4.29324,0,0,0,68.648908,66.679939,0
+INV,105635,"FLAX SEEDS, WHOLE (25 LBS)",,2,0,0,0,43.14,43.14,0
+INV,105663,"POLY BAG 14”X18” 2MIL  (1,000/CASE)",,1127,0,0,0,100.8665,100.8665,0
+INV,105671,"Copy Paper, 20 Lb., 92 Bright, 8 1/2"" x 11"", White, 10-Ream Case (324791)",,2,0,0,0,63.98,63.98,63.98
+INV,105677,OFFICE CHAIR,,6,0,0,0,575.94,575.94,575.94
+INV,105693,Yellow Pail Lid Opener (24/pack),,48,0,0,0,46.08,47.28,46.08
+INV,105694,RUBBER STAMP 3/4 x 3,,14,0,0,0,0,153.3,153.3
+INV,105695,RUBBER STAMP 0.5 x 2,,5,0,0,0,0,39.75,39.75
+INV,105697,PAPER TOWEL DISPENSER,,1,0,0,0,45.71,45.71,0
+INV,105699,"WORK TABLE 30"" x 72"" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf",,1,0,0,0,164.99,164.99,0
+INV,105701,"POLY BAG SEALER 12"" Impulse",,2,0,0,0,224,224,0
+INV,105702,"POLY BAG SEALER 16"" Impulse ",,1,0,0,0,159,159,0
+INV,105703,KLEENEX (10 boxes),,1,0,0,0,0,13.99,16.99
+INV,105704,TOILET PAPER (30 rolls),,2,0,0,0,0,33.98,0
+INV,105705,DISPENSER PAPER TOWELS (16 packs),,2,0,0,0,0,51.98,51.98
+INV,105706,GLOVES (Med),,1004,0,0,0,0,122.86,20069.96
+INV,105707,GLOVES (large),,2,0,0,0,0,39.98,39.98
+INV,105708,DIXIE PLATES (285),,1,0,0,0,0,18.49,0
+INV,105710,HAND SOAP (2 pack),,1,0,0,0,0,5.99,5.99
+INV,105711,CUPS (200),,2,0,0,0,0,17.98,17.98
+INV,105712,GARBAGE BAGS (50 Gallon),,3,0,0,0,0,59.97,59.97
+INV,105713,SPOONS,,1,0,0,0,0,10.79,10.79
+INV,105714,CLOROX BLEACH,,1,0,0,0,0,10.99,0
+INV,105716,WIRELESS MOUSE,,1,0,0,0,0,24.99,24.99
+INV,105727,PACKING FOAM 21X43,,0.0001,0,0,0,0,0,0
+INV,105728,SANITARY NAPKIN RECEPTACLE BAGS (500/case),,1,0,0,0,0,16.99,16.99
+INV,105729,WALL-MOUNT SANITARY NAPKIN RECEPTACLE,,2,0,0,0,0,25.98,0
+INV,105731,"CLOCK: 13"" JUMBO DIGITAL BATTERY OPERATED LCD DISPLAY BY TXL",,3,0,0,0,135,135,0
+INV,105732,"WORK TABLE: 30"" x 72"" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf Regency",,1,0,0,0,316.99,316.99,0
+INV,105733,HAND SOAP: Softsoap Hand Soap with Aloe 7.5 oz. (126012),,1,0,0,0,1.99,1.99,0
+INV,105735,SAFETY GLASSES ( 4/pack) 3M Virtua ,,1,0,0,0,19.97,19.97,0
+INV,105738,BACK SUPPORT VEST  Extra Large Polyester Hook-n-loop Back Support AWP,,1,0,0,0,14.98,14.98,0
+INV,105750,"Chukka Boots (Mauss Brown, Size 9) San Polos Men's, Model 2926",,1,0,0,0,31.51,0.124444,65
+INV,105760,"CAPSULE FILLING MACHINE, 400 Holes, Size #0, With Tamper Tool",,2,0,0,0,306,306,0
+INV,105764,REFILL INK Black by BCH (16.9 oz),,1,0,0,0,15.99,15.99,0
+INV,105765,Yellow Plastic Pail Opener QPD,,1,0,0,0,1.66,1.042877,6.75
+INV,105766,"WHOLE NUTMEG (8 OZ) SHAKER, REGAL SPICE",,8,0,0,0,33.44,33.44,0
+INV,105767,GARLIC POWDER (25 LBS) REGAL BULK,,3,0,0,0,172.26,172.26,0
+INV,105770,COCONUT OIL LOUANA BAG IN BOX RBD (35 LBS),,0.02902,0,0,0,1.114368,1.114369,0
+INV,105771,CLOROX WIPES,,2,0,0,0,0,25.98,28.98
+INV,105772,ARROWHEAD WATER,,1,0,0,0,0,4.99,4.99
+INV,105773,MOP REFILL (2 PACK),,1,0,0,0,0,14.97,0
+INV,105774,"LABEL 3""X 2"" Weatherproof Polyester Laser(10/sheet)",,65.0008,0,0,0,32.4679,32.4679,0
+INV,105775,CREAM OF TARTAR SHAKER (16 oz)  REGAL ,,1,0,0,0,4.91,4.91,0
+INV,105777,SHRINK BAND 90x40 (250/case),,3820,0,0,0,51.188,51.196489,0
+INV,105781,CAPSULES CLEAR GELATIN (size 0),,1340550,0,0,0,5228.145,5228.145,0
+INV,105782,"CLEAR BAG 4: 8 oz Stand Up, Clear, Poly Zip (1,000/case)",,97,0,0,0,18.43,18.43,0
+INV,105783,"CLEAR BAG 5: 12 oz Stand Up, Clear, Poly Zip (1,000/case)",,450,0,0,0,96.75,96.75,0
+INV,105784,"CLEAR BAG 6: 16 oz Stand Up, Clear, Poly Zip (1,000/case)",,1100,0,0,0,275,275,0
+INV,105785,"CLEAR BAG 6.5: 24 oz Stand Up, Clear, Poly Zip (1,000/case)",,425,0,0,0,136,136,0
+INV,105786,"CLEAR BAG 7: 2 lb Stand Up, Clear, Poly Zip (1,000/case)",,200,0,0,0,76,76,0
+INV,105787,RUBBER STAMP 2 X 2 ,,2,0,0,0,29.9,29.9,0
+INV,105792,DIXIE BOWLS ,,1,0,0,0,0,10.79,10.79
+INV,105793,MICROFIBER TOWELS,,1,0,0,0,0,15.99,0
+INV,105794,SHARPIES (25CT),,2,0,0,0,0,32.94,0
+INV,105795,DUST MOP (LARGE),,2,0,0,0,0,23.94,0
+INV,105796,DUST PAN,,1,0,0,0,0,14.97,0
+INV,105797,PUSH BROOM (LIBMAN),,1,0,0,0,0,7.97,0
+INV,105804,FILTER MASK (100/box),,2000,0,0,0,160,160,160
+INV,105805,"CLEAR BAG 1: 1 oz Stand Up, Clear, Poly Zip (2,000/case)",,975,0,0,0,87.75,87.75,87.75
+INV,105806,"CLEAR BAG 2: 2 oz Stand Up, Clear, Poly Zip (2,000/case)",,825,0,0,0,86.625,86.625,86.625
+INV,105807,"CLEAR BAG 3: 4 oz Stand Up, Clear, Poly Zip (1,000/case)",,328,0,0,0,47.56,47.56,47.56
+INV,105808,"CLEAR BAG 8: 5 lb Stand Up, Clear, Poly Zip (500/case)",,487,0,0,0,272.72,272.72,272.72
+INV,105812,CINNAMON STICKS (3 LBS),,1.339767,0,0,0,20.994149,20.073341,0
+INV,105813,MALTODEXTRIN DE 10-15 NON-GMO (55.1156 LBS),,40,0,0,0,1180,1180,0
+INV,105814,STRETCH FILM DISPENSER SET/Hand Saver Pallet Wrap (2/pack),,3,0,0,0,12.06,12.06,12.06
+INV,105815,L-ARGININE BASE POWDER (55.1156 LBS),,1.454,0,0,0,476.85384,472.08472,476.85384
+INV,105816,MORINGA EXTRACT POWDER (55 LBS),,2.70776,0,0,0,1066.74913,1053.49,1066.74913
+INV,105817,DESK TRAYS Eldon Recycled Stackable Side -Loading Letter-Size (6-tier),,5,0,0,0,108.95,108.95,108.95
+INV,105820,"Progesterone Cream (Bioidentical) 4oz Pump of 2000mg USP Bio-Identical Progesterone. Paraben-Free, Soy-Free & Non-GMO. May Support PCOS, Menopause, TTC",,2,0,0,0,37.9,37.9,0
+INV,105821,FIR NEEDLE ESSENTIAL OIL (2 oz),,1,0,0,0,0,11.61,0
+INV,105825,HYALURONIC ACID (2.20 LBS),,6.5795,0,0,0,1328.79582,1328.79582,0
+INV,105826,ALFALFA POWDER (11.0231 LBS),,1,0,0,0,136.96,136.96,0
+INV,105827,BARLEY GRASS (11.0231 LBS),,5,0,0,0,629.8,629.8,0
+INV,105828,SPIRULINA (55.1156 LBS),,1,0,0,0,261.96,261.96,0
+INV,105831,WHEAT GRASS (55.1156 LBS),,0.963246,0,0,0,290.861762,290.861762,0
+INV,105832,BITTER MELON EXTRACT (55.1156 LBS),,1,0,0,0,378.96,378.96,0
+INV,105833,CREATINE MONOHYDRATE (55.1156 LBS),,1,0,0,0,186.96,186.96,0
+INV,105835,ESSENTIAL OIL: WILD ORANGE (? ML),,545.5674,0,0,0,0,0,0
+INV,105836,RAINBOW NON PAREILS (10 LBS),,0.85,0,0,0,13.923,13.923,0
+INV,105837,PEPPERMINT KRUNCH CANDY (10 LBS),,9,0,0,0,283.05,283.05,0
+INV,105838,RAINBOW SPRINKLES (25 LBS),,13.8,0,0,0,404.754,404.75,0
+INV,105839,CHRISTMAS SPRINKLES (10 LBS),,13.2,0,0,0,225.72,225.72,0
+INV,105841,"48"" HEAVY DUTY ANGLE BROOM",,1,0,0,0,10.99,10.99,0
+INV,105842,"30""  BLACK UNFLAGGED LOBBY BROOM AND DUSTPAN",,1,0,0,0,19.99,19.99,0
+INV,105843,36 QT. YELLOW MOP BUCKET,,1,0,0,0,28.99,28.99,0
+INV,105844,MICROFIBER DUST MOP ,,2,0,0,0,66.98,66.98,0
+INV,105845,20 LB SCALE,,12,0,0,0,256.68,256.68,0
+INV,105846,20 QT. STAINLESS STEEL POT WITH COVER,,1,0,0,0,46.99,46.99,0
+INV,105847,MOBILE ALUMINUM RACK,,3,0,0,0,416.97,416.97,0
+INV,105848,"30"" X 72"" STAINLESS STEEL TABLE",,49,0,0,0,7786.59,7786.59,0
+INV,105849,"30"" X 30"" STAINLESS STEEL TABLE",,2,0,0,0,604.72,604.72,0
+INV,105850,85 OZ SCOOP ,,2,0,0,0,14.58,14.58,0
+INV,105851,12 OZ SCOOP,,12,0,0,0,19.56,19.56,0
+INV,105852,38 OZ SCOOP,,12,0,0,0,43.2,43.2,0
+INV,105853,CACTUS MAT,,300,0,0,0,1257,1257,0
+INV,105854,3 STEP FOLDING STEP STOOL ,,2,0,0,0,159.98,159.98,0
+INV,105856,"LABEL 3.75"" x 1.4375"" Clear Laser ",,500,0,0,0,219.95,219.95,219.95
+INV,105857,"LABEL 4"" X 1.4375"" White Gloss for Laser",,250,0,0,0,72.95,72.95,0
+INV,105858,WHITE DISPOSABLE HAIR CAP,,20,0,0,0,44,44,0
+INV,105859,"SQUARE PALM LEAF PLATE 10"" ECOCHOICE TREEVIVE (100/CASE)",,35,0,0,0,878.85,878.85,0
+INV,105861,NITRILE  GLOVES (LARGE),,32,0,0,0,1231.36,1231.36,1231.36
+INV,105862,3 BOX WALL MOUNT GLOVE DISPENSER,,36,0,0,0,287.28,287.28,0
+INV,105863,"7"" COMPOSTABLE SUGARCANE/BAGASSE PLATE",,3,0,0,0,130.53,130.53,0
+INV,105864,"9"" COMPOSTABLE SUGARCANE/BAGASSE PLATE",,3,0,0,0,112.98,112.98,0
+INV,105865,NITRILE GLOVES (SMALL) (1000/box),,4,0,0,0,153.92,153.92,0
+INV,105866,NITRILE GLOVES (MEDIUM) ,,32,0,0,0,1231.36,1231.36,0
+INV,105867,FRENCH COFFEE PRESS,,24,0,0,0,161.28,161.28,0
+INV,105870,EDTA (5 LBS) Temporary Replacement (ETA ??),,0.069,0,0,0,2.98011,3.104353,0
+INV,105872,"LABEL 2.375"" x 3"" Weatherproof Polyester Laser ",,89.4445,0,0,0,44.677528,44.677528,41.14447
+INV,105887,"OUTSIDE RUG: Guardian Clean Step Scraper Outdoor Floor Mat, Natural Rubber, 3'x5', Black, Ideal for any outside entryway, Scrapes Shoes Clean of Dirt and Grime",,1,0,0,0,28.41,28.41,0
+INV,105890,"INSIDE RUG: Cactus Mat 1485M-L34 3' x 4' Charcoal Needle Rib Carpet Mat - 3/8"" Thick",,1,0,0,0,16.49,16.49,0
+INV,105891,ASHWAGANDHA EXTRACT POWDER (25 kg),,1,0,0,0,381.96,381.96,0
+INV,105892,BEET ROOT POWDER (20 KG),,1,0,0,0,144.96,144.96,0
+INV,105893,MACA ROOT EXTRACT POWDER (25 KG),,1,0,0,0,324.96,324.96,0
+INV,105894,GRAPE SEED EXTRACT POWDER ( 25 KG),,1,0,0,0,611.96,611.96,0
+INV,105895,PINE BARK EXTRACT POWDER (25 KG),,1,0,0,0,583.96,583.96,0
+INV,105896,RED YEAST RICE EXTRACT POWDER (25 KG),,1,0,0,0,336.96,336.96,0
+INV,105897,CHASTEBERRY EXTRACT POWDER (25 KG),,1,0,0,0,424.96,424.96,0
+INV,105898,DANDELION ROOT EXTRACT POWDER (25 KG),,1,0,0,0,353.96,353.96,0
+INV,105899,MILK THISTLE EXTRACT POWDER (25 KG),,1,0,0,0,881.96,881.96,0
+INV,105900,ST JOHN'S WORT EXTRACT (25 KG),,1,0,0,0,755.96,755.96,0
+INV,105901,VALERIAN ROOT EXTRACT POWDER (25 KG),,0.93884,0,0,0,358.599326,358.599326,0
+INV,105902,METHYLSULFONYLMETHANE (MSM) POWDER  (25 KG),,2,0,0,0,247.42,247.42,0
+INV,105903,BIOTIN 1% (VITAMIN B7) POWDER (25 KG),,1,0,0,0,496.96,496.96,0
+INV,105904,GRAPEFRUIT SEED EXTRACT POWDER (25 KG),,1,0,0,0,353.96,353.96,0
+INV,105905,PAPAYA FRUIT EXTRACT POWDER (25 KG),,1,0,0,0,381.96,381.96,0
+INV,105906,BAMBOO EXTRACT POWDER (25 KG),,1,0,0,0,482.96,482.96,0
+INV,105907,CORDYCEPS POWDER (25 KG),,1,0,0,0,454.96,454.96,0
+INV,105908,FO-TI EXTRACT POWDER (25 KG),,1,0,0,0,396.96,396.96,0
+INV,105909,COENZYME Q10 (COQ10) (1KG),,1,0,0,0,255.96,255.96,0
+INV,105910,MAGNESIUM OXIDE POWDER (25 KG),,1,0,0,0,195.96,195.96,0
+INV,105911,KAVA KAVA EXTRACT POWDER (25 KG),,1,0,0,0,755.96,755.96,0
+INV,105912,BILBERRY EXTRACT POWDER (25 KG),,1,0,0,0,381.96,381.96,0
+INV,105914,PORTLAND CEMENT TYPE I/II (94 LB),,7.29792,0,0,0,88.669728,0,0
+INV,105918,SYRINGE (60 ML) (4/pack),,3,0,0,0,29.97,29.97,0
+INV,105919,SYRINGE (20 ML) (4/pack),,3,0,0,0,20.97,20.97,0
+INV,105921,"AMBER GLASS BOTTLE 5 ML, 18-din neck finish",,181,0,0,0,10.7695,10.764364,0
+INV,105922,"AMBER GLASS 15 ML, 18-DIN ",,138,0,0,0,8.7768,8.773318,0
+INV,105923,CONSUMER COMMODITY ORM-D STICKERS,,1,0,0,0,8.78,8.78,0
+INV,105924,ARBORVITAE ,,82.798,0,0,0,0,0,0
+INV,105925,BERGAMOT ,,73.5674,0,0,0,0,0,0
+INV,105926,CAMPHOR ,,128.7837,0,0,0,0,0,0
+INV,105927,CARDAMOM ,,109.27,0,0,0,0,0,0
+INV,105928,CASSIA,,96,0,0,0,0,0,0
+INV,105929,CEDARWOOD,,32.02195,0,0,0,0,0,0
+INV,105930,CINNAMON LEAF,,320,0,0,0,0,0,0
+INV,105931,CLARY SAGE,,0.00186,0,0,0,0,0,0
+INV,105932,CLOVE,,236.4953,0,0,0,0,0,0
+INV,105933,CORIANDER,,160.74546,0,0,0,0,0,0
+INV,105934,CYPRESS,,104.7837,0,0,0,0,0,0
+INV,105935,EUCALYPTUS,,70.40878,0,0,0,0,0,0
+INV,105936,FENNEL,,104,0,0,0,0,0,0
+INV,105937,FRANKINCENSE,,236.10345,0,0,0,0,0,0
+INV,105938,GERANIUM,,112,0,0,0,0,0,0
+INV,105939,GINGER,,233.5674,0,0,0,0,0,0
+INV,105940,GRAPEFRUIT,,170.3511,0,0,0,0,0,0
+INV,105941,WHITE GRAPEFRUIT,,96,0,0,0,0,0,0
+INV,105942,JUNIPER BERRY,,40,0,0,0,0,0,0
+INV,105943,BAY LAUREL LEAF,,214.6395,0,0,0,0,0,0
+INV,105944,LAVENDER,,59.06521,0,0,0,0,0,0
+INV,105945,LEMONGRASS,,114.07461,0,0,0,0,0,0
+INV,105946,LEMON,,219.7116,0,0,0,0,0,0
+INV,105947,LIME,,142.6395,0,0,0,0,0,0
+INV,105948,MANDARIN GREEN,,96,0,0,0,0,0,0
+INV,105949,MARJORAM,,13.34859,0,0,0,0,0,0
+INV,105950,MYRRH,,192,0,0,0,0,0,0
+INV,105951,ORANGE,,288,0,0,0,0,0,0
+INV,105952,OREGANO,,14.01693,0,0,0,0,0,0
+INV,105953,PEPPERMINT,,128.7837,0,0,0,0,0,0
+INV,105954,PETITGRAIN,,120,0,0,0,0,0,0
+INV,105955,ROSEMARY,,96.59875,0,0,0,0,0,0
+INV,105956,SIBERIAN FIR,,133.50972,0,0,0,0,0,0
+INV,105957,TANGERINE,,114.927,0,0,0,0,0,0
+INV,105958,THYME,,113.17555,0,0,0,0,0,0
+INV,105959,VETIVER,,176,0,0,0,0,0,0
+INV,105960,WILD ORANGE,,192,0,0,0,0,0,0
+INV,105961,WINTER GREEN,,96,0,0,0,0,0,0
+INV,105962,YLANG YLANG,,56.7837,0,0,0,0,0,0
+INV,105963,ACAI BERRY (B/O MID FEB.) EXTRACT (25 KG),,2.2228,0,0,0,833.55,859.46999,0
+INV,105964,"DIINDOLYLMETHANE 3, 3' (25 KG)",,1,0,0,0,2000,2000,0
+INV,105965,ALFALFA EXTRACT 10:1 (25 KG),,1,0,0,0,300,300,0
+INV,105966,POMEGRANATE JUICE POWDER (20 KG),,1.92316,0,0,0,538.4848,538.4848,0
+INV,105969,SLIPPERY ELM BARK EXTRACT 10:1 (25 KG),,2.34903,0,0,0,704.709,704.709,0
+INV,105970,BCAA (25 KG),,2,0,0,0,862.5,862.5,0
+INV,105971,BROCCOLI EXTRACT POWDER (25 KG),,1,0,0,0,300,300,0
+INV,105972,BITTER MELON EXTRACT 10:1 (25 KG),,0.1837,0,0,0,55.11,55.11,0
+INV,105974,GREEN TEE EXTRACT 80% ( 25 KG),,0.8402,0,0,0,357.085,357.085,0
+INV,105975,KELP EXTRACT 10:1 (25 KG),,1,0,0,0,350,350,0
+INV,105977,ACEROLA CHERRY POWDER (25 KG),,1.6199,0,0,0,809.95,809.95,0
+INV,105980,"DRUM HEATER, Briskheat Silicone Rubber 55 Gallon",,1,0,0,0,0,161.95,0
+INV,105981,"DIATAMACEOUS EARTH (1,000 LBS) FOOD GRADE SUPER SACK",,1.74571,0,0,0,436.4275,436.4275,0
+INV,105988,GRAPEOLA 100% GRAPE SEED OIL (3 liter),,12,0,0,0,137.4,137.4,137.4
+INV,105989,SUN FLOWER OIL 100% Non - GMO (35 LB),,0.30195,0,0,0,12.98083,12.98083,12.98083
+INV,105991,OREGANO LEAVES REGAL (3 oz),,24,0,0,0,33.36,33.36,33.36
+INV,105992,OREGANO LEAVES REGAL (8 oz),,24,0,0,0,49.2,49.2,49.2
+INV,105994,CELERY SEED REGAL (5 lb),,1,0,0,0,12.49,12.49,12.49
+INV,105995,OREGANO REGAL BULK (20 lb),,1,0,0,0,49.99,49.99,0
+INV,105999,PARSLEY FLAKES REGAL BULK ( 20 lb),,3,0,0,0,279.93,279.93,279.93
+INV,106001,AVOCADO OIL 100 % PURE (50 lb),,1,0,0,0,162.99,162.99,162.99
+INV,106002,DUTCH COCOA POWDER (5 lb),,44,0,0,0,687.28,687.281805,687.28
+INV,106013,"LABEL 1"" x 0.5"" Weatherproof Polyester Laser",,580.19375,0,0,0,289.806778,260.273647,289.806778
+INV,106014,"VINEGAR POWDER, APPLE CIDER ( 25 LB)",,1,0,0,0,161.2,161.2,161.2
+INV,106015,SODIUM TRIPOLYPHOSPHATE LITE (55.1156 LBS) TECH,,1.41467,0,0,0,36.646081,36.63841,0
+INV,106018,NUTELLA HAZELNUT SPREAD 6.6 LB  (2/case),,10,0,0,0,392.4,382.4,382.4
+INV,106019,THIN WALL PLASTIC COLD CUP 7 oz TRANSLUCENT (2500/case),,20,0,0,0,699,699,699
+INV,106020,"BALLPOINT PENS, BIC ROUND STIC XTRA- LIFE ( 60/pack)",,1,0,0,0,5.09,5.09,5.09
+INV,106026,CORE BY ACOPA 1O OZ STEMLESS FLUTE GLASS (12/case),,1,0,0,0,16.49,16.49,16.49
+INV,106027,CLEAR SAN PLASTIC BEVERAGE PITCHER 60 oz,,384,0,0,0,687.36,687.36,687.36
+INV,106029,ALMOND FLOUR (25 LBS),,325.12,0,0,0,0,25196.8,0
+INV,106030,EDTA CALCIUM DISODIUM (For Capsules) POWDER (25 KG) BULK SUPPLEMENTS,,6.512,0,0,0,2265.26432,3713.03,0
+INV,106033,"DISPOSABLE POLY APRON 42"" x 24"". 50 MIL (100/box)",,13,0,0,0,38.61,32.31,38.61
+INV,106036,"HANGING FILE FOLDER,5-TAB,LETTER SIZE (50/box)",,1,0,0,0,16.05,16.05,16.05
+INV,106043,NORFOX CAPB  (480 LBS) Cocamidopropyl Betaine 30%,,1,0,0,0,288,288,0
+INV,106049,LABEL 2 X 5 WEATHERPROOF POLYESTER LASER ( 8/sheet),,100,0,0,0,49.95,49.95,49.95
+INV,106052,SORTKWIK FINGER TIP MOISTENER,,2,0,0,0,5.38,5.38,5.38
+INV,106053,BELT FOR FR900 SEALING MACHINE 50 psc,,1,0,0,0,34,34,34
+INV,106058,RUBBER STAMP .5 X 1.5,,3,0,0,0,20.85,20.85,20.85
+INV,106062,TVP TEXTURED VEGETABLE PROTEIN (25 LBS),,2,0,0,0,97.88,97.88,0
+INV,106064,OXYGEN ABSORBERS 1 X 1000 cc,,1,0,0,0,34.99,34.99,0
+INV,106065,SCREEN PROTECTOR FOR DELL INSPIRON 15 300,,2,0,0,0,25.98,28.98,0
+INV,10607,SODIUM BICARBONATE USP NO. 1 POWDERED (50 LBS),,342.902,0,0,0,4672.03975,4672.037389,0
+INV,106071,SHRINK BAND 75 X 28 ( 250/case),,2883,0,0,0,29.4066,29.4066,29.4066
+INV,106072,SHRINK BAND 66 X 25 (250/case),,2440,0,0,0,23.668,23.668,23.668
+INV,106086,APRICOT KERNEL OIL (30 LBS),,2,0,0,0,216.6,216.6,0
+INV,106087,ARGAN OIL (30 LBS),,1,0,0,0,640.33,640.33,0
+INV,106088,CASTOR OIL (440 LBS),,1,0,0,0,635.67,635.67,0
+INV,106089,EVENING PRIMROSE OIL (30 LBS),,1,0,0,0,597.81,597.81,0
+INV,106090,HEMPSEED OIL (30 LBS),,1,0,0,0,151.5,151.5,0
+INV,106095,REGAL EVERYTHING BAGEL SEASONING (5 LBS),,24,0,0,0,315.84,315.84,0
+INV,106096,PINK SPRINKLES (10 LBS),,5,0,0,0,73.95,73.95,0
+INV,106097,RED SPRINKLES (10 LBS),,5,0,0,0,73.95,73.95,0
+INV,106098,PURPLE SPRINKLES (10 LBS),,5,0,0,0,73.95,73.95,0
+INV,106099,16 OZ RECTANGULAR PLASTIC SPICE STORAGE CONTAINER/SHAKE LID ,,24,0,0,0,18.72,18.72,18.72
+INV,106100,32 OZ RECTANGULAR PLASTIC SPICE STORAGE CONTAINER/SHAKE LID ,,24,0,0,0,26.16,26.16,26.16
+INV,106101,8.5 OZ ROUND PLASTIC SPICE STORAGE CONTAINER/SHAKE LID ,,24,0,0,0,16.32,16.32,16.32
+INV,106102,GOURMET PEPPERCORN MEDLEY 8 OZ,,24,0,0,0,124.56,124.56,124.56
+INV,106114,"AIR DUSTER,10 OZ (PACK OF 6)",,1,0,0,0,18.99,18.99,18.99
+INV,106116,GLOVES (SMALL) 1000/box,,1,0,0,0,0,42.99,0
+INV,106123,SURFACE MOUNT SANITARY NAPKIN DISPOSAL RECEPTACLE B-254,,1,0,0,0,85.91,85.91,85.91
+INV,106124,HALF FOLD PAPER TOILET SEAT COVER ( 5000/case),,1,0,0,0,34.99,34.99,34.99
+INV,106125,LAVEX JANITORIAL STAINLESS STEEL TOILET COVER DISPENSER,,3,0,0,0,68.19,68.19,68.19
+INV,106126,"TABLECRAFT B22 EMPLOYEE MUST WASH HANDS SIGN 9""X3""",,3,0,0,0,8.37,8.37,8.37
+INV,10621,CITRIC ACID ANHY F6000 USP FCC KSHR (50 LBS),,1.2515,0,0,0,0,53.845519,0
+INV,10662,CASSIA CINNAMON GROUND (25 LBS),,2.44,0,0,0,174.1672,165.453868,0
+INV,10663,QUICK OATS (25 LBS),,1.1,0,0,0,16.72,16.720418,0
+INV,10665,MOUSE PAD,,5,0,0,0,4.95,4.95,4.95
+INV,10668,CEYLON CINNAMON GROUND (5 LBS),,1.077,0,0,0,44.157,51.15,0
+INV,10728,COLLAGEN PEPTIDES (2.25 LBS),,0.22438,0,0,0,10.094856,10.094871,0
+INV,10739,CALCIUM CHLORIDE TECH GRADE (ICE MELT) B/O DO NOT ORDER MORE,,46.16,0,0,0,556.228,822.567037,0
+INV,10744,OLD FASHIONED OATS ROLLED (25 LBS),,17.36,0,0,0,263.872,267.234646,277.76
+INV,10745,STEEL CUT OATS (25 LBS),,158.92,0,0,0,2415.584,2415.584,0
+INV,10759,DUTCH BAKING COCOA (50 LBS),,1,0,0,0,116.85,118.893333,0
+INV,10771,"CLEANING TOWELS 14"" x 12"" Cleaning Solutions 79142 (150/pack)",,1,0,0,0,29.99,29.99,0
+INV,10772,"STRETCH FILM - 18"" x 1500' 80 Gauge Pallet Wrap (4/case) Lavex Industries",,53555.438818,0,0,0,401.55868,417.616004,0

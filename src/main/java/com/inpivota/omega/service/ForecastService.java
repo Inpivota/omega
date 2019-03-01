@@ -58,13 +58,12 @@ public class ForecastService {
                 sales) {
             quantitySold += quantity.getQuantity();
         }
-        BigDecimal avg = new BigDecimal(quantitySold).divide(new BigDecimal(days));
+        BigDecimal avg = new BigDecimal(0);
+        if(quantitySold > 0) {
+            avg = new BigDecimal(quantitySold).divide(new BigDecimal(days));
+        }
+        result = avg;
 
-        // Returning a default of 1 for now for tests. Because we dont have data in DB yet.
-        result = avg != new BigDecimal(0) ? avg : new BigDecimal(1);
-
-        // result = calculation of AVG
-        //result = avg;
         return result;
     }
 
