@@ -20,7 +20,8 @@ public class HelperMethods {
     }
 
     public static String FindFNSKUBySKU(List<ManageData> Data, String SKU){
-        String result = Data.stream().filter(p -> p.SKU.equals(SKU)).findFirst().get().fnSKU;
+        var item = Data.stream().filter(p -> p.SKU.equals(SKU)).findFirst();
+        String result = item.isEmpty() ? "" : item.get().fnSKU;
         return result;
     }
 

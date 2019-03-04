@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.*;
 
 import static com.inpivota.omega.FinaleImports.HelperMethods.*;
@@ -84,10 +85,11 @@ public class ProductImport {
                     int doesGetBuilt = stringBuilt != null ? Integer.parseInt(stringBuilt) : 0;
 
                     String stringDate = data[11];
-                    Date doneDate = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH).parse(stringDate);
+                    Date doneDate = stringDate.isBlank() ? new Date() : new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH).parse(stringDate);
 
                     String notes = data[15];
-                    String UPC = data[17];
+
+                    String UPC = data.length == 17 ? data[17] : "";
 
                     Optional<Product> dbProduct = FindProductByFinaleId(dbProducts, finaleProductId);
 
