@@ -16,7 +16,8 @@ public class HelperMethods {
     }
 
     public static Optional<ProductCategory> FindCategoryByName(List<ProductCategory> Categories, String Name){
-        return Categories.stream().filter(p -> p.getName().equals(Name)).findFirst();
+        var result = Categories.stream().filter(p -> p.getName().equals(Name)).findFirst();
+        return result;
     }
 
     public static String FindFNSKUBySKU(List<ManageData> Data, String SKU){

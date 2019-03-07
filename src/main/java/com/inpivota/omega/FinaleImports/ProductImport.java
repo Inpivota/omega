@@ -71,25 +71,29 @@ public class ProductImport {
                 String[] data = line.split(",");
 
                 String finaleProductId = data[0];
-                String productName = data[2];
+                String productName = data.length > 1 ? data[2] : "";
 
                 if (!finaleProductId.toLowerCase().equals("productid") && !finaleProductId.equals("")) {
 
-                    String productCategory = data[3];
-                    ProductCategory category = FindCategoryByName(dbCategories, productCategory).orElseThrow();
-
-                    String SKU = data[5];
+                    String productCategory = data.length > 2 ? data[3] : "";
+                    ProductCategory category = null;
+                    try {
+                        category = FindCategoryByName(dbCategories, productCategory).orElseThrow();
+                    }catch (Exception ex){
+                        errors.add("Error: " + ex.getMessage() + " Product: " + finaleProductId + " Category: " + productCategory);
+                    }
+                    String SKU = data.length > 4 ? data[5] : "";
                     String fnSKU = FindFNSKUBySKU(listManageData, SKU);
 
-                    String stringBuilt = data[9];
-                    int doesGetBuilt = stringBuilt != null ? Integer.parseInt(stringBuilt) : 0;
+                    String stringBuilt = data.length > 8 ? data[9] : "";
+                    int doesGetBuilt = !stringBuilt.isEmpty() ? Integer.parseInt(stringBuilt) : 0;
 
-                    String stringDate = data[11];
+                    String stringDate = data.length > 10 ? data[11] : "";
                     Date doneDate = stringDate.isBlank() ? new Date() : new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH).parse(stringDate);
 
-                    String notes = data[15];
+                    //String notes = data.length > 14 ? data[15] : "";
 
-                    String UPC = data.length == 17 ? data[17] : "";
+                    String UPC = data.length > 15 && data.length > 16 ? data[16] : "";
 
                     Optional<Product> dbProduct = FindProductByFinaleId(dbProducts, finaleProductId);
 
@@ -102,7 +106,7 @@ public class ProductImport {
                                 Product product = new Product();
                                 product.setFinaleId(finaleProductId);
                                 product.setCreatedAt(doneDate.toInstant());
-                                product.setDescription(notes);
+                               // product.setDescription(notes);
                                 product.setFnSku(fnSKU);
                                 product.setName(productName);
                                 product.setNotes("Import Note");
@@ -118,10 +122,11 @@ public class ProductImport {
                                 Product product = dbProduct.get();
                                 product.setName(productName);
                                 product.setProductCategory(category);
-                                product.setDescription(notes);
+                                //product.setDescription(notes);
                                 product.setCreatedAt(doneDate.toInstant());
                                 product.setFnSku(fnSKU);
                                 product.setSku(SKU);
+                                product.setProductCategory(category);
                                 // Need to Make sure this persists to the DB
                                 updateCount++;
                             }
@@ -147,7 +152,7 @@ public class ProductImport {
                                 // Update the Product
                                 RawProduct rawProduct = dbRawProduct.get();
                                 rawProduct.setName(productName);
-                                rawProduct.setDescription(notes);
+                               // rawProduct.setDescription(notes);
                                 rawProduct.setSupplierId(null);
 
                                 rawUpdateCount++;
@@ -155,7 +160,7 @@ public class ProductImport {
                                 RawProduct rawProduct = new RawProduct();
                                 rawProduct.setName(productName);
                                 rawProduct.setSupplierId(null);
-                                rawProduct.setDescription(notes);
+                                //rawProduct.setDescription(notes);
                                 rawProduct.setNotes("Import Notes");
 
                                 rawProductRepository.save(rawProduct);
