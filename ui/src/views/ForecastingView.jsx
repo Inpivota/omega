@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Table from "@material-ui/core/Table/Table";
 import TableHead from "@material-ui/core/TableHead/TableHead";
 import TableRow from "@material-ui/core/TableRow/TableRow";
@@ -12,6 +12,7 @@ import IconButton from "@material-ui/core/IconButton/IconButton";
 import MuiTooltip from "@material-ui/core/Tooltip/Tooltip";
 import InfoIcon from "@material-ui/icons/Info";
 import MUIDataTable from "mui-datatables";
+import {getForcastData} from "../utilAPIs/APIUtils";
 
 const styles = theme => ({
     root: {
@@ -26,6 +27,12 @@ const styles = theme => ({
 
 const ForecastingView = (props) => {
     const {classes} = props;
+    const [tableData, setTableData] = useState([]);
+
+    useEffect(()=>{
+        if(tableData.length < 1) getForcastData().then(data => setTableData(data))
+    });
+
     const graph = (data) => {
         return (
             <AreaChart width={250} height={80} data={data}>
@@ -47,44 +54,44 @@ const ForecastingView = (props) => {
         "Notes",
         "Actions"
     ];
-    const tableData = [
-        [
-            "Vitamin C (1 lb) POI",
-            15,
-            <TextField value={34}/>,
-            graph(salesDataObjects([5, 10, 14, 17, 12, 8, 7, 3, 14, 16, 20, 26, 27, 30, 34, 31, 28, 25, 23, 26, 29, 20, 15, 21, 16, 10, 18, 6, 2, 1, 1])),
-            "",
-            <MuiTooltip title={"View Details"}>
-                <IconButton>
-                    <InfoIcon/>
-                </IconButton>
-            </MuiTooltip>
-        ],
-        [
-            "Calcium Carbonate 16oz",
-            1.8,
-            <TextField value={6.250}/>,
-            graph(salesDataObjects([6, 1, 4, 5, 4, 6, 5, 3, 4, 4, 3, 6, 5, 5, 0, 0, 0, 0, 0, 0, 1, 8, 5, 3, 3, 1, 7, 7, 7, 2, 6])),
-            "",
-            <MuiTooltip title={"View Details"}>
-                <IconButton>
-                    <InfoIcon/>
-                </IconButton>
-            </MuiTooltip>
-        ],
-        [
-            "POI Aluminum Oxide 32oz X23",
-            3.3,
-            <TextField value={5}/>,
-            graph(salesDataObjects([0, 0, 0, 3, 2, 2, 0, 1, 0, 1, 0, 3, 1, 7, 2, 1, 2, 6, 2, 1, 2, 4, 3, 0, 1, 1, 4, 0, 2, 0, 1])),
-            "Low Avg",
-            <MuiTooltip title={"View Details"}>
-                <IconButton>
-                    <InfoIcon/>
-                </IconButton>
-            </MuiTooltip>
-        ]
-    ];
+    // const tableData = [
+    //     [
+    //         "Vitamin C (1 lb) POI",
+    //         15,
+    //         <TextField value={34}/>,
+    //         graph(salesDataObjects([5, 10, 14, 17, 12, 8, 7, 3, 14, 16, 20, 26, 27, 30, 34, 31, 28, 25, 23, 26, 29, 20, 15, 21, 16, 10, 18, 6, 2, 1, 1])),
+    //         "",
+    //         <MuiTooltip title={"View Details"}>
+    //             <IconButton>
+    //                 <InfoIcon/>
+    //             </IconButton>
+    //         </MuiTooltip>
+    //     ],
+    //     [
+    //         "Calcium Carbonate 16oz",
+    //         1.8,
+    //         <TextField value={6.250}/>,
+    //         graph(salesDataObjects([6, 1, 4, 5, 4, 6, 5, 3, 4, 4, 3, 6, 5, 5, 0, 0, 0, 0, 0, 0, 1, 8, 5, 3, 3, 1, 7, 7, 7, 2, 6])),
+    //         "",
+    //         <MuiTooltip title={"View Details"}>
+    //             <IconButton>
+    //                 <InfoIcon/>
+    //             </IconButton>
+    //         </MuiTooltip>
+    //     ],
+    //     [
+    //         "POI Aluminum Oxide 32oz X23",
+    //         3.3,
+    //         <TextField value={5}/>,
+    //         graph(salesDataObjects([0, 0, 0, 3, 2, 2, 0, 1, 0, 1, 0, 3, 1, 7, 2, 1, 2, 6, 2, 1, 2, 4, 3, 0, 1, 1, 4, 0, 2, 0, 1])),
+    //         "Low Avg",
+    //         <MuiTooltip title={"View Details"}>
+    //             <IconButton>
+    //                 <InfoIcon/>
+    //             </IconButton>
+    //         </MuiTooltip>
+    //     ]
+    // ];
     // const data = [
     //     {
     //         name: "Vitamin C (1 lb) POI",
