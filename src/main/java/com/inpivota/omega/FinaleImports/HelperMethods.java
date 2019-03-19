@@ -98,9 +98,8 @@ public class HelperMethods {
         return result;
     }
 
-    public static Location FindLocaitonByName(List<Location> Locaitons, String Name){
-        Location result = Locaitons.stream().filter(p -> p.getName() == Name).findFirst().get();
-        return result;
+    public static Optional<Order> FindOrderById(List<Order> Orders, String OrderId){
+        return Orders.stream().filter(p -> p.getOrderNumber().equals(OrderId)).findFirst();
     }
 }
 
