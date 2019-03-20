@@ -58,15 +58,17 @@ public class BOMImport {
 
                 String finaleProductId = data[0];
                 String stringQuantity = data[3];
-                BigDecimal quantity = !stringQuantity.equals("") ? new BigDecimal(stringQuantity) : new BigDecimal(0);
                 String rawProductId = data[4];
                 String itemNote = data[5];
 
                 try {
-                    Product dbProduct = FindProductByFinaleId(dbProducts, finaleProductId).orElseThrow();
-                    RawProduct dbRawProduct = FindRawProductByFinaleId(dbRawProducts,rawProductId).orElseThrow();
 
                     if (!finaleProductId.equals("ProductID")) {
+
+                        BigDecimal quantity = !stringQuantity.equals("") && !stringQuantity.equals("Quantity") ? new BigDecimal(stringQuantity) : new BigDecimal(0);
+
+                        Product dbProduct = FindProductByFinaleId(dbProducts, finaleProductId).orElseThrow();
+                        RawProduct dbRawProduct = FindRawProductByFinaleId(dbRawProducts,rawProductId).orElseThrow();
                         Optional<Bom> dbBOM = FindBOMByProductAndRawFinaleId(dbBOMs, dbProduct.getFinaleId(), dbRawProduct.getFinaleId());
 
                         //todo We need a way to delete BOMs from the DB if they are not in the new file...

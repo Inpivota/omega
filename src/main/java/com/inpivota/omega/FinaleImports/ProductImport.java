@@ -160,6 +160,7 @@ public class ProductImport {
                                 RawProduct rawProduct = new RawProduct();
                                 rawProduct.setName(productName);
                                 rawProduct.setSupplierId(null);
+                                rawProduct.setFinaleId(finaleProductId);
                                 //rawProduct.setDescription(notes);
                                 rawProduct.setNotes("Import Notes");
 

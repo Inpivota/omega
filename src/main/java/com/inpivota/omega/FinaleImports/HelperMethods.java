@@ -39,55 +39,61 @@ public class HelperMethods {
         return Locations.stream().filter(p -> p.getName().equals(Name)).findFirst();
     }
 
-    public static Optional<InventoryItem> FindInventoryItemByProductIdAndLocation(List<InventoryItem> InventoryItems, String ProductId, String LocationName){
-        return InventoryItems.stream().filter(p ->
+    public static Optional<InventoryItem> FindInventoryItemByProductIdAndLocation(List<InventoryItem> InventoryItems, String ProductId, Location Location) {
+
+        var result = InventoryItems.stream().filter(p ->
                 (p.getProduct().getFinaleId().equals(ProductId) || p.getRawProduct().getFinaleId().equals(ProductId))
-                        && p.getLocation().getName().equals(LocationName)).findFirst();
+                        //&& p.getLocation().getName().equals(LocationName)
+                        && p.getLocation().equals(Location)).findFirst();
+        return result;
     }
 
-    public static List<ManageData> GetManageData(String filePath, String manageFileName){
+    public static List<ManageData> GetManageData(String filePath, String manageFileName) {
         List<ManageData> listManageData = new ArrayList<ManageData>();
         String line = "";
-        try{
+        try {
             var br = new BufferedReader(new FileReader(filePath + manageFileName));
-            while  ((line = br.readLine()) != null){
+            while ((line = br.readLine()) != null) {
                 //String[] data  = line.split("   ");
-                String[] data  = line.split("\",\"");
+                String[] data = line.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
                 String sku = data[0];
-                String fnSKU = data[1];
-                String asin = data[2];
-                String productName = data[3];
-                int workingQuantity = Integer.parseInt(data[15]);
-                int shippedQuantity = Integer.parseInt(data[16]);
-                int receivingQuantity = Integer.parseInt(data[17]);
-                int totalInboundQuantity = receivingQuantity + shippedQuantity + workingQuantity;
+                if (!sku.equals("sku")) {
 
-                if (!sku.equals("sku")){
+                    String fnSKU = data[1];
+                    String asin = data[2];
+                    String productName = data[3];
+                    int workingQuantity = Integer.parseInt(data[15]);
+                    int shippedQuantity = Integer.parseInt(data[16]);
+                    int receivingQuantity = Integer.parseInt(data[17]);
+                    int totalInboundQuantity = receivingQuantity + shippedQuantity + workingQuantity;
+
+
                     listManageData.add(new ManageData(sku, fnSKU, asin, productName, totalInboundQuantity));
                 }
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             //throw new Exception("Error Pulling Data from Manage File" + e.getMessage());
         }
         return listManageData;
     }
 
-    public static List<ManageData> GetFulfillData(String filePath, String fulfillFileName){
+    public static List<ManageData> GetFulfillData(String filePath, String fulfillFileName) {
         List<ManageData> listManageData = new ArrayList<ManageData>();
         String line = "";
-        try{
+        try {
             var br = new BufferedReader(new FileReader(filePath + fulfillFileName));
-            while  ((line = br.readLine()) != null){
+            while ((line = br.readLine()) != null) {
                 //String[] data  = line.split("   ");
-                String[] data  = line.split("   ");
+                String[] data = line.split("\t");
                 String sku = data[0];
-                int quantity = Integer.parseInt(data[5]);
+                if (!sku.equals("seller-sku")) {
 
-                if (!sku.equals("sku")){
+                    int quantity = Integer.parseInt(data[5]);
+
                     listManageData.add(new ManageData(sku, null, null, null, quantity));
                 }
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             //throw new Exception("Error Pulling Data from Manage File" + e.getMessage());
         }
         return listManageData;

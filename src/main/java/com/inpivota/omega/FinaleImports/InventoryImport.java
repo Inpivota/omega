@@ -63,49 +63,69 @@ public class InventoryImport {
                 String[] data = line.split(",");
 
                 String subLocation = data[0];
-                String finaleProductId = data[1];
-                int finaleUnits = Integer.parseInt(data[4]);
 
-                Location dbLocation = FindLocationByName(dbLocations, subLocation).orElseThrow();
-                Product dbProduct = FindProductByFinaleId(dbProducts, finaleProductId).orElseThrow();
-                Optional<RawProduct> dbRawProduct = FindRawProductByFinaleId(dbRawProducts, finaleProductId);
-                boolean useRawProduct = dbRawProduct.isPresent();
-                String productSKU = dbProduct.getSku();
+                if(!subLocation.equals("Sublocation")) {
 
-                int shippedUnits = FindQuantityBySKU(shippedInventory, productSKU);
-                int FBAUnits = FindQuantityBySKU(FBAInventory, productSKU);
-                int units = subLocation.equals("FBA") ? FBAUnits : subLocation.equals("--") ? shippedUnits : finaleUnits;
+                    String finaleProductId = data[1];
+                    int finaleUnits = Integer.parseInt(data[4]);
 
-                String productName = useRawProduct ? dbRawProduct.get().getName() : dbProduct.getName();
+                    String newSubLocation = subLocation.equals("--") ? "In Transit" : subLocation;
 
-                try {
+                    Location dbLocation = FindLocationByName(dbLocations, newSubLocation).orElseThrow();
+                    Product dbProduct = FindProductByFinaleId(dbProducts, finaleProductId).orElseThrow();
+                    Optional<RawProduct> dbRawProduct = FindRawProductByFinaleId(dbRawProducts, finaleProductId);
+                    boolean useRawProduct = dbRawProduct.isPresent();
+                    String productSKU = dbProduct.getSku();
 
-                    Optional<InventoryItem> dbInventoryItem = FindInventoryItemByProductIdAndLocation(dbInventoryItems, finaleProductId, subLocation);
-
-                    if (!dbInventoryItem.isPresent()) {
-                        // Create one
-                        InventoryItem newInventoryItem = new InventoryItem();
-
-                        newInventoryItem.setLocation(dbLocation);
-                        newInventoryItem.setName(productName + "-" + subLocation);
-                        newInventoryItem.setProduct(dbProduct);
-                        if (useRawProduct) newInventoryItem.setRawProduct(dbRawProduct.get());
-                        newInventoryItem.setQuantity(units);
-
-                        inventoryItemRepository.save(newInventoryItem);
-                        successCount++;
-
-                    } else {
-                        // Update it
-                        dbInventoryItem.get().setQuantity(units);
-
-                        updateCount++;
+                    int shippedUnits = 0;
+                    if(subLocation.equals("--")){
+                        try {
+                            shippedUnits = FindQuantityBySKU(shippedInventory, productSKU);
+                        }catch(Exception e) {
+                            errors.add("Could Not find Shipped Inventory for Product: " + finaleProductId + "SKU: " + productSKU);
+                        }
                     }
+                    int FBAUnits = 0;
+                    if(subLocation.equals("FBA")){
+                        try{
+                        FBAUnits = FindQuantityBySKU(FBAInventory, productSKU);
+                        }catch(Exception e) {
+                            errors.add("Could Not find FBA Inventory for Product: " + finaleProductId + "SKU: " + productSKU);
+                        }
+                    }
+                    int units = subLocation.equals("FBA") ? FBAUnits : subLocation.equals("--") ? shippedUnits : finaleUnits;
 
-                } catch (Exception ex) {
-                    errorCount++;
-                    errors.add("Had problem with Product Inventory. ProductId: " + finaleProductId + ", Location: " + subLocation +
-                            ", Error: " + ex.getMessage() + "\r\n");
+                    String productName = useRawProduct ? dbRawProduct.get().getName() : dbProduct.getName();
+
+                    try {
+
+                        Optional<InventoryItem> dbInventoryItem = FindInventoryItemByProductIdAndLocation(dbInventoryItems, finaleProductId, dbLocation);
+
+                        if (!dbInventoryItem.isPresent()) {
+                            // Create one
+                            InventoryItem newInventoryItem = new InventoryItem();
+
+                            newInventoryItem.setLocation(dbLocation);
+                            newInventoryItem.setName(productName + "-" + newSubLocation);
+                            newInventoryItem.setProduct(dbProduct);
+                            if (useRawProduct) newInventoryItem.setRawProduct(dbRawProduct.get());
+                            newInventoryItem.setQuantity(units);
+
+                            inventoryItemRepository.save(newInventoryItem);
+                            successCount++;
+
+                        } else {
+                            // Update it
+                            dbInventoryItem.get().setQuantity(units);
+
+                            updateCount++;
+                        }
+
+                    } catch (Exception ex) {
+                        errorCount++;
+                        errors.add("Had problem with Product Inventory. ProductId: " + finaleProductId + ", Location: " + subLocation +
+                                ", Error: " + ex.getMessage() + "\r\n");
+                    }
                 }
             }
         } catch (Exception e) {

@@ -6,6 +6,7 @@ import com.inpivota.omega.model.OrderLineItem;
 import com.inpivota.omega.model.Product;
 import com.inpivota.omega.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -14,6 +15,7 @@ import java.util.*;
 
 import static com.inpivota.omega.FinaleImports.HelperMethods.*;
 
+@Service
 public class OrderImport {
 
     private ProductRepository productRepository;
@@ -54,7 +56,7 @@ public class OrderImport {
 
                 String finaleProductId = data[0];
 
-                if(!finaleProductId.equals("--")){
+                if(!finaleProductId.equals("--") && !finaleProductId.equals("ProductID")){
 
                     String locationName = data[4];
                     Optional<Location> dbLocation = FindLocationByName(dbLocations, locationName);
@@ -75,8 +77,11 @@ public class OrderImport {
 
                         Order newOrder = new Order();
 
-                        //newOrder.setOrderDate(orderDate);
-                        //newOrder.setShipDate(shipDate);
+                        var newOrderDate = new java.sql.Date(orderDate.getTime());
+                        var newShipDate = new java.sql.Date(shipDate.getTime());
+
+                        newOrder.setOrderDate(newOrderDate);
+                        newOrder.setShipDate(newShipDate);
                         newOrder.setOrderNumber(orderId);
 
                         orderRepository.save(newOrder);
@@ -86,20 +91,35 @@ public class OrderImport {
                         // I dont think we need to update anything about an order
                     }
 
-                    Optional<Product> dbProduct =  FindProductByFinaleId(dbProducts, finaleProductId);
+                    // Get the Product
+                    Optional<Product> dbProduct = FindProductByFinaleId(dbProducts, finaleProductId);
                     if(!dbProduct.isEmpty()){
+                        // Get the Order
+                        Optional<Order> dbOrder = orderRepository.findByOrderNumber(orderId);
+                        if(!dbOrder.isEmpty()) {
+                            // Then make sure that this product is not already on the Order
+                            OrderLineItem lineItem = orderLineItemRepository.findByProductAndOrder(dbProduct.get(), dbOrder.get());
+                            // An order will never contain multiple of the same item on it.
+                            if(lineItem == null) {
 
-                        OrderLineItem orderItem = new OrderLineItem();
+                                OrderLineItem orderItem = new OrderLineItem();
 
-                        //orderItem.setOrder();
-                        int price = !itemPrice.isEmpty() ? Integer.getInteger(itemPrice) : 0;
-                        orderItem.setPrice(price);
-                        orderItem.setProduct(dbProduct.get());
-                        int quantity = !unitSum.isEmpty() ? Integer.getInteger(unitSum) : 0;
-                        orderItem.setQuantity(quantity);
+                                orderItem.setOrder(dbOrder.get());
+                                int price = !itemPrice.isEmpty() ? Integer.getInteger(itemPrice) : 0;
+                                orderItem.setPrice(price);
+                                orderItem.setProduct(dbProduct.get());
+                                int quantity = !unitSum.isEmpty() ? Integer.getInteger(unitSum) : 0;
+                                orderItem.setQuantity(quantity);
+                                orderItem.setLocation(dbLocation.get());
 
-                        orderLineItemRepository.save(orderItem);
-                        lineItemCount++;
+                                orderLineItemRepository.save(orderItem);
+                                lineItemCount++;
+                            }
+
+                        }else {
+                            errorCount++;
+                            errors.add("Could Not find Order Id: " + orderId + " in the DB");
+                        }
                     }
                 }
 

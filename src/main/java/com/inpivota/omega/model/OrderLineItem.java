@@ -19,6 +19,9 @@ public class OrderLineItem extends BaseEntity {
     @ManyToOne
     private Order order;
 
+    @ManyToOne
+    private Location location;
+
     @Override
     public String getUiLabel() {
         return product.getUiLabel();

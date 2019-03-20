@@ -28,6 +28,10 @@ public class FinaleImportTest {
     private BomRepository bomRepository;
     @MockBean
     private InventoryItemRepository inventoryItemRepository;
+    @MockBean
+    private OrderRepository orderRepository;
+    @MockBean
+    private OrderLineItemRepository orderLineItemRepository;
 
     public FinaleImportTest(){
 
@@ -41,8 +45,9 @@ public class FinaleImportTest {
         ProductImport productImport = new ProductImport(productRepository, rawProductRepository, productCategoryRepository);
         BOMImport bomImport = new BOMImport(productRepository, bomRepository, rawProductRepository);
         InventoryImport inventoryImport = new InventoryImport(productRepository, inventoryItemRepository, rawProductRepository, locationRepository);
+        OrderImport orderImport = new OrderImport(productRepository, orderRepository, orderLineItemRepository, locationRepository);
 
-        RunImport finaleImport = new RunImport(categoryImport, locationImport, productImport, bomImport, inventoryImport);
+        RunImport finaleImport = new RunImport(categoryImport, locationImport, productImport, bomImport, inventoryImport, orderImport);
 
         try {
             //String results = finaleImport.doImports();
